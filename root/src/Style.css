@@ -1,0 +1,68 @@
+* {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.parent {
+   position: relative;
+   width: 16vw;
+   margin: 0;
+   padding: 0;
+}
+#upperL6Key5, #lowerL6Key6N {
+   position: relative;
+   display: block;
+   height: auto;
+}
+#key {
+   position: absolute;
+   top: 4.8vw;
+   left: 8.55vw;
+   width: 3.5%;
+   height: auto;
+   -webkit-user-drag: auto;
+}
+#key1 {
+   display: none;
+   position: absolute;
+   top: 4.8vw;
+   left: 8.55vw;
+   width: 3.5%;
+   height: auto;
+   -webkit-user-drag: auto;
+}
+.straight {
+   position: relative;
+   display: block;
+   height: auto;
+   width: 40%;
+   top: 3.75vw;
+   left: 10vw;
+}
+.split {
+   position: absolute;
+   top: 0;
+   left: 49.8vw;
+   height: auto;
+   width: 12%;
+}
+.up {
+   position: absolute;
+   top: -2.57vw;
+   left: 62vw;
+   height: auto;
+   width: 22%;
+}
+.down {
+   position: absolute;
+   top: 3.6vw;
+   left: 62vw;
+   height: auto;
+   width: 22%;
+}
+.one {
+   height: 30vh;
+   width: auto;
+   position: relative;
+   margin: 0;
+   padding: 0;
+}
