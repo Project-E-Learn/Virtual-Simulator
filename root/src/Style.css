@@ -1,68 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
-    -webkit-user-drag: none;
-    user-select: none;
+  font-family: 'Poppins', sans-serif;
+   -webkit-user-drag: none;
+   user-select: none;
 }
+
 .parent {
-   position: relative;
-   width: 16vw;
-   margin: 0;
-   padding: 0;
+  position: relative;
+  width: 16vw;
+  margin: 0;
+  padding: 0;
 }
-#upperL6Key5, #lowerL6Key6N {
-   position: relative;
-   display: block;
-   height: auto;
+
+#upperL6Key5 {
+  position: absolute;
+  top: 4.8vw;
+  left: 8.55vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
 }
-#key {
-   position: absolute;
-   top: 4.8vw;
-   left: 8.55vw;
-   width: 3.5%;
-   height: auto;
-   -webkit-user-drag: auto;
+
+#lowerL6Key6N {
+  position: absolute;
+  top: 4.8vw;
+  left: 8.55vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
 }
-#key1 {
-   display: none;
-   position: absolute;
-   top: 4.8vw;
-   left: 8.55vw;
-   width: 3.5%;
-   height: auto;
-   -webkit-user-drag: auto;
+
+#upperL5Key5 {
+  position: absolute;
+  top: 4.8vw;
+  left: 5.25vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
 }
-.straight {
-   position: relative;
-   display: block;
-   height: auto;
-   width: 40%;
-   top: 3.75vw;
-   left: 10vw;
+
+#upperL5Key5N {
+  position: absolute;
+  top: 4.8vw;
+  left: 12.08vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
 }
-.split {
-   position: absolute;
-   top: 0;
-   left: 49.8vw;
-   height: auto;
-   width: 12%;
+
+#lowerL5Key5 {
+  position: absolute;
+  top: 4.8vw;
+  left: 5.25vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
 }
-.up {
-   position: absolute;
-   top: -2.57vw;
-   left: 62vw;
-   height: auto;
-   width: 22%;
+
+#lowerL5Key5R {
+  position: absolute;
+  top: 4.8vw;
+  left: 12.08vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
 }
-.down {
-   position: absolute;
-   top: 3.6vw;
-   left: 62vw;
-   height: auto;
-   width: 22%;
+
+#upperL4KeyAN {
+  position: absolute;
+  top: 4.8vw;
+  left: 8.56vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
 }
-.one {
-   height: 30vh;
-   width: auto;
-   position: relative;
-   margin: 0;
-   padding: 0;
+
+#lowerL4Key5N {
+  position: absolute;
+  top: 4.8vw;
+  left: 5.25vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
+}
+
+#lowerL4Key6N {
+  position: absolute;
+  top: 4.8vw;
+  left: 12.08vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
+}
+
+#upperL3KeyAN {
+  position: absolute;
+  top: 4.8vw;
+  left: 8.57vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
+}
+
+#lowerL3Key5R {
+  position: absolute;
+  top: 4.8vw;
+  left: 5.25vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
+}
+
+#lowerL3Key6N {
+  position: absolute;
+  top: 4.8vw;
+  left: 12.08vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
+}
+
+#lowerL2KeyAN {
+  position: absolute;
+  top: 4.8vw;
+  left: 8.6vw;
+  width: 3.5%;
+  height: auto;
+  -webkit-user-drag: auto;
+}
+
+.track-base {
+  height: 20vw;
+  width: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#straight {
+  position: relative;
+  display: block;
+  height: auto;
+  width: 40%;
+  top: 10.75vw;
+  left: 10vw;
+}
+
+#split {
+  position: absolute;
+  top: 7vw;
+  left: 49.8vw;
+  height: auto;
+  width: 12%;
+}
+
+#up {
+  position: absolute;
+  top: 4.4vw;
+  left: 62vw;
+  height: auto;
+  width: 22%;
+}
+
+#down {
+  position: absolute;
+  top: 10.6vw;
+  left: 62vw;
+  height: auto;
+  width: 22%;
+}
+
+#led-a1 {
+  position: absolute;
+  top: 13vw;
+  left: 25vw;
+  height: auto;
+  width: 3.5%;
+}
+
+#led-111 {
+  position: absolute;
+  top: 13vw;
+  left: 46vw;
+  height: auto;
+  width: 3.5%;
+}
+
+#led-5v6 {
+  position: absolute;
+  top: 13.6vw;
+  left: 54.2vw;
+  height: auto;
+  width: 3%;
+}
+
+#led-25_4 {
+  position: absolute;
+  top: 6.8vw;
+  left: 73vw;
+  height: auto;
+  width: 5%;
+}
+
+#led-25_5 {
+  position: absolute;
+  top: 12.5vw;
+  left: 72.8vw;
+  height: auto;
+  width: 5%;
+}
+
+#led-zap {
+  position: absolute;
+  top: 13vw;
+  left: 44.5vw;
+  height: auto;
+  width: 3.5%;
+}
+
+#led-announce {
+  position: absolute;
+  top: 7vw;
+  left: 22vw;
+  height: auto;
+  width: 3.5%;
+}
+
+#led-awa {
+  position: absolute;
+  top: 6vw;
+  left: 34vw;
+  height: auto;
+  width: 3.5%;
+}
+
+#start {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: white;
+  letter-spacing: 1px;
+  top: 13.5vw;
+  left: 12.8vw;
+}
+
+#end {
+  position: absolute;
+  font-weight: 200;
+  font-size: 1vw;
+  color: white;
+  letter-spacing: 1px;
+  top: 12.25vw;
+  left: 76.8vw;
+}
+
+#label-a1, #label-zap, #label-111, #label-5v6, #label-announce, #label-awa {
+  position: absolute;
+  font-weight: 400;
+  font-size: 0.75vw;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#label-a1 {
+  top: 12.25vw;
+  left: 27vw;
+}
+
+#label-zap {
+  font-size: 0.65vw;
+  font-weight: 200;
+  top: 13vw;
+  left: 44.5vw;
+}
+
+#label-111 {
+  font-size: 0.75vw;
+  font-weight: 200;
+  top: 12.8vw;
+  left: 47.5vw;
+}
+
+#label-5v6 {
+  font-size: 0.75vw;
+  font-weight: 300;
+  top: 16vw;
+  left: 55vw;
+  letter-spacing: 1px;
+  color: goldenrod;
+}
+
+#label-announce {
+  top: 6.25vw;
+  left: 21.5vw;
+}
+
+#label-awa {
+  top: 5.5vw;
+  left: 35.4vw;
 }
