@@ -39,6 +39,50 @@ function validateKeyCombo(keyId, holderId) {
   console.log('Validation Result: ' + keyData.includes(keyId));
   return keyData.includes(keyId);
 }
+var flag_key1,flag_key2;
+function rotateKey(ev) {
+  var keyId = ev.target.id;
+  var keyObject=document.getElementById(keyId);
+  console.log('Key To Rotate: '+keyId);
+  if(keyObject.style.transform=="rotate(0deg)"){
+    console.log('Existing Transform Property: '+keyObject.style.transform);
+    keyObject.style.transform= 'rotate(90deg)';
+    console.log('Post Rotate Transform Property: '+keyObject.style.transform);
+    disableKey(keyId);  
+  }
+  else{
+    console.log('Existing Transform Property: '+keyObject.style.transform);
+    keyObject.style.transform= 'rotate(0deg)';
+    console.log('Post Rotate Transform Property: '+keyObject.style.transform);
+    enableKey(keyId);
+  }
+  
+}
+
+function changeImage() {
+  if(flag_key1==1&&flag_key2==1){
+  var image = document.getElementById('myImage');
+  if (image.src.match("matching")) {
+      image.src = "assets/PNG/Ag5_D.png";
+  } else {
+      image.src = "assets/PNG/Ag5_G.png";
+      }
+}
+}
+ 
+function enableKey(keyId){
+
+ keyAvailabilityMap.set(keyId,true);
+ document.getElementById(keyId).draggable=true;
+  
+}
+function disableKey(keyId){
+  keyAvailabilityMap.set(keyId,false); 
+  document.getElementById(keyId).draggable=false;
+}
+
+
+
 // var a = 0;
 // function rotateMe() {
 //   if(a == 0)
