@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Index.js"></script>
     <script src="config.js"></script>
+    <script src="utils.js"></script>
 </head>
 
 <body onload="initializeData()">
@@ -56,26 +57,24 @@
 
             </div>
             <div id="upperKeySet3" class="col-2">
-                <div class="parent">
-                    <img id="upperL3KeyHolderAN" src="assets/PNG/AN_key.png" class="img-fluid col-5 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                <div class="parent text-center">
+                    <img id="upperL3KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
+                        ondrop="dragDrop(event)" ondragover="allowDrop(event)" draggable="false"> 
                     <img id="upperL3KeyAN" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
                 </div>
             </div>
             <div id="upperKeySet4" class="col-2">
-                <div class="parent">
-                    <img id="upperL4KeyHolderAN" src="assets/PNG/AN_key.png" class="img-fluid col-5 mx-auto d-block"
+                <div class="parent text-center">
+                    <img id="upperL4KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="upperL4KeyAN" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
                 </div>
             </div>
             <div id="upperKeySet5" class="col-2">
-                <div class="parent">
-                    <img id="upperL5KeyHolder5" src="assets/PNG/5_key.png" class="img-fluid col-5 offset-1"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="upperL5KeyHolder5N" src="assets/PNG/5N_key.png" class="img-fluid col-5"
+                <div class="parent text-center">
+                    <img id="upperL5KeyHolder" src="assets/PNG/5_5N_Key.png" class="img-fluid col-6 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="upperL5Key5" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
@@ -84,8 +83,8 @@
                 </div>
             </div>
             <div id="upperKeySet6" class="col-2">
-                <div class="parent">
-                    <img id="upperL6KeyHolder5" src="assets/PNG/5_key.png" class="img-fluid col-5 mx-auto d-block"
+                <div class="parent text-center">
+                    <img id="upperL6KeyHolder5" src="assets/PNG/5_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="upperL6Key5" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
@@ -98,18 +97,16 @@
 
             </div>
             <div id="lowerKeySet2" class="col-2">
-                <div class="parent">
-                    <img id="lowerL2KeyHolderAN" src="assets/PNG/AN_key.png" class="img-fluid col-5 mx-auto d-block"
+                <div class="parent text-center">
+                    <img id="lowerL2KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="lowerL2KeyAN" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
                 </div>
             </div>
             <div id="lowerKeySet3" class="col-2">
-                <div class="parent">
-                    <img id="lowerL3KeyHolder5R" src="assets/PNG/5R_key.png" class="img-fluid col-5 offset-1"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL3KeyHolder6N" src="assets/PNG/6N_key.png" class="img-fluid col-5"
+                <div class="parent text-center">
+                    <img id="lowerL3KeyHolder" src="assets/PNG/5R_6N_Key.png" class="img-fluid col-6 mx-auto d-block "
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="lowerL3Key5R" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
@@ -118,10 +115,8 @@
                 </div>
             </div>
             <div id="lowerKeySet4" class="col-2">
-                <div class="parent">
-                    <img id="lowerL4KeyHolder5N" src="assets/PNG/5N_key.png" class="img-fluid col-5 offset-1"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL4KeyHolder6N" src="assets/PNG/6N_key.png" class="img-fluid col-5"
+                <div class="parent text-center">
+                    <img id="lowerL4KeyHolder" src="assets/PNG/5N_6N_Key.png" class="img-fluid col-6 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="lowerL4Key5N" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
@@ -130,10 +125,8 @@
                 </div>
             </div>
             <div id="lowerKeySet5" class="col-2">
-                <div class="parent">
-                    <img id="lowerL5KeyHolder5" src="assets/PNG/5_key.png" class="img-fluid col-5 offset-1"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL5KeyHolder5R" src="assets/PNG/5R_key.png" class="img-fluid col-5"
+                <div class="parent text-center">
+                    <img id="lowerL5KeyHolder" src="assets/PNG/5_5R_Key.png" class="img-fluid col-6 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="lowerL5Key5" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
@@ -142,8 +135,8 @@
                 </div>
             </div>
             <div id="lowerKeySet6" class="col-2">
-                <div class="parent">
-                    <img id="lowerL6KeyHolder6N" src="assets/PNG/6N_key.png" class="img-fluid col-5 mx-auto d-block"
+                <div class="parent text-center">
+                    <img id="lowerL6KeyHolder6N" src="assets/PNG/6N_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
                     <img id="lowerL6Key6N" src="assets/PNG/key.png" class="img-fluid" draggable="true"
                         ondragstart="dragStart(event)">
