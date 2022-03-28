@@ -59,16 +59,16 @@ function rotateKey(ev) {
   
 }
 
-function changeImage() {
-  if(flag_key1==1&&flag_key2==1){
-  var image = document.getElementById('myImage');
-  if (image.src.match("matching")) {
-      image.src = "assets/PNG/Ag5_D.png";
-  } else {
-      image.src = "assets/PNG/Ag5_G.png";
-      }
-}
-}
+//function changeImage() {
+//  if(flag_key1==1&&flag_key2==1){
+//  var image = document.getElementById('myImage');
+//  if (image.src.match("matching")) {
+//      image.src = "assets/PNG/Ag5_D.png";
+//  } else {
+//      image.src = "assets/PNG/Ag5_G.png";
+//      }
+//}
+//}
  
 function enableKey(keyId){
 
