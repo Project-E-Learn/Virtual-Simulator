@@ -1,4 +1,6 @@
 var holderMap;
+var exactKeyMap;
+var keyAvailabilityMap;
 var lowerL2KeyHolderAN;
 var upperL3KeyHolderAN;
 var lowerL3KeyHolder5R;
@@ -12,12 +14,14 @@ var lowerL5KeyHolder5;
 var lowerL5KeyHolder5R;
 var lowerL6KeyHolder6N;
 var upperL6KeyHolder5;
-  
+const UNAVAILABLE = 'UNAVAILABLE';
+
 function initializeData() {
   console.log('INITIALIZE DATA'); 
-  arraySetup();
-  mapSetup();
+  //arraySetup();
+  //mapSetup();
   defaultKeySetup();
+  exactKeyMapSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 
@@ -39,6 +43,7 @@ function defaultKeySetup() {
     console.log('Key Setup Ends');
 }
 
+//The following method is not required.
 function mapSetup() {
     console.log('Map Setup Begins');
     holderMap = new Map();
@@ -59,6 +64,7 @@ function mapSetup() {
     console.log('Map Setup Ends');
 }
 
+//The following method is not required
 function arraySetup() {
     console.log('Array Setup Begins');
     lowerL2KeyHolderAN = ["lowerL2KeyAN", "upperL3KeyAN", "upperL4KeyAN"];
@@ -75,4 +81,19 @@ function arraySetup() {
     upperL6KeyHolder5 = ["upperL5Key5", "lowerL5Key5", "upperL6Key5"];
     lowerL6KeyHolder6N = ["lowerL3Key6N", "lowerL4Key6N", "lowerL6Key6N"];
     console.log('Array Setup Ends');
+}
+
+function exactKeyMapSetup(){
+    console.log('Unique Key-Holder mapping begins');
+    exactKeyMap = new Map();
+    exactKeyMap.set('upperL3KeyHolderAN', ['upperL3KeyAN']);
+    exactKeyMap.set('upperL4KeyHolderAN', ['upperL4KeyAN']);
+    exactKeyMap.set('upperL5KeyHolder', ['upperL5Key5','upperL5Key5N']);
+    exactKeyMap.set('upperL6KeyHolder5', ['upperL6Key5']);
+    exactKeyMap.set('lowerL2KeyHolderAN', ['lowerL2KeyAN']);
+    exactKeyMap.set('lowerL3KeyHolder', ['lowerL3Key5R','lowerL3Key6N']);
+    exactKeyMap.set('lowerL4KeyHolder', ['lowerL4Key5N','lowerL4Key6N']);
+    exactKeyMap.set('lowerL5KeyHolder', ['lowerL5Key5','lowerL5Key5R']);
+    exactKeyMap.set('lowerL6KeyHolder6N', ['lowerL6Key6N']);
+    console.log('Unique Key-Holder mapping ends');
 }
