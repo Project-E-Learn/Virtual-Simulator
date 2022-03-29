@@ -1,4 +1,6 @@
 var holderMap;
+var exactKeyMap;
+var keyAvailabilityMap;
 var lowerL2KeyHolderAN;
 var upperL3KeyHolderAN;
 var lowerL3KeyHolder5R;
@@ -12,12 +14,14 @@ var lowerL5KeyHolder5;
 var lowerL5KeyHolder5R;
 var lowerL6KeyHolder6N;
 var upperL6KeyHolder5;
-  
+const UNAVAILABLE = 'UNAVAILABLE';
+
 function initializeData() {
   console.log('INITIALIZE DATA'); 
-  arraySetup();
-  mapSetup();
+  //arraySetup();
+  //mapSetup();
   defaultKeySetup();
+  exactKeyMapSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 
@@ -39,6 +43,7 @@ function defaultKeySetup() {
     console.log('Key Setup Ends');
 }
 
+//The following method is not required.
 function mapSetup() {
     console.log('Map Setup Begins');
     holderMap = new Map();
@@ -59,6 +64,7 @@ function mapSetup() {
     console.log('Map Setup Ends');
 }
 
+//The following method is not required
 function arraySetup() {
     console.log('Array Setup Begins');
     lowerL2KeyHolderAN = ["lowerL2KeyAN", "upperL3KeyAN", "upperL4KeyAN"];
@@ -77,53 +83,4 @@ function arraySetup() {
     console.log('Array Setup Ends');
 }
 
-function keyAvailabilityMapSetup(){
-    console.log('Key Availability Map Setup Begins');
-    keyAvailabilityMap = new Map();
-    keyAvailabilityMap.set('lowerL2KeyAN', false);
-    keyAvailabilityMap.set('upperL3KeyAN', true );
-    keyAvailabilityMap.set('upperL4KeyAN', true);
-    keyAvailabilityMap.set('lowerL3Key5R', false);
-    keyAvailabilityMap.set('lowerL4Key5N', false);
-    keyAvailabilityMap.set('upperL5Key5N', false);
-    keyAvailabilityMap.set('upperL5Key5', true);
-    keyAvailabilityMap.set('lowerL5Key5', true);
-    keyAvailabilityMap.set('upperL6Key5', true);
-    keyAvailabilityMap.set('lowerL3Key6N', false);    
-    keyAvailabilityMap.set('lowerL4Key6N', false);
-    keyAvailabilityMap.set('lowerL5Key5R', true);
-    keyAvailabilityMap.set('lowerL6Key6N', true);
-    console.log('Map Data: ' + keyAvailabilityMap); //to print in key-value pairs
-    console.log('Key Availability Map Setup Ends');
 
-}
-
-function defaultKeyOrientationSetup() {
-    console.log('Key Orientation Setup Begins');
-    document.getElementById('lowerL2KeyAN').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL3KeyAN').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL4KeyAN').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL3Key5R').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL4Key5N').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL5Key5N').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL5Key5').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL5Key5').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL6Key5').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL3Key6N').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL4Key6N').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL5Key5R').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL6Key6N').style.transform = 'rotate(0deg)';
-    console.log('Key Orientation Setup Ends');
-}
-
-    
-    
-
-/*function unlock(){
-    angle= new Map();
-    angle.set('a',0);
-}
-function lock(){
-    locku= new Map();
-    locku.set('a',90);
-}*/
