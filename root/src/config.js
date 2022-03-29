@@ -22,6 +22,8 @@ function initializeData() {
   //mapSetup();
   defaultKeySetup();
   exactKeyMapSetup();
+  keyAvailabilityMapSetup();
+  defaultKeyOrientationSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 
@@ -83,4 +85,55 @@ function arraySetup() {
     console.log('Array Setup Ends');
 }
 
+function exactKeyMapSetup(){
+    console.log('Unique Key-Holder mapping begins');
+    exactKeyMap = new Map();
+    exactKeyMap.set('upperL3KeyHolderAN', ['upperL3KeyAN']);
+    exactKeyMap.set('upperL4KeyHolderAN', ['upperL4KeyAN']);
+    exactKeyMap.set('upperL5KeyHolder', ['upperL5Key5','upperL5Key5N']);
+    exactKeyMap.set('upperL6KeyHolder5', ['upperL6Key5']);
+    exactKeyMap.set('lowerL2KeyHolderAN', ['lowerL2KeyAN']);
+    exactKeyMap.set('lowerL3KeyHolder', ['lowerL3Key5R','lowerL3Key6N']);
+    exactKeyMap.set('lowerL4KeyHolder', ['lowerL4Key5N','lowerL4Key6N']);
+    exactKeyMap.set('lowerL5KeyHolder', ['lowerL5Key5','lowerL5Key5R']);
+    exactKeyMap.set('lowerL6KeyHolder6N', ['lowerL6Key6N']);
+    console.log('Unique Key-Holder mapping ends');
+}
+function keyAvailabilityMapSetup(){
+    console.log('Key Availability Map Setup Begins');
+    keyAvailabilityMap = new Map();
+    keyAvailabilityMap.set('lowerL2KeyAN', false);
+    keyAvailabilityMap.set('upperL3KeyAN', true );
+    keyAvailabilityMap.set('upperL4KeyAN', true);
+    keyAvailabilityMap.set('lowerL3Key5R', false);
+    keyAvailabilityMap.set('lowerL4Key5N', false);
+    keyAvailabilityMap.set('upperL5Key5N', false);
+    keyAvailabilityMap.set('upperL5Key5', true);
+    keyAvailabilityMap.set('lowerL5Key5', true);
+    keyAvailabilityMap.set('upperL6Key5', true);
+    keyAvailabilityMap.set('lowerL3Key6N', false);    
+    keyAvailabilityMap.set('lowerL4Key6N', false);
+    keyAvailabilityMap.set('lowerL5Key5R', true);
+    keyAvailabilityMap.set('lowerL6Key6N', true);
+    console.log('Map Data: ' + keyAvailabilityMap); //to print in key-value pairs
+    console.log('Key Availability Map Setup Ends');
 
+}
+
+function defaultKeyOrientationSetup() {
+    console.log('Key Orientation Setup Begins');
+    document.getElementById('lowerL2KeyAN').style.transform = 'rotate(0deg)';
+    document.getElementById('upperL3KeyAN').style.transform = 'rotate(0deg)';
+    document.getElementById('upperL4KeyAN').style.transform = 'rotate(0deg)';
+    document.getElementById('lowerL3Key5R').style.transform = 'rotate(0deg)';
+    document.getElementById('lowerL4Key5N').style.transform = 'rotate(0deg)';
+    document.getElementById('upperL5Key5N').style.transform = 'rotate(0deg)';
+    document.getElementById('upperL5Key5').style.transform = 'rotate(0deg)';
+    document.getElementById('lowerL5Key5').style.transform = 'rotate(0deg)';
+    document.getElementById('upperL6Key5').style.transform = 'rotate(90deg)';
+    document.getElementById('lowerL3Key6N').style.transform = 'rotate(0deg)';
+    document.getElementById('lowerL4Key6N').style.transform = 'rotate(0deg)';
+    document.getElementById('lowerL5Key5R').style.transform = 'rotate(0deg)';
+    document.getElementById('lowerL6Key6N').style.transform = 'rotate(0deg)';
+    console.log('Key Orientation Setup Ends');
+}

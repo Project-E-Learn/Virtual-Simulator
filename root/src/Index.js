@@ -52,4 +52,36 @@ function getKeyBySuffixMatch(keyId,holderId){
   console.log('Returning held key id: ' + heldKeyId);
   return heldKeyId; //Returning the held key
 }
+function getExactKeysForHolder(holderId){
+  return exactKeyMap.get(holderId);
+}
+function rotateKey(ev) {
+  var keyId = ev.target.id;
+  var keyObject=document.getElementById(keyId);
+  console.log('Key To Rotate: '+keyId);
+  if(keyObject.style.transform=="rotate(0deg)"){
+    console.log('Existing Transform Property: '+keyObject.style.transform);
+    keyObject.style.transform= 'rotate(90deg)';
+    console.log('Post Rotate Transform Property: '+keyObject.style.transform);
+    disableKey(keyId);  
+  }
+  else{
+    console.log('Existing Transform Property: '+keyObject.style.transform);
+    keyObject.style.transform= 'rotate(0deg)';
+    console.log('Post Rotate Transform Property: '+keyObject.style.transform);
+    enableKey(keyId);
+  }
+
+}
+
+function enableKey(keyId){
+
+  keyAvailabilityMap.set(keyId,true);
+  document.getElementById(keyId).draggable=true;
+ 
+ }
+ function disableKey(keyId){
+   keyAvailabilityMap.set(keyId,false); 
+   document.getElementById(keyId).draggable=false;
+ }
 
