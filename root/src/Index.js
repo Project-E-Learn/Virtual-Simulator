@@ -53,6 +53,3 @@ function getKeyBySuffixMatch(keyId,holderId){
   return heldKeyId; //Returning the held key
 }
 
-function getExactKeysForHolder(holderId){
-  return exactKeyMap.get(holderId);
-}
