@@ -5,6 +5,7 @@
    user-select: none;
 }
 
+
 .parent {
   position: relative;
   width: 16vw;
@@ -14,117 +15,117 @@
 
 #upperL6Key5 {
   position: absolute;
-  top: 4.8vw;
-  left: 8.55vw;
-  width: 3.5%;
+  top: 3.5vw;
+  left: 8.7vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #lowerL6Key6N {
   position: absolute;
-  top: 4.8vw;
-  left: 8.55vw;
-  width: 3.5%;
+  top: 3.5vw;
+  left: 8.7vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #upperL5Key5 {
   position: absolute;
-  top: 4.8vw;
-  left: 5.25vw;
-  width: 3.5%;
+  top: 3.65vw;
+  left: 6.9vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #upperL5Key5N {
   position: absolute;
-  top: 4.8vw;
-  left: 12.08vw;
-  width: 3.5%;
+  top: 3.65vw;
+  left: 10.6vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #lowerL5Key5 {
   position: absolute;
-  top: 4.8vw;
-  left: 5.25vw;
-  width: 3.5%;
+  top: 3.75vw;
+  left: 6.88vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #lowerL5Key5R {
   position: absolute;
-  top: 4.8vw;
-  left: 12.08vw;
-  width: 3.5%;
+  top: 3.75vw;
+  left: 10.65vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #upperL4KeyAN {
   position: absolute;
-  top: 4.8vw;
-  left: 8.56vw;
-  width: 3.5%;
+  top: 3.55vw;
+  left: 8.65vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #lowerL4Key5N {
   position: absolute;
-  top: 4.8vw;
-  left: 5.25vw;
-  width: 3.5%;
+  top: 3.75vw;
+  left: 6.85vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #lowerL4Key6N {
   position: absolute;
-  top: 4.8vw;
-  left: 12.08vw;
-  width: 3.5%;
+  top: 3.75vw;
+  left: 10.65vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #upperL3KeyAN {
   position: absolute;
-  top: 4.8vw;
-  left: 8.57vw;
-  width: 3.5%;
+  top: 3.55vw;
+  left: 8.66vw;
+  width: 3.7%;
   height: auto;
-  -webkit-user-drag: auto;
+  -webkit-user-drag: none;
 }
 
 #lowerL3Key5R {
   position: absolute;
-  top: 4.8vw;
-  left: 5.25vw;
-  width: 3.5%;
+  top: 3.75vw;
+  left: 6.85vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #lowerL3Key6N {
   position: absolute;
-  top: 4.8vw;
-  left: 12.08vw;
-  width: 3.5%;
+  top: 3.75vw;
+  left: 10.60vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
 
 #lowerL2KeyAN {
   position: absolute;
-  top: 4.8vw;
-  left: 8.6vw;
-  width: 3.5%;
+  top: 3.45vw;
+  left: 8.70vw;
+  width: 3.7%;
   height: auto;
   -webkit-user-drag: auto;
 }
