@@ -14,6 +14,13 @@ var lowerL5KeyHolder5;
 var lowerL5KeyHolder5R;
 var lowerL6KeyHolder6N;
 var upperL6KeyHolder5;
+var lever1;
+var lever2;
+var lever3;
+var lever4;
+var lever5;
+var lever6;
+
 const UNAVAILABLE = 'UNAVAILABLE';
 
 function initializeData() {
@@ -24,24 +31,26 @@ function initializeData() {
   exactKeyMapSetup();
   keyAvailabilityMapSetup();
   defaultKeyOrientationSetup();
+  initalizeDrag();
+  leverChange();
   console.log('INITIALIZATION COMPLETE');
 }
 
 function defaultKeySetup() {
     console.log('Key Setup Begins');
-    document.getElementById('lowerL2KeyAN').style.display = 'none';
-    document.getElementById('upperL3KeyAN').style.display = 'block';
-    document.getElementById('upperL4KeyAN').style.display = 'block';
-    document.getElementById('lowerL3Key5R').style.display = 'none';
-    document.getElementById('lowerL4Key5N').style.display = 'none';
-    document.getElementById('upperL5Key5N').style.display = 'block';
-    document.getElementById('upperL5Key5').style.display = 'none';
-    document.getElementById('lowerL5Key5').style.display = 'block';
-    document.getElementById('upperL6Key5').style.display = 'block';
-    document.getElementById('lowerL3Key6N').style.display = 'none';
-    document.getElementById('lowerL4Key6N').style.display = 'none';
-    document.getElementById('lowerL5Key5R').style.display = 'block';
-    document.getElementById('lowerL6Key6N').style.display = 'block';
+    hideElement('lowerL2KeyAN');
+    makeElementVisible('upperL3KeyAN');
+    makeElementVisible('upperL4KeyAN');
+    hideElement('lowerL3Key5R');
+    hideElement('lowerL4Key5N');
+    makeElementVisible('upperL5Key5N');
+    hideElement('upperL5Key5');
+    makeElementVisible('lowerL5Key5');
+    makeElementVisible('upperL6Key5');
+    hideElement('lowerL3Key6N');
+    hideElement('lowerL4Key6N');
+    makeElementVisible('lowerL5Key5R');
+    makeElementVisible('lowerL6Key6N');
     console.log('Key Setup Ends');
 }
 
@@ -122,18 +131,38 @@ function keyAvailabilityMapSetup(){
 
 function defaultKeyOrientationSetup() {
     console.log('Key Orientation Setup Begins');
-    document.getElementById('lowerL2KeyAN').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL3KeyAN').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL4KeyAN').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL3Key5R').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL4Key5N').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL5Key5N').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL5Key5').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL5Key5').style.transform = 'rotate(0deg)';
-    document.getElementById('upperL6Key5').style.transform = 'rotate(90deg)';
-    document.getElementById('lowerL3Key6N').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL4Key6N').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL5Key5R').style.transform = 'rotate(0deg)';
-    document.getElementById('lowerL6Key6N').style.transform = 'rotate(0deg)';
+    rotateElement('lowerL2KeyAN',0);   
+    rotateElement('upperL3KeyAN',90);
+    rotateElement('upperL4KeyAN',90);
+    rotateElement('lowerL3Key5R',0);
+    rotateElement('lowerL4Key5N',0);
+    rotateElement('upperL5Key5N',0);
+    rotateElement('upperL5Key5',0); 
+    rotateElement('lowerL5Key5',90);
+    rotateElement('upperL6Key5',90);
+    rotateElement('lowerL3Key6N',0); 
+    rotateElement('lowerL4Key6N',0);
+    rotateElement('lowerL5Key5R',90);
+    rotateElement('lowerL6Key6N',0);
     console.log('Key Orientation Setup Ends');
+}
+function initalizeDrag(){
+    addClass('lowerL2KeyAN','dragEnabled');
+    addClass('lowerL3Key5R','dragEnabled');
+    addClass('lowerL4Key5N','dragEnabled');
+    addClass('upperL5Key5N','dragEnabled');
+    addClass('upperL5Key5','dragEnabled');
+    addClass('lowerL3Key6N','dragEnabled');
+    addClass('lowerL4Key6N','dragEnabled');
+    addClass('lowerL6Key6N','dragEnabled');
+}
+
+function leverChange(){
+    leverimg= new Map();
+    leverimg.set('lever1',true);
+    leverimg.set('lever2',true);
+    leverimg.set('lever3',true);
+    leverimg.set('lever4',true);
+    leverimg.set('lever5',true);
+    leverimg.set('lever6',true);
 }

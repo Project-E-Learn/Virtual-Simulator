@@ -12,6 +12,7 @@
     <script src="utils.js"></script>
 </head>
 
+
 <body onload="initializeData()">
     <div id="displayBoardContainer" class="container-fluid text-center">
         <div class="row" style="background-color: rgb(20, 20, 20);">
@@ -59,8 +60,8 @@
             <div id="upperKeySet3" class="col-2">
                 <div class="parent text-center">
                     <img id="upperL3KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)" draggable="false"> 
-                    <img id="upperL3KeyAN" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                        ondrop="dragDrop(event)" ondragover="allowDrop(event)" > 
+                    <img id="upperL3KeyAN" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -69,7 +70,7 @@
                 <div class="parent text-center">
                     <img id="upperL4KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="upperL4KeyAN" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="upperL4KeyAN" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -78,10 +79,10 @@
                 <div class="parent text-center">
                     <img id="upperL5KeyHolder" src="assets/PNG/5_5N_Key.png" class="img-fluid col-6 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="upperL5Key5" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="upperL5Key5" src="assets/PNG/key.png" class="img-fluid "
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
-                    <img id="upperL5Key5N" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="upperL5Key5N" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -90,7 +91,7 @@
                 <div class="parent text-center">
                     <img id="upperL6KeyHolder5" src="assets/PNG/5_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="upperL6Key5" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="upperL6Key5" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -105,7 +106,7 @@
                 <div class="parent text-center">
                     <img id="lowerL2KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL2KeyAN" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL2KeyAN" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -114,10 +115,10 @@
                 <div class="parent text-center">
                     <img id="lowerL3KeyHolder" src="assets/PNG/5R_6N_Key.png" class="img-fluid col-6 mx-auto d-block "
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL3Key5R" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL3Key5R" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
-                    <img id="lowerL3Key6N" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL3Key6N" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -126,10 +127,10 @@
                 <div class="parent text-center">
                     <img id="lowerL4KeyHolder" src="assets/PNG/5N_6N_Key.png" class="img-fluid col-6 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL4Key5N" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL4Key5N" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
-                    <img id="lowerL4Key6N" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL4Key6N" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -138,10 +139,10 @@
                 <div class="parent text-center">
                     <img id="lowerL5KeyHolder" src="assets/PNG/5_5R_Key.png" class="img-fluid col-6 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL5Key5" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL5Key5" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
-                    <img id="lowerL5Key5R" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL5Key5R" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -150,7 +151,7 @@
                 <div class="parent text-center">
                     <img id="lowerL6KeyHolder6N" src="assets/PNG/6N_Key.png" class="img-fluid col-3 mx-auto d-block"
                         ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL6Key6N" src="assets/PNG/key.png" class="img-fluid" draggable="true"
+                    <img id="lowerL6Key6N" src="assets/PNG/key.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
@@ -174,7 +175,7 @@
             </div>
             <div id="lever5" class="col-2">
                 <img id="myImage"
-                onclick="changeImage(myImage)" src="assets/PNG/Ag5_D.png" class="img-fluid col-6 mx-auto d-block">
+                onclick="changeImage('myImage','lever5')" src="assets/PNG/Ag5_D.png" class="img-fluid col-6 mx-auto d-block">
                  />        
               </div>
             <div id="lever6" class="col-2">
