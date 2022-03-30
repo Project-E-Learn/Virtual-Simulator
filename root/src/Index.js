@@ -57,31 +57,49 @@ function getExactKeysForHolder(holderId){
 }
 function rotateKey(ev) {
   var keyId = ev.target.id;
-  var keyObject=document.getElementById(keyId);
   console.log('Key To Rotate: '+keyId);
-  if(keyObject.style.transform=="rotate(0deg)"){
-    console.log('Existing Transform Property: '+keyObject.style.transform);
-    keyObject.style.transform= 'rotate(90deg)';
-    console.log('Post Rotate Transform Property: '+keyObject.style.transform);
+  if(checkOrientation(keyId,0)){
+    console.log('Existing Transform Property: '+getOrientationStatus(keyId));
+    rotateElement(keyId,90);
+    console.log('Post Rotate Transform Property: '+getOrientationStatus(keyId));
     disableKey(keyId);  
-  }
-  else{
-    console.log('Existing Transform Property: '+keyObject.style.transform);
-    keyObject.style.transform= 'rotate(0deg)';
-    console.log('Post Rotate Transform Property: '+keyObject.style.transform);
+      }
+  else if(checkOrientation(keyId,90)){
+    console.log('Existing Transform Property: '+getOrientationStatus(keyId));
+    rotateElement(keyId,0);
+    console.log('Post Rotate Transform Property: '+getOrientationStatus(keyId));
     enableKey(keyId);
   }
 
 }
 
 function enableKey(keyId){
-
   keyAvailabilityMap.set(keyId,true);
-  document.getElementById(keyId).draggable=true;
- 
- }
+  addClass(keyId,'dragEnabled');
+}
  function disableKey(keyId){
    keyAvailabilityMap.set(keyId,false); 
-   document.getElementById(keyId).draggable=false;
+   removeClass(keyId,'dragEnabled');
  }
 
+ function changeImage(keyId,a){
+  var image = document.getElementById(keyId);
+  if(keyId=="myImage"){
+    var keyObject1=document.getElementById('upperL5Key5');
+    var keyObject2=document.getElementById('upperL5Key5N');
+    if(keyObject1.style.transform=="rotate(90deg)" && keyObject2.style.transform=="rotate(90deg)"){
+      if (leverimg.get(a)==true) 
+      {
+        image.src = "assets/PNG/Ag5_G.png";
+        leverimg.set(a,false);
+        console.log(leverimg.get(a));
+      } 
+      else
+      {
+        image.src = "assets/PNG/Ag5_D.png";
+        leverimg.set(a,true);
+        console.log(leverimg.get(a));
+      }
+    }
+  }
+}
