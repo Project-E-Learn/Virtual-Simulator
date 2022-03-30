@@ -1,9 +1,11 @@
 function checkVisibilityStatus(elementId){
   
   var status =  getVisibilityStatus(elementId);
+  console.log('Visibility of ' + elementId + ' is: ' + getVisibilityStatus(elementId));
   if(status == 'none'){
     return false;
   } else {
+    console.log('Returning true');
     return true;
   }
 }
@@ -31,11 +33,7 @@ function hideElement(elementId){
   document.getElementById(elementId).style.display = 'none';
 }
 function rotateElement(elementId,angle){
-  console.log('Start');
   document.getElementById(elementId).style.transform= 'rotate('+angle+'deg)';
-  console.log( document.getElementById(elementId).style.transform);
-  console.log('End');
-  
 }
 
 function removeClass(elementId,className){
@@ -43,4 +41,8 @@ function removeClass(elementId,className){
 }
 function addClass(elementId,className){
   document.getElementById(elementId).classList.add(className);
+}
+
+function changeSourceImage(imageId,newImagePath){
+  document.getElementById(imageId).src = newImagePath;
 }
