@@ -127,7 +127,7 @@ function checkHolderKeysUnlockStatus(holderId){
   /** This method checks if all the keys for the given holder are in vertical and available for dragging, meaning if holder is theoretically locked. */
   var keyArray = getExactKeysForHolder(holderId);
   console.log('Keys for holder ' + holderId + ' is: ' + keyArray);
-  var overallLockStatus = keyArray.every(getKeyUnlockState);
+  var overallLockStatus = keyArray.some(getKeyUnlockState);
   console.log('Overlall lock status: ' + overallLockStatus);
   return overallLockStatus;
 }
