@@ -1,13 +1,15 @@
 function openSidebar() {
+    document.getElementById("contentContainer").style.marginLeft = "0%";
     document.getElementById("contentContainer").style.marginRight = "25%";
-    document.getElementById("sidebarBlock").style.width = "25%";
+    // document.getElementById("sidebarBlock").style.width = "25%";
     document.getElementById("sidebarBlock").style.display = "inline-block";
     document.getElementById('sidebarTriggerButton').innerHTML = '>';
     document.getElementById('sidebarTrigger').style.marginRight = '25%';
   }
   function closeSidebar() {
-    document.getElementById("contentContainer").style.marginRight = "0%";
-    document.getElementById("sidebarBlock").style.width = "0%";
+    document.getElementById("contentContainer").style.marginLeft = "10%";
+    document.getElementById("contentContainer").style.marginRight = "10%";
+    // document.getElementById("sidebarBlock").style.width = "0%";
     document.getElementById("sidebarBlock").style.display = "none";
     document.getElementById('sidebarTriggerButton').innerHTML = '<';
     document.getElementById('sidebarTrigger').style.marginRight = '0%';
