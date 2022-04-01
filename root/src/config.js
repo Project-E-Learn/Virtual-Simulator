@@ -1,38 +1,26 @@
 var holderMap;
 var exactKeyMap;
 var keyAvailabilityMap;
-var lowerL2KeyHolderAN;
-var upperL3KeyHolderAN;
-var lowerL3KeyHolder5R;
-var lowerL3KeyHolder6N;
-var upperL4KeyHolderAN;
-var lowerL4KeyHolder5N;
-var lowerL4KeyHolder6N;
-var upperL5KeyHolder5;
-var upperL5KeyHolder5N;
-var lowerL5KeyHolder5;
-var lowerL5KeyHolder5R;
-var lowerL6KeyHolder6N;
-var upperL6KeyHolder5;
-var lever1;
-var lever2;
-var lever3;
-var lever4;
-var lever5;
-var lever6;
+var holderLockStateMap;
+var leverHolderMap;
+var leverStateMap;
+var leverDefaultSourceMap;
+var leverSwitchedSourceMap;
 
 const UNAVAILABLE = 'UNAVAILABLE';
 
 function initializeData() {
   console.log('INITIALIZE DATA'); 
-  //arraySetup();
-  //mapSetup();
   defaultKeySetup();
   exactKeyMapSetup();
   keyAvailabilityMapSetup();
   defaultKeyOrientationSetup();
   initalizeDrag();
-  leverChange();
+  setupDefaultHolderLockState();
+  initializeLeverHolderMap();
+  initializeDefaultLeverStates();
+  defaultLeverImageSetup();
+  switchedLeverImageSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 
@@ -54,44 +42,19 @@ function defaultKeySetup() {
     console.log('Key Setup Ends');
 }
 
-//The following method is not required.
-function mapSetup() {
-    console.log('Map Setup Begins');
-    holderMap = new Map();
-    holderMap.set('lowerL2KeyHolderAN', lowerL2KeyHolderAN);
-    holderMap.set('upperL3KeyHolderAN', upperL3KeyHolderAN);
-    holderMap.set('lowerL3KeyHolder5R', lowerL3KeyHolder5R);
-    holderMap.set('lowerL3KeyHolder6N', lowerL3KeyHolder6N);
-    holderMap.set('upperL4KeyHolderAN', upperL4KeyHolderAN);
-    holderMap.set('lowerL4KeyHolder5N', lowerL4KeyHolder5N);
-    holderMap.set('lowerL4KeyHolder6N', lowerL4KeyHolder6N);
-    holderMap.set('upperL5KeyHolder5', upperL5KeyHolder5);
-    holderMap.set('upperL5KeyHolder5N', upperL5KeyHolder5N);
-    holderMap.set('lowerL5KeyHolder5', lowerL5KeyHolder5);    
-    holderMap.set('lowerL5KeyHolder5R', lowerL5KeyHolder5R);
-    holderMap.set('upperL6KeyHolder5', upperL6KeyHolder5);
-    holderMap.set('lowerL6KeyHolder6N', lowerL6KeyHolder6N);
-    console.log('Map Data: ' + holderMap); //to print in key-value pairs
-    console.log('Map Setup Ends');
-}
-
-//The following method is not required
-function arraySetup() {
-    console.log('Array Setup Begins');
-    lowerL2KeyHolderAN = ["lowerL2KeyAN", "upperL3KeyAN", "upperL4KeyAN"];
-    upperL3KeyHolderAN = ["lowerL2KeyAN", "upperL3KeyAN", "upperL4KeyAN"];
-    lowerL3KeyHolder5R = ["lowerL3Key5R", "lowerL5Key5R"];
-    lowerL3KeyHolder6N = ["lowerL3Key6N", "lowerL4Key6N", "lowerL6Key6N"];
-    upperL4KeyHolderAN = ["lowerL2KeyAN", "upperL3KeyAN", "upperL4KeyAN"];
-    lowerL4KeyHolder5N = ["lowerL4Key5N", "upperL5Key5N"];
-    lowerL4KeyHolder6N = ["lowerL3Key6N", "lowerL4Key6N", "lowerL6Key6N"];
-    upperL5KeyHolder5 = ["upperL5Key5", "lowerL5Key5", "upperL6Key5"];
-    upperL5KeyHolder5N = ["lowerL4Key5N", "upperL5Key5N"];
-    lowerL5KeyHolder5 = ["upperL5Key5", "lowerL5Key5", "upperL6Key5"];
-    lowerL5KeyHolder5R = ["lowerL3Key5R", "lowerL5Key5R"];
-    upperL6KeyHolder5 = ["upperL5Key5", "lowerL5Key5", "upperL6Key5"];
-    lowerL6KeyHolder6N = ["lowerL3Key6N", "lowerL4Key6N", "lowerL6Key6N"];
-    console.log('Array Setup Ends');
+function setupDefaultHolderLockState() {
+    console.log('Holder Lock State Map Setup Begins');
+    holderLockStateMap = new Map();
+    holderLockStateMap.set('upperL3KeyHolderAN', false);
+    holderLockStateMap.set('upperL4KeyHolderAN', false);
+    holderLockStateMap.set('upperL5KeyHolder', true);
+    holderLockStateMap.set('upperL6KeyHolder5', false);
+    holderLockStateMap.set('lowerL2KeyHolderAN', true);
+    holderLockStateMap.set('lowerL3KeyHolder', true);
+    holderLockStateMap.set('lowerL4KeyHolder', true);
+    holderLockStateMap.set('lowerL5KeyHolder', false);
+    holderLockStateMap.set('lowerL6KeyHolder6N', true);
+    console.log('Holder Lock State Map Setup Ends');
 }
 
 function exactKeyMapSetup(){
@@ -157,12 +120,44 @@ function initalizeDrag(){
     addClass('lowerL6Key6N','dragEnabled');
 }
 
-function leverChange(){
-    leverimg= new Map();
-    leverimg.set('lever1',true);
-    leverimg.set('lever2',true);
-    leverimg.set('lever3',true);
-    leverimg.set('lever4',true);
-    leverimg.set('lever5',true);
-    leverimg.set('lever6',true);
+function initializeLeverHolderMap(){
+    console.log('Lever Holder Map Setup Begins');
+    leverHolderMap = new Map();
+    leverHolderMap.set('lever1AuA',[]);
+    leverHolderMap.set('lever2A1',['lowerL2KeyHolderAN']);
+    leverHolderMap.set('lever3C111',['lowerL3KeyHolder','upperL3KeyHolderAN']);
+    leverHolderMap.set('lever4C111',['lowerL4KeyHolder','upperL4KeyHolderAN']);
+    leverHolderMap.set('lever5Ag5',['lowerL5KeyHolder','upperL5KeyHolder']);
+    leverHolderMap.set('lever6V6',['lowerL6KeyHolder6N','upperL6KeyHolder5']);
+    console.log('Lever Holder Map Setup Ends');
+}
+
+function initializeDefaultLeverStates(){
+    leverStateMap= new Map();
+    leverStateMap.set('lever1AuA',true);
+    leverStateMap.set('lever2A1',true);
+    leverStateMap.set('lever3C111',true);
+    leverStateMap.set('lever4C111',true);
+    leverStateMap.set('lever5Ag5',true);
+    leverStateMap.set('lever6V6',true);
+}
+
+function defaultLeverImageSetup(){
+    leverDefaultSourceMap = new Map();
+    leverDefaultSourceMap.set('lever1AuA','assets/PNG/Au_A_I.png');
+    leverDefaultSourceMap.set('lever2A1','assets/PNG/A1_F.png');
+    leverDefaultSourceMap.set('lever3C111','assets/PNG/c111_v3_F.png');
+    leverDefaultSourceMap.set('lever4C111','assets/PNG/c111_v1_F.png');
+    leverDefaultSourceMap.set('lever5Ag5','assets/PNG/Ag5_D.png');
+    leverDefaultSourceMap.set('lever6V6','assets/PNG/V6_L.png');
+}
+
+function switchedLeverImageSetup(){
+    leverSwitchedSourceMap = new Map();
+    leverSwitchedSourceMap.set('lever1AuA','assets/PNG/Au_A_A.png');
+    leverSwitchedSourceMap.set('lever2A1','assets/PNG/A1_O.png');
+    leverSwitchedSourceMap.set('lever3C111','assets/PNG/c111_v3_O.png');
+    leverSwitchedSourceMap.set('lever4C111','assets/PNG/c111_v1_O.png');
+    leverSwitchedSourceMap.set('lever5Ag5','assets/PNG/Ag5_G.png');
+    leverSwitchedSourceMap.set('lever6V6','assets/PNG/V6_R.png');
 }
