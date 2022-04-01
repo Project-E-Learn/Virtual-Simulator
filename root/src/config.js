@@ -21,6 +21,7 @@ function initializeData() {
   initializeDefaultLeverStates();
   defaultLeverImageSetup();
   switchedLeverImageSetup();
+  sidebarSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 
@@ -160,4 +161,10 @@ function switchedLeverImageSetup(){
     leverSwitchedSourceMap.set('lever4C111','assets/PNG/c111_v1_O.png');
     leverSwitchedSourceMap.set('lever5Ag5','assets/PNG/Ag5_G.png');
     leverSwitchedSourceMap.set('lever6V6','assets/PNG/V6_R.png');
+}
+
+function sidebarSetup(){
+    document.getElementById('contentContainer').style.marginRight = '0%';
+    document.getElementById('sidebarBlock').style.right = '0';
+    hideElement('sidebarBlock');
 }

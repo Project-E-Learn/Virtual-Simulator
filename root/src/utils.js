@@ -32,6 +32,7 @@ function makeElementVisible(elementId){
 function hideElement(elementId){
   document.getElementById(elementId).style.display = 'none';
 }
+
 function rotateElement(elementId,angle){
   document.getElementById(elementId).style.transform= 'rotate('+angle+'deg)';
 }

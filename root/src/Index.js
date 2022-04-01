@@ -95,10 +95,10 @@ function rotateAndEnableKey(keyId){
     console.log('Key ' + keyId + ' is not available in any holders');
   } else{    
     if(checkHolderKeysUnlockStatus(holderId)){
-      console.log('All keys are draggable. Holder ' + holderId + ' can be locked.');
+      console.log('Few keys are draggable. Holder ' + holderId + ' can be locked.');
       lockHolder(holderId);
     } else{
-      console.log('Holder ' + holderId + ' cannot be locked. One of the keys for this holder is in unavailable state.');
+      console.log('Holder ' + holderId + ' cannot be locked. None of the keys for this holder are in available state.');
     }
   }
 }
@@ -115,7 +115,7 @@ function rotateAndDisableKey(keyId){
     console.log('Key ' + keyId + ' is not available in any holders');
   } else{    
     if(checkHolderKeysLockStatus(holderId)){
-      console.log('All keys are unavilable for dragging. Holder ' + holderId + 'can be unlocked.');
+      console.log('No keys are available for dragging. Holder ' + holderId + 'can be unlocked.');
       unlockHolder(holderId);
     } else{
       console.log('Few keys are still draggable. Holder ' + holderId + ' cannot be unlocked.');
@@ -124,7 +124,7 @@ function rotateAndDisableKey(keyId){
 }
 
 function checkHolderKeysUnlockStatus(holderId){
-  /** This method checks if all the keys for the given holder are in vertical and available for dragging, meaning if holder is theoretically locked. */
+  /** This method checks if some of the keys for the given holder are in vertical and available for dragging, meaning if holder is theoretically locked. */
   var keyArray = getExactKeysForHolder(holderId);
   console.log('Keys for holder ' + holderId + ' is: ' + keyArray);
   var overallLockStatus = keyArray.some(getKeyUnlockState);

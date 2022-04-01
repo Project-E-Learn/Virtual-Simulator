@@ -6,178 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Index.js"></script>
     <script src="config.js"></script>
     <script src="utils.js"></script>
+    <script src="sidebar.js"></script>
 </head>
 
 
 <body onload="initializeData()">
-    <div id="displayBoardContainer" class="container-fluid text-center">
-        <div class="row" style="background-color: rgb(20, 20, 20);">
-            <div class="track-base">
-                <h2 id="start">EPINAY</h2>
-                <img src="assets/PNG/track_straight.png" class="img-fluid" id="straight">
-                <img src="assets/PNG/track_split.png" class="img-fluid" id="split">
-                <img src="assets/PNG/track_above.png" class="img-fluid" id="up">
-                <img src="assets/PNG/track_below.png" class="img-fluid" id="down">
-                <p id="label-announce">Announce</p>
-                <img src="assets/PNG/Announce_White.png" class="img-fluid" id="led-announce">
-                <p id="label-awa">AwA</p>
-                <img src="assets/PNG/AWA_Red.png" class="img-fluid" id="led-awa">
-                <p id="label-a1">A1</p>
-                <img src="assets/PNG/A1_Normal_State.png" class="img-fluid" id="led-a1">
-                <p id="label-zap">Z Ap</p>
-                <img src="assets/PNG/ZAP_White.png" class="img-fluid" id="led-zap">
-                <p id="label-111">111</p>
-                <img src="assets/PNG/111_Red.png" class="img-fluid" id="led-111">
-                <p id="label-5v6">5.V6</p>
-                <img src="assets/PNG/5v6_Orange.png" class="img-fluid" id="led-5v6">
-                <img src="assets/PNG/25_4.png" class="img-fluid" id="led-25_4">
-                <img src="assets/PNG/25_5.png" class="img-fluid" id="led-25_5">
-                <h2 id="end">LE TREPORT</h2>
+    <div id="sidebarTrigger">
+        <button id="sidebarTriggerButton" class="openbtn" ondragenter="toggleSidebar()" onclick="toggleSidebar()">&lt;</button>
+    </div>
+    <div  id="sidebarBlock" class="w3-sidebar w3-bar-block w3-card w3-animate-right">
+        
+    </div>
+    <div id="contentContainer" style="transition: 0.5s;">
+        <div id="displayBoardContainer" class="container-fluid text-center">
+            <div class="row" style="background-color: rgb(20, 20, 20);">
+                <div class="track-base">
+                    <h2 id="start">EPINAY</h2>
+                    <img src="assets/PNG/track_straight.png" class="img-fluid" id="straight">
+                    <img src="assets/PNG/track_split.png" class="img-fluid" id="split">
+                    <img src="assets/PNG/track_above.png" class="img-fluid" id="up">
+                    <img src="assets/PNG/track_below.png" class="img-fluid" id="down">
+                    <p id="label-announce">Announce</p>
+                    <img src="assets/PNG/Announce_White.png" class="img-fluid" id="led-announce">
+                    <p id="label-awa">AwA</p>
+                    <img src="assets/PNG/AWA_Red.png" class="img-fluid" id="led-awa">
+                    <p id="label-a1">A1</p>
+                    <img src="assets/PNG/A1_Normal_State.png" class="img-fluid" id="led-a1">
+                    <p id="label-zap">Z Ap</p>
+                    <img src="assets/PNG/ZAP_White.png" class="img-fluid" id="led-zap">
+                    <p id="label-111">111</p>
+                    <img src="assets/PNG/111_Red.png" class="img-fluid" id="led-111">
+                    <p id="label-5v6">5.V6</p>
+                    <img src="assets/PNG/5v6_Orange.png" class="img-fluid" id="led-5v6">
+                    <img src="assets/PNG/25_4.png" class="img-fluid" id="led-25_4">
+                    <img src="assets/PNG/25_5.png" class="img-fluid" id="led-25_5">
+                    <h2 id="end">LE TREPORT</h2>
+                </div>
             </div>
         </div>
-    </div>
+        
+        <div id="emergencyContainer" class="container-fluid">
+            <div class="row">
+                <div id="emergencyControl" class="col-12" style="background-color: rgb(42, 42, 42);">
+                    <img class="img-fluid col-1 mx-auto d-block" src="assets/PNG/Emergency.png">
+                </div>
+            </div>
+        </div>
     
-    <div id="emergencyContainer" class="container-fluid">
-        <div class="row">
-            <div id="emergencyControl" class="col-12" style="background-color: rgb(42, 42, 42);">
-                <img class="img-fluid col-1 mx-auto d-block" src="assets/PNG/Emergency.png">
-            </div>
-        </div>
-    </div>
-
-    <div id="keyContainer" class="container-fluid" style="background-color: rgb(42, 42, 42);">
-        <div id="upperKeyRow" class="row">
-            <div id="upperKeySet1" class="col-2">
-
-            </div>
-            <div id="upperKeySet2" class="col-2">
-
-            </div>
-            <div id="upperKeySet3" class="col-2">
-                <div class="parent text-center">
-                    <img id="upperL3KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)" > 
-                    <img id="upperL3KeyAN" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
+        <div id="keyContainer" class="container-fluid" style="background-color: rgb(42, 42, 42);">
+            <div id="upperKeyRow" class="row">
+                <div id="upperKeySet1" class="col-2">
+    
+                </div>
+                <div id="upperKeySet2" class="col-2">
+    
+                </div>
+                <div id="upperKeySet3" class="col-2">
+                    <div class="parent text-center">
+                        <img id="upperL3KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)" > 
+                        <img id="upperL3KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
+                </div>
+                <div id="upperKeySet4" class="col-2">
+                    <div class="parent text-center">
+                        <img id="upperL4KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="upperL4KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
+                </div>
+                <div id="upperKeySet5" class="col-2">
+                    <div class="parent text-center">
+                        <img id="upperL5KeyHolder" src="assets/PNG/5_5N_Key.png" class="img-fluid col-6 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="upperL5Key5" src="assets/PNG/key.png" class="img-fluid "
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                        <img id="upperL5Key5N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
+                </div>
+                <div id="upperKeySet6" class="col-2">
+                    <div class="parent text-center">
+                        <img id="upperL6KeyHolder5" src="assets/PNG/5_Key.png" class="img-fluid col-3 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="upperL6Key5" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
                 </div>
             </div>
-            <div id="upperKeySet4" class="col-2">
-                <div class="parent text-center">
-                    <img id="upperL4KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="upperL4KeyAN" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
+    
+            <div id="lowerKeyRow" class="row">
+                <div id="loweKeySet1" class="col-2">
+    
                 </div>
-            </div>
-            <div id="upperKeySet5" class="col-2">
-                <div class="parent text-center">
-                    <img id="upperL5KeyHolder" src="assets/PNG/5_5N_Key.png" class="img-fluid col-6 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="upperL5Key5" src="assets/PNG/key.png" class="img-fluid "
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
-                    <img id="upperL5Key5N" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
+                <div id="lowerKeySet2" class="col-2">
+                    <div class="parent text-center">
+                        <img id="lowerL2KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="lowerL2KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
                 </div>
-            </div>
-            <div id="upperKeySet6" class="col-2">
-                <div class="parent text-center">
-                    <img id="upperL6KeyHolder5" src="assets/PNG/5_Key.png" class="img-fluid col-3 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="upperL6Key5" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
+                <div id="lowerKeySet3" class="col-2">
+                    <div class="parent text-center">
+                        <img id="lowerL3KeyHolder" src="assets/PNG/5R_6N_Key.png" class="img-fluid col-6 mx-auto d-block "
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="lowerL3Key5R" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                        <img id="lowerL3Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div id="lowerKeyRow" class="row">
-            <div id="loweKeySet1" class="col-2">
-
-            </div>
-            <div id="lowerKeySet2" class="col-2">
-                <div class="parent text-center">
-                    <img id="lowerL2KeyHolderAN" src="assets/PNG/AN_Key.png" class="img-fluid col-3 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL2KeyAN" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
+                <div id="lowerKeySet4" class="col-2">
+                    <div class="parent text-center">
+                        <img id="lowerL4KeyHolder" src="assets/PNG/5N_6N_Key.png" class="img-fluid col-6 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="lowerL4Key5N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                        <img id="lowerL4Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
                 </div>
-            </div>
-            <div id="lowerKeySet3" class="col-2">
-                <div class="parent text-center">
-                    <img id="lowerL3KeyHolder" src="assets/PNG/5R_6N_Key.png" class="img-fluid col-6 mx-auto d-block "
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL3Key5R" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
-                    <img id="lowerL3Key6N" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
+                <div id="lowerKeySet5" class="col-2">
+                    <div class="parent text-center">
+                        <img id="lowerL5KeyHolder" src="assets/PNG/5_5R_Key.png" class="img-fluid col-6 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="lowerL5Key5" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                        <img id="lowerL5Key5R" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
                 </div>
-            </div>
-            <div id="lowerKeySet4" class="col-2">
-                <div class="parent text-center">
-                    <img id="lowerL4KeyHolder" src="assets/PNG/5N_6N_Key.png" class="img-fluid col-6 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL4Key5N" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
-                    <img id="lowerL4Key6N" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
-                </div>
-            </div>
-            <div id="lowerKeySet5" class="col-2">
-                <div class="parent text-center">
-                    <img id="lowerL5KeyHolder" src="assets/PNG/5_5R_Key.png" class="img-fluid col-6 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL5Key5" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
-                    <img id="lowerL5Key5R" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
-                </div>
-            </div>
-            <div id="lowerKeySet6" class="col-2">
-                <div class="parent text-center">
-                    <img id="lowerL6KeyHolder6N" src="assets/PNG/6N_Key.png" class="img-fluid col-3 mx-auto d-block"
-                        ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-                    <img id="lowerL6Key6N" src="assets/PNG/key.png" class="img-fluid" 
-                        ondragstart="dragStart(event)"
-                        onclick="rotateKey(event)">
+                <div id="lowerKeySet6" class="col-2">
+                    <div class="parent text-center">
+                        <img id="lowerL6KeyHolder6N" src="assets/PNG/6N_Key.png" class="img-fluid col-3 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                        <img id="lowerL6Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="levercontainer" class="container-fluid">
-        <div id="leverRow" class="row" style="background-color: rgb(42, 42, 42);">
-            <div id="lever1ContainerAuA" class="col-2">
-                <img id="lever1AuA" onclick="changeLeverPosition('lever1AuA')" src="assets/PNG/Au_A_I.png" class="img-fluid col-6 mx-auto d-block">
-            </div>
-            <div id="lever2ContainerA1" class="col-2">
-                <img id="lever2A1" onclick="changeLeverPosition('lever2A1')" src="assets/PNG/A1_F.png" class="img-fluid col-6 mx-auto d-block">
-            </div>
-            <div id="lever3ContainerC111" class="col-2">
-                <img id="lever3C111" onclick="changeLeverPosition('lever3C111')" src="assets/PNG/c111_v3_F.png" class="img-fluid col-6 mx-auto d-block">
-            </div>
-            <div id="lever4ContainerC111" class="col-2">
-                <img id="lever4C111" onclick="changeLeverPosition('lever4C111')" src="assets/PNG/c111_v1_F.png" class="img-fluid col-6 mx-auto d-block">
-            </div>
-            <div id="lever5ContainerAg5" class="col-2">
-                <img id="lever5Ag5" onclick="changeLeverPosition('lever5Ag5')" src="assets/PNG/Ag5_D.png" class="img-fluid col-6 mx-auto d-block">      
-            </div>
-            <div id="lever6ContainerV6" class="col-2">
-                <img id="lever6V6" onclick="changeLeverPosition('lever6V6')" src="assets/PNG/V6_L.png" class="img-fluid col-6 mx-auto d-block">
+    
+        <div id="levercontainer" class="container-fluid">
+            <div id="leverRow" class="row" style="background-color: rgb(42, 42, 42);">
+                <div id="lever1ContainerAuA" class="col-2">
+                    <img id="lever1AuA" onclick="changeLeverPosition('lever1AuA')" src="assets/PNG/Au_A_I.png" class="img-fluid col-6 mx-auto d-block">
+                </div>
+                <div id="lever2ContainerA1" class="col-2">
+                    <img id="lever2A1" onclick="changeLeverPosition('lever2A1')" src="assets/PNG/A1_F.png" class="img-fluid col-6 mx-auto d-block">
+                </div>
+                <div id="lever3ContainerC111" class="col-2">
+                    <img id="lever3C111" onclick="changeLeverPosition('lever3C111')" src="assets/PNG/c111_v3_F.png" class="img-fluid col-6 mx-auto d-block">
+                </div>
+                <div id="lever4ContainerC111" class="col-2">
+                    <img id="lever4C111" onclick="changeLeverPosition('lever4C111')" src="assets/PNG/c111_v1_F.png" class="img-fluid col-6 mx-auto d-block">
+                </div>
+                <div id="lever5ContainerAg5" class="col-2">
+                    <img id="lever5Ag5" onclick="changeLeverPosition('lever5Ag5')" src="assets/PNG/Ag5_D.png" class="img-fluid col-6 mx-auto d-block">      
+                </div>
+                <div id="lever6ContainerV6" class="col-2">
+                    <img id="lever6V6" onclick="changeLeverPosition('lever6V6')" src="assets/PNG/V6_L.png" class="img-fluid col-6 mx-auto d-block">
+                </div>
             </div>
         </div>
     </div>
