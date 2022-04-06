@@ -1,6 +1,6 @@
 function openSidebar() {
-    document.getElementById("contentContainer").style.marginLeft = "0%";
-    document.getElementById("contentContainer").style.marginRight = "25%";
+    document.getElementById("contentContainer").style.marginLeft = "0vw";
+    document.getElementById("contentContainer").style.marginRight = "25vw";
     // document.getElementById("sidebarBlock").style.width = "25%";
     document.getElementById("sidebarBlock").style.display = "inline-block";
     document.getElementById('sidebarTriggerButton').innerHTML = '>';
