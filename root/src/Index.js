@@ -113,7 +113,9 @@ function rotateAndDisableKey(keyId){
   var holderId = getHolderIdForKey(keyId);
   if(holderId == UNAVAILABLE){
     console.log('Key ' + keyId + ' is not available in any holders');
-  } else{    
+  } else if(holderId == 'upperL7KeyHolder5'){
+    document.getElementById('sidebarSplit').style.left = "7.6vw";
+  }else{    
     if(checkHolderKeysLockStatus(holderId)){
       console.log('No keys are available for dragging. Holder ' + holderId + 'can be unlocked.');
       unlockHolder(holderId);
@@ -255,8 +257,8 @@ function Announcement_on(a){
 function tracksandsignallighton(leverId){
   if(leverId=='lever3C111'){
     document.getElementById('led-111').setAttribute('src','assets/PNG/111_White.png');
-    document.getElementById('tracklight1').style.display = 'block';
-    document.getElementById('tracklight2').style.display = 'block'; 
+    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Red.png');
+    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Red.png');
   }
   else if(leverId=='lever5Ag5'){
     document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_White.png');
@@ -271,8 +273,8 @@ function tracksandsignallightoff(leverId){
   if(leverId=='lever3C111'){
     document.getElementById('led-111').style.display = 'block';
     document.getElementById('led-111').setAttribute('src','assets/PNG/111_Red.png');
-    document.getElementById('tracklight1').style.display = 'none';
-    document.getElementById('tracklight2').style.display = 'none';
+    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Ash.png');
+    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Ash.png');
   }
   else if(leverId=='lever5Ag5'){
     document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_Orange.png');

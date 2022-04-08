@@ -21,6 +21,7 @@ function initializeData() {
   initializeDefaultLeverStates();
   defaultLeverImageSetup();
   switchedLeverImageSetup();
+  defaultKeyPosition();
   sidebarSetup();
   changeImg();
   console.log('INITIALIZATION COMPLETE');
@@ -41,7 +42,25 @@ function defaultKeySetup() {
     hideElement('lowerL4Key6N');
     makeElementVisible('lowerL5Key5R');
     makeElementVisible('lowerL6Key6N');
+    hideElement('upperL7Key5');
     console.log('Key Setup Ends');
+
+    // console.log('Key Setup Begins');
+    // makeElementVisible('lowerL2KeyAN');
+    // makeElementVisible('upperL3KeyAN');
+    // makeElementVisible('upperL4KeyAN');
+    // makeElementVisible('lowerL3Key5R');
+    // makeElementVisible('lowerL4Key5N');
+    // makeElementVisible('upperL5Key5N');
+    // makeElementVisible('upperL5Key5');
+    // makeElementVisible('lowerL5Key5');
+    // makeElementVisible('upperL6Key5');
+    // makeElementVisible('lowerL3Key6N');
+    // makeElementVisible('lowerL4Key6N');
+    // makeElementVisible('lowerL5Key5R');
+    // makeElementVisible('lowerL6Key6N');
+    // makeElementVisible('upperL7Key5');
+    // console.log('Key Setup Ends');
 }
 
 function setupDefaultHolderLockState() {
@@ -56,6 +75,7 @@ function setupDefaultHolderLockState() {
     holderLockStateMap.set('lowerL4KeyHolder', true);
     holderLockStateMap.set('lowerL5KeyHolder', false);
     holderLockStateMap.set('lowerL6KeyHolder6N', true);
+    holderLockStateMap.set('upperL7KeyHolder5', false);
     console.log('Holder Lock State Map Setup Ends');
 }
 
@@ -71,6 +91,7 @@ function exactKeyMapSetup(){
     exactKeyMap.set('lowerL4KeyHolder', ['lowerL4Key5N','lowerL4Key6N']);
     exactKeyMap.set('lowerL5KeyHolder', ['lowerL5Key5','lowerL5Key5R']);
     exactKeyMap.set('lowerL6KeyHolder6N', ['lowerL6Key6N']);
+    exactKeyMap.set('upperL7KeyHolder5', ['upperL7Key5']);
     console.log('Unique Key-Holder mapping ends');
 }
 function keyAvailabilityMapSetup(){
@@ -89,6 +110,7 @@ function keyAvailabilityMapSetup(){
     keyAvailabilityMap.set('lowerL4Key6N', false);
     keyAvailabilityMap.set('lowerL5Key5R', true);
     keyAvailabilityMap.set('lowerL6Key6N', true);
+    keyAvailabilityMap.set('upperL7Key5', false);
     console.log('Map Data: ' + keyAvailabilityMap); //to print in key-value pairs
     console.log('Key Availability Map Setup Ends');
 
@@ -109,6 +131,7 @@ function defaultKeyOrientationSetup() {
     rotateElement('lowerL4Key6N',0);
     rotateElement('lowerL5Key5R',90);
     rotateElement('lowerL6Key6N',0);
+    rotateElement('upperL7Key5',0);
     console.log('Key Orientation Setup Ends');
 }
 function initalizeDrag(){
@@ -175,4 +198,52 @@ function sidebarSetup(){
 function changeImg(){
     img=new Map();
     img.set('Bp_An',true);
+}
+
+function defaultKeyPosition() {
+    addClass('lowerL2KeyAN','lowerL2KeyAN-initial');
+    addClass('upperL3KeyAN','upperL3KeyAN-initial');
+    addClass('lowerL3Key5R','lowerL3Key5R-initial');
+    addClass('lowerL3Key6N','lowerL3Key6N-initial');
+    addClass('upperL4KeyAN','upperL4KeyAN-initial');
+    addClass('lowerL4Key5N','lowerL4Key5N-initial');
+    addClass('lowerL4Key6N','lowerL4Key6N-initial');
+    addClass('upperL5Key5','upperL5Key5-initial');
+    addClass('upperL5Key5N','upperL5Key5N-initial');
+    addClass('lowerL5Key5','lowerL5Key5-initial');
+    addClass('lowerL5Key5R','lowerL5Key5R-initial');
+    addClass('upperL6Key5','upperL6Key5-initial');
+    addClass('lowerL6Key6N','lowerL6Key6N-initial');
+}
+
+function sidebarKeyPosition() {
+    addClass('lowerL2KeyAN','lowerL2KeyAN-changed');
+    addClass('upperL3KeyAN','upperL3KeyAN-changed');
+    addClass('lowerL3Key5R','lowerL3Key5R-changed');
+    addClass('lowerL3Key6N','lowerL3Key6N-changed');
+    addClass('upperL4KeyAN','upperL4KeyAN-changed');
+    addClass('lowerL4Key5N','lowerL4Key5N-changed');
+    addClass('lowerL4Key6N','lowerL4Key6N-changed');
+    addClass('upperL5Key5','upperL5Key5-changed');
+    addClass('upperL5Key5N','upperL5Key5N-changed');
+    addClass('lowerL5Key5','lowerL5Key5-changed');
+    addClass('lowerL5Key5R','lowerL5Key5R-changed');
+    addClass('upperL6Key5','upperL6Key5-changed');
+    addClass('lowerL6Key6N','lowerL6Key6N-changed');
+}
+
+function removePosition() {
+    removeClass('lowerL2KeyAN','lowerL2KeyAN-changed');
+    removeClass('upperL3KeyAN','upperL3KeyAN-changed');
+    removeClass('lowerL3Key5R','lowerL3Key5R-changed');
+    removeClass('lowerL3Key6N','lowerL3Key6N-changed');
+    removeClass('upperL4KeyAN','upperL4KeyAN-changed');
+    removeClass('lowerL4Key5N','lowerL4Key5N-changed');
+    removeClass('lowerL4Key6N','lowerL4Key6N-changed');
+    removeClass('upperL5Key5','upperL5Key5-changed');
+    removeClass('upperL5Key5N','upperL5Key5N-changed');
+    removeClass('lowerL5Key5','lowerL5Key5-changed');
+    removeClass('lowerL5Key5R','lowerL5Key5R-changed');
+    removeClass('upperL6Key5','upperL6Key5-changed');
+    removeClass('lowerL6Key6N','lowerL6Key6N-changed');
 }

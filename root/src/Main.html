@@ -22,7 +22,12 @@
     </div>
     <div  id="sidebarBlock" class="w3-sidebar w3-bar-block w3-card w3-animate-right">
         <img src="assets/PNG/Track-01.png" class="img-fluid" id="sidebarTrack">
-        <img src="assets/PNG/5_Key.png" class="img-fluid" style="width: 10vw;">
+        <img src="assets/PNG/Track-02.png" class="img-fluid" id="sidebarSplit">
+        <img src="assets/PNG/5_Key.png" class="img-fluid" id="upperL7KeyHolder5" 
+                    ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+        <img id="upperL7Key5" src="assets/PNG/key.png" class="img-fluid" 
+                    ondragstart="dragStart(event)"
+                    onclick="rotateKey(event)">
     </div>
     <div id="contentContainer" style="transition: 0.5s;">
         <div id="displayBoardContainer" class="container-fluid text-center">
@@ -47,8 +52,9 @@
                     <img src="assets/PNG/5v6_Orange.png" class="img-fluid" id="led-5v6">
                     <img src="assets/PNG/25_4.png" class="img-fluid" id="led-25_4">
                     <img src="assets/PNG/25_5.png" class="img-fluid" id="led-25_5">
-                    <img src="assets/PNG/track_light _white.png" class="img-fluid" id="tracklight1">
-                <img src="assets/PNG/track_light _white_1.png" class="img-fluid" id="tracklight2">
+                    <img src="assets/PNG/Z13_Ash.png" class="img-fluid" id="tracklight1">
+                    <img src="assets/PNG/Z15_Ash.png" class="img-fluid" id="tracklight2">
+                    <img src="assets/PNG/Z17_Ash.png" class="img-fluid" id="tracklight3">
                 
                     <p id="end">LE TREPORT</p>
                     <img src="assets/PNG/switch_ON.png" class="img-fluid" id="switch-z9">

@@ -3,6 +3,7 @@ function openSidebar() {
     document.getElementById("contentContainer").style.marginRight = "25vw";
     // document.getElementById("sidebarBlock").style.width = "25%";
     document.getElementById("sidebarBlock").style.display = "inline-block";
+    sidebarKeyPosition();
     document.getElementById('sidebarTriggerButton').innerHTML = '>';
     document.getElementById('sidebarTrigger').style.marginRight = '25%';
   }
@@ -11,6 +12,7 @@ function openSidebar() {
     document.getElementById("contentContainer").style.marginRight = "10%";
     // document.getElementById("sidebarBlock").style.width = "0%";
     document.getElementById("sidebarBlock").style.display = "none";
+    removePosition();
     document.getElementById('sidebarTriggerButton').innerHTML = '<';
     document.getElementById('sidebarTrigger').style.marginRight = '0%';
   }
