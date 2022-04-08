@@ -4,7 +4,22 @@
    -webkit-user-drag: none;
    user-select: none;
 }
-
+#tracklight1{
+  position: absolute;
+  top: 15.3vw;
+  left: 51.25vw;
+  height: auto;
+  width: 1.3%;
+  display: block;
+}
+#tracklight2{
+  position: absolute;
+  top: 9.64vw;
+  left: 63.35vw;
+  height: auto;
+  width: 1.28%;
+  display: block;
+}
 
 #upperKeySet2, #upperKeySet3, #upperKeySet4, #upperKeySet5, #upperKeySet6,
 #lowerKeySet2, #lowerKeySet3, #lowerKeySet4, #lowerKeySet5, #lowerKeySet6{

@@ -22,6 +22,7 @@ function initializeData() {
   defaultLeverImageSetup();
   switchedLeverImageSetup();
   sidebarSetup();
+  changeImg();
   console.log('INITIALIZATION COMPLETE');
 }
 
@@ -170,4 +171,8 @@ function sidebarSetup(){
     document.getElementById('contentContainer').style.marginLeft = '10%';
     document.getElementById('contentContainer').style.marginRight = '10%';
     hideElement('sidebarBlock');
+}
+function changeImg(){
+    img=new Map();
+    img.set('Bp_An',true);
 }

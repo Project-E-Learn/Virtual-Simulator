@@ -190,10 +190,12 @@ function changeLeverPosition(leverId){
       var switchImageSource = leverSwitchedSourceMap.get(leverId);
       leverStateMap.set(leverId,false);
       changeSourceImage(leverId,switchImageSource);
+      tracksandsignallighton(leverId);
     } else {
       var defaultImageSource = leverDefaultSourceMap.get(leverId);
       leverStateMap.set(leverId,true);
       changeSourceImage(leverId,defaultImageSource);
+      tracksandsignallightoff(leverId);
     }
   }
 }
@@ -236,3 +238,48 @@ function getKeyLockState(keyId){
   console.log('Lock state for key ' + keyId + ' is: ' + resultStatus);
   return resultStatus;
 }
+
+function Announcement_on(a){
+  var image=document.getElementById('led-announce');
+  if (img.get(a)==true) 
+      {
+        image.src = "assets/PNG/Announce_Orange.png";
+        img.set(a,false);
+      } 
+      else
+      {
+        image.src = "assets/PNG/Announce_White.png";
+        img.set(a,true);
+      }
+}
+function tracksandsignallighton(leverId){
+  if(leverId=='lever3C111'){
+    document.getElementById('led-111').setAttribute('src','assets/PNG/111_White.png');
+    document.getElementById('tracklight1').style.display = 'block';
+    document.getElementById('tracklight2').style.display = 'block'; 
+  }
+  else if(leverId=='lever5Ag5'){
+    document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_White.png');
+   
+  }
+  else if(leverId=='lever2A1'){
+    document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_Normal_State.png');
+    trainAppear();
+  }
+}
+function tracksandsignallightoff(leverId){
+  if(leverId=='lever3C111'){
+    document.getElementById('led-111').style.display = 'block';
+    document.getElementById('led-111').setAttribute('src','assets/PNG/111_Red.png');
+    document.getElementById('tracklight1').style.display = 'none';
+    document.getElementById('tracklight2').style.display = 'none';
+  }
+  else if(leverId=='lever5Ag5'){
+    document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_Orange.png');
+  }
+  else if(leverId=='lever2A1'){
+    document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_ON_State.png');
+    
+    trainDisappear();
+  }
+  }
