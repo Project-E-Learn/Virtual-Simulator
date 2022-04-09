@@ -257,8 +257,8 @@ function Announcement_on(a){
 function tracksandsignallighton(leverId){
   if(leverId=='lever3C111'){
     document.getElementById('led-111').setAttribute('src','assets/PNG/111_White.png');
-    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Red.png');
-    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Red.png');
+    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_White.png');
+    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_White.png');
   }
   else if(leverId=='lever5Ag5'){
     document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_White.png');
@@ -281,7 +281,28 @@ function tracksandsignallightoff(leverId){
   }
   else if(leverId=='lever2A1'){
     document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_ON_State.png');
-    
     trainDisappear();
   }
+}
+
+function trainAppear() {
+  console.log('started animation');
+  let id = null;
+  const element = document.getElementById("train"); 
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 50);
+  function frame() {
+    element.style.visibility = "visible"; 
+    if (pos == 6.5) {
+      clearInterval(id);
+    } else {
+      pos+=0.5; 
+      element.style.left = pos + "vw"; 
+    }
   }
+}
+
+function trainDisappear() {
+  document.getElementById("train").style.visibility = 'hidden';
+}

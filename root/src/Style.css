@@ -29,6 +29,14 @@
   width: 11%;
 }
 
+#train {
+  position: absolute;
+  top: 7.5vw;
+  width: 25%;
+  height: auto;
+  visibility: hidden;
+}
+
 #upperKeySet2, #upperKeySet3, #upperKeySet4, #upperKeySet5, #upperKeySet6,
 #lowerKeySet2, #lowerKeySet3, #lowerKeySet4, #lowerKeySet5, #lowerKeySet6{
   position: relative;
