@@ -115,6 +115,7 @@ function rotateAndDisableKey(keyId){
     console.log('Key ' + keyId + ' is not available in any holders');
   } else if(holderId == 'upperL7KeyHolder5'){
     document.getElementById('sidebarSplit').style.left = "7.6vw";
+    document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_Orange.png');
   }else{    
     if(checkHolderKeysLockStatus(holderId)){
       console.log('No keys are available for dragging. Holder ' + holderId + 'can be unlocked.');
@@ -291,13 +292,13 @@ function trainAppear() {
   const element = document.getElementById("train"); 
   let pos = 0;
   clearInterval(id);
-  id = setInterval(frame, 50);
+  id = setInterval(frame, 100);
   function frame() {
     element.style.visibility = "visible"; 
     if (pos == 6.5) {
       clearInterval(id);
     } else {
-      pos+=0.5; 
+      pos += 0.5; 
       element.style.left = pos + "vw"; 
     }
   }

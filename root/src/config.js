@@ -44,23 +44,6 @@ function defaultKeySetup() {
     makeElementVisible('lowerL6Key6N');
     hideElement('upperL7Key5');
     console.log('Key Setup Ends');
-
-    // console.log('Key Setup Begins');
-    // makeElementVisible('lowerL2KeyAN');
-    // makeElementVisible('upperL3KeyAN');
-    // makeElementVisible('upperL4KeyAN');
-    // makeElementVisible('lowerL3Key5R');
-    // makeElementVisible('lowerL4Key5N');
-    // makeElementVisible('upperL5Key5N');
-    // makeElementVisible('upperL5Key5');
-    // makeElementVisible('lowerL5Key5');
-    // makeElementVisible('upperL6Key5');
-    // makeElementVisible('lowerL3Key6N');
-    // makeElementVisible('lowerL4Key6N');
-    // makeElementVisible('lowerL5Key5R');
-    // makeElementVisible('lowerL6Key6N');
-    // makeElementVisible('upperL7Key5');
-    // console.log('Key Setup Ends');
 }
 
 function setupDefaultHolderLockState() {

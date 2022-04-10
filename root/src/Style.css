@@ -31,9 +31,9 @@
 
 #train {
   position: absolute;
-  top: 7.5vw;
-  width: 25%;
-  height: auto;
+  top: 8vw;
+  width: 42%;
+  height: 12%;
   visibility: hidden;
 }
 
@@ -46,196 +46,209 @@
 
 #upperL6Key5 {
   position: absolute;
-  top: 2.35vw;
   width: 6.5%;
   height: auto;
 }
 
 .upperL6Key5-initial {
-  left: 7.15vw;
+  top: 2.5vw;
+  left: 7.2vw;
 }
 
 .upperL6Key5-changed {
+  top: 2.35vw;
   left: 6.75vw;
 }
 
 #lowerL6Key6N {
   position: absolute;
-  top: 2.45vw;
   width: 6.5%;
   height: auto;
 }
 
 .lowerL6Key6N-initial {
+  top: 2.6vw;
   left: 7.05vw;
 }
 
 .lowerL6Key6N-changed {
-  left: 6.65vw;
+  top: 2.5vw;
+  left: 6.6vw;
 }
 
 #upperL5Key5 {
   position: absolute;
-  top: 2.6vw;
   width: 7%;
   height: auto;
 }
 
 .upperL5Key5-initial {
-  left: 5.6vw;
+  top: 2.6vw;
+  left: 5.5vw;
 }
 
 .upperL5Key5-changed {
-  left: 5.2vw;
+  top: 2.45vw;
+  left: 5.1vw;
 }
 
 #upperL5Key5N {
   position: absolute;
-  top: 2.6vw;
   width: 7%;
   height: auto;
 }
 
 .upperL5Key5N-initial {
-  left: 8.6vw;
+  top: 2.6vw;
+  left: 8.65vw;
 }
 
 .upperL5Key5N-changed {
-  left: 8.2vw;
+  top: 2.45vw;
+  left: 8.1vw;
 }
 
 #lowerL5Key5 {
   position: absolute;
-  top: 2.65vw;
   width: 7%;
   height: auto;
 }
 
 .lowerL5Key5-initial {
-  left: 5.6vw;
+  top: 2.6vw;
+  left: 5.5vw;
 }
 
 .lowerL5Key5-changed {
-  left: 5.2vw;
+  top: 2.4vw;
+  left: 5.1vw;
 }
 
 #lowerL5Key5R {
   position: absolute;
-  top: 2.65vw;
   width: 7%;
   height: auto;
 }
 
 .lowerL5Key5R-initial {
-  left: 8.6vw;
+  top: 2.6vw;
+  left: 8.65vw;
 }
 
 .lowerL5Key5R-changed {
-  left: 8.2vw;
+  top: 2.4vw;
+  left: 8.1vw;
 }
 
 #upperL4KeyAN {
   position: absolute;
-  top: 2.45vw;
   width: 6.5%;
   height: auto;
 }
 
 .upperL4KeyAN-initial {
-  left: 7vw;
+  top: 2.55vw;
+  left: 7.1vw;
 }
 
 .upperL4KeyAN-changed {
+  top: 2.4vw;
   left: 6.6vw;
 }
 
 #lowerL4Key5N {
   position: absolute;
-  top: 2.65vw;
   width: 7%;
   height: auto;
 }
 
 .lowerL4Key5N-initial {
+  top: 2.6vw;
   left: 5.5vw;
 }
 
 .lowerL4Key5N-changed {
+  top: 2.45vw;
   left: 5.1vw;
 }
 
 #lowerL4Key6N {
   position: absolute;
-  top: 2.65vw;
   width: 7%;
   height: auto;
 }
 
 .lowerL4Key6N-initial {
-  left: 8.6vw;
+  top: 2.6vw;
+  left: 8.65vw;
 }
 
 .lowerL4Key6N-changed {
-  left: 8.2vw;
+  top: 2.45vw;
+  left: 8.15vw;
 }
 
 #upperL3KeyAN {
   position: absolute;
-  top: 2.45vw;
   width: 6.5%;
   height: auto;
 }
 
 .upperL3KeyAN-initial {
-  left: 7vw;
+  top: 2.6vw;
+  left: 7.1vw;
 }
 
 .upperL3KeyAN-changed {
+  top: 2.4vw;
   left: 6.6vw;
 }
 
 #lowerL3Key5R {
   position: absolute;
-  top: 2.7vw;
   width: 7%;
   height: auto;
 }
 
 .lowerL3Key5R-initial {
+  top: 2.6vw;
   left: 5.5vw;
 }
 
 .lowerL3Key5R-changed {
-  left: 5.1vw;
+  top: 2.4vw;
+  left: 5.15vw;
 }
 
 #lowerL3Key6N {
   position: absolute;
-  top: 2.7vw;
   width: 7%;
   height: auto;
 }
 
 .lowerL3Key6N-initial {
+  top: 2.6vw;
   left: 8.65vw;
 }
 
 .lowerL3Key6N-changed {
-  left: 8.25vw;
+  top: 2.4vw;
+  left: 8.15vw;
 }
 
 #lowerL2KeyAN {
   position: absolute;
-  top: 2.5vw;
   width: 6.25%;
   height: auto;
 }
 
 .lowerL2KeyAN-initial {
-  left: 7.05vw;
+  top: 2.6vw;
+  left: 7.1vw;
 }
 
 .lowerL2KeyAN-changed {
+  top: 2.4vw;
   left: 6.65vw;
 }
 
@@ -643,7 +656,7 @@
 #upperL7Key5 {
   position: absolute;
   top: 43.75vw;
-  left: 13.5vw;
+  left: 13.55vw;
   width: 5.75%;
   height: auto;
 }
