@@ -301,10 +301,10 @@
 
 #led-a1 {
   position: absolute;
-  top: 9.25vw;
-  left: 23vw;
+  top: 8.5vw;
+  left: 22.6vw;
   height: auto;
-  width: 7%;
+  width: 9%;
 }
 
 #led-111 {
@@ -352,7 +352,7 @@
   top: 3.5vw;
   left: 18vw;
   height: auto;
-  width: 8%;
+  width: 10%;
 }
 
 #led-awa {
@@ -392,7 +392,7 @@
 }
 
 #label-a1 {
-  top: 8.25vw;
+  top: 7.80vw;
   left: 24.75vw;
 }
 
@@ -664,3 +664,5 @@
 .dragEnabled {
   -webkit-user-drag: auto;
 }
+
+

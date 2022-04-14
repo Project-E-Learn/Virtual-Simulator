@@ -246,6 +246,8 @@ function Announcement_on(a){
   var image=document.getElementById('led-announce');
   if (img.get(a)==true) 
       {
+        var audio = new Audio('assets/SOUND/Ding_Sound_Effect.mp3');
+        audio.play();
         image.src = "assets/PNG/Announce_Orange.png";
         img.set(a,false);
       } 
