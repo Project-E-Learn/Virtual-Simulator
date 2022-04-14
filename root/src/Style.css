@@ -301,26 +301,26 @@
 
 #led-a1 {
   position: absolute;
-  top: 8.5vw;
-  left: 22.6vw;
+  top: 8.25vw;
+  left: 22vw;
   height: auto;
-  width: 9%;
+  width: 11%;
 }
 
 #led-111 {
   position: absolute;
-  top: 9.25vw;
-  left: 41vw;
+  top: 8.75vw;
+  left: 41.15vw;
   height: auto;
-  width: 6%;
+  width: 8%;
 }
 
 #led-5v6 {
   position: absolute;
-  top: 9.75vw;
-  left: 48.25vw;
+  top: 9.20vw;
+  left: 47.75vw;
   height: auto;
-  width: 6%;
+  width: 9%;
 }
 
 #led-25_4 {
@@ -341,26 +341,26 @@
 
 #led-zap {
   position: absolute;
-  top: 9vw;
+  top: 8.5vw;
   left: 39vw;
   height: auto;
-  width: 7%;
+  width: 9%;
 }
 
 #led-announce {
   position: absolute;
   top: 3.5vw;
-  left: 18vw;
+  left: 17.5vw;
   height: auto;
-  width: 10%;
+  width: 12%;
 }
 
 #led-awa {
   position: absolute;
   top: 2vw;
-  left: 30vw;
+  left: 29.80vw;
   height: auto;
-  width: 8%;
+  width: 10%;
 }
 
 #start {
@@ -392,27 +392,27 @@
 }
 
 #label-a1 {
-  top: 7.80vw;
-  left: 24.75vw;
+  top: 7.50vw;
+  left: 24.70vw;
 }
 
 #label-zap {
   font-size: 0.75vw;
   font-weight: 200;
-  top: 8.5vw;
-  left: 39.35vw;
+  top: 8.15vw;
+  left: 39.90vw;
 }
 
 #label-111 {
   font-size: 0.75vw;
   font-weight: 200;
-  top: 8.75vw;
-  left: 42vw;
+  top: 8.25vw;
+  left: 42.35vw;
   letter-spacing: 0.2vw;
 }
 
 #label-5v6 {
-  font-size: 0.75vw;
+  font-size: 0.80vw;
   font-weight: 300;
   top: 12vw;
   left: 48.75vw;
@@ -467,11 +467,11 @@
 
 #label-bp_an {
   position: absolute;
-  font-size: 0.5vw;
+  font-size: 0.8vw;
   color: white;
   font-weight: 300;
-  top: 14.25vw;
-  left: 24.4vw;
+  top: 13.65vw;
+  left: 23.95vw;
 }
 
 #line-0 {
@@ -486,82 +486,82 @@
 #Bp_An {
   position: absolute;
   top: 16.15vw;
-  left: 24.75vw;
+  left: 24.55vw;
   height: auto;
-  width: 0.75vw;
+  width: 1.25vw;
 }
 
 #label-occupee_1, #label-occupee_2, #label-occupee_3, #label-occupee_4, #label-occupee_5, #label-occupee_6, #label-occupee_7{
   position: absolute;
-  font-size: 0.8vw;
+  font-size: 1vw;
   font-weight: 300;
-  top: 17.5vw;
+  top: 17.25vw;
   letter-spacing: 1px;
   color: white;
 }
 
 #label-occupee_1{
-  left: 29.25vw;
+  left: 28.75vw;
 }
 
 #label-occupee_2{
-  left: 35.25vw;
+  left: 34.75vw;
 }
 
 #label-occupee_3{
-  left: 41.25vw;
+  left: 40.75vw;
 }
 
 #label-occupee_4{
-  left: 47.25vw;
+  left: 46.75vw;
 }
 
 #label-occupee_5{
-  left: 53.25vw;
+  left: 52.75vw;
 }
 
 #label-occupee_6{
-  left: 59.25vw;
+  left: 58.75vw;
 }
 
 #label-occupee_7{
-  left: 65.25vw;
+  left: 64.75vw;
 }
 
 #label-libre_1, #label-libre_2, #label-libre_3, #label-libre_4, #label-libre_5{
   position: absolute;
-  font-size: 0.5vw;
+  font-size: 0.8vw;
   font-weight: 300;
-  top: 14.8vw;
+  top: 14.25vw;
   letter-spacing: 1px;
   color: white;
 }
 
 #label-libre_1{
-  left: 30.15vw;
+  left: 29.90vw;
 }
 
 #label-libre_2{
-  left: 36.15vw;
+  left: 35.90vw;
 }
 
 #label-libre_3{
-  left: 42.15vw;
+  left: 41.90vw;
 }
 
 #label-libre_4{
-  left: 48.15vw;
+  left: 47.90vw;
 }
 
 #label-libre_5{
-  left: 54.15vw;
+  left: 53.90vw;
 }
 
 #line-1, #line-2, #line-3, #line-4, #line-5 {
   position: absolute;
   height: 1px;
-  width: 1vw;
-  top: 15vw;
+  width: 1.2vw;
+  top: 14.75vw;
   background: rgb(255, 255, 255);
 
 }
@@ -588,48 +588,48 @@
 
 #label-z9, #label-z11, #label-z13, #label-z15, #label-z17{
   position: absolute;
-  font-size: 0.5vw;
+  font-size: 0.8vw;
   font-weight: 300;
-  top: 13.5vw;
+  top: 13vw;
   letter-spacing: 1px;
   color: white;
 }
 
 #label-z9{
-  left: 30.35vw;
+  left: 30.18vw;
 }
 
 #label-z11{
-  left: 36.35vw;
+  left: 36.18vw;
 }
 
 #label-z13{
-  left: 42.35vw;
+  left: 42.18vw;
 }
 
 #label-z15{
-  left: 48.35vw;
+  left: 48.18vw;
 }
 
 #label-z17{
-  left: 54.35vw;
+  left: 54.18vw;
 }
 
 #label-25_4, #label-25_5{
   position: absolute;
-  font-size: 0.5vw;
+  font-size: 0.8vw;
   font-weight: 300;
-  top: 14.8vw;
+  top: 14.2vw;
   letter-spacing: 1px;
   color: white;
 }
 
 #label-25_4{
-  left: 60.5vw;
+  left: 60.25vw;
 }
 
 #label-25_5{
-  left: 66.5vw;
+  left: 66.25vw;
 }
 
 #sidebarTrack {
@@ -643,6 +643,7 @@
   left: 9vw;
   width: 9vw;
   height: auto;
+  transition: ease-in 0.8s;
 }
 
 #upperL7KeyHolder5 {
