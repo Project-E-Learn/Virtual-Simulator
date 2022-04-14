@@ -251,39 +251,34 @@ function Announcement_on(a){
         image.src = "assets/PNG/Announce_Orange.png";
         img.set(a,false);
       } 
-      else
-      {
-        image.src = "assets/PNG/Announce_White.png";
-        img.set(a,true);
-      }
+      // else
+      // {
+      //   image.src = "assets/PNG/Announce_White.png";
+      //   img.set(a,true);
+      // }
 }
 function tracksandsignallighton(leverId){
   if(leverId=='lever3C111'){
     document.getElementById('led-111').setAttribute('src','assets/PNG/111_White.png');
-    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_White.png');
-    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_White.png');
+    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Yellow.png');
+    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Yellow.png');
   }
-  else if(leverId=='lever5Ag5'){
+  if(leverId=='lever5Ag5'){
     document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_White.png');
    
   }
   else if(leverId=='lever2A1'){
-    document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_Normal_State.png');
+    document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_ON_State.png');
     trainAppear();
   }
 }
 function tracksandsignallightoff(leverId){
-  if(leverId=='lever3C111'){
-    document.getElementById('led-111').style.display = 'block';
-    document.getElementById('led-111').setAttribute('src','assets/PNG/111_Red.png');
-    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Ash.png');
-    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Ash.png');
-  }
-  else if(leverId=='lever5Ag5'){
+
+  if(leverId=='lever5Ag5'){
     document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_Orange.png');
   }
   else if(leverId=='lever2A1'){
-    document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_ON_State.png');
+    document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_Normal_State.png');
     trainDisappear();
   }
 }
@@ -309,3 +304,38 @@ function trainAppear() {
 function trainDisappear() {
   document.getElementById("train").style.visibility = 'hidden';
 }
+
+function toggleSwitch(switchId) {
+  console.log(switchId);
+  if(switchStateMap.get(switchId) == true){
+    var switchImageSource = switchSwitchedSourceMap.get(switchId);
+    switchStateMap.set(switchId,false);
+    changeSourceImage(switchId,switchImageSource);
+    if(switchId=='switch-z9') {
+      document.getElementById('led-announce').setAttribute('src','assets/PNG/Announce_White.png');
+      document.getElementById('led-zap').setAttribute('src','assets/PNG/ZAP_Red.png');
+    }
+    if(switchId=='switch-z13'){
+      document.getElementById('led-111').setAttribute('src','assets/PNG/111_Red.png')
+      document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Red.png')
+
+    }
+    if(switchId=='switch-z17'){
+      document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Red.png')
+    }
+  } else {
+    var defaultImageSource = switchDefaultSourceMap.get(switchId);
+    switchStateMap.set(switchId,true);
+    changeSourceImage(switchId,defaultImageSource);
+      if(switchId=='switch-z9') {
+        document.getElementById('led-zap').setAttribute('src','assets/PNG/ZAP_Orange.png');
+      }
+      if(switchId=='switch-z13'){
+        document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Ash.png')
+      }
+      if(switchId=='switch-z17'){
+        document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Ash.png')
+      }
+  }
+}
+
