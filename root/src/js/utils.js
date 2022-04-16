@@ -9,6 +9,7 @@ function checkVisibilityStatus(elementId){
     return true;
   }
 }
+
 function checkOrientation(elementId,angle){
   var status =  getOrientationStatus(elementId);
   if(status == 'rotate('+angle+'deg)'){
@@ -18,18 +19,24 @@ function checkOrientation(elementId,angle){
   }
 
 }
+
 function getOrientationStatus(elementId){
   return document.getElementById(elementId).style.transform;
 }
+
 function getVisibilityStatus(elementId){
   return document.getElementById(elementId).style.display;
 }
   
 function makeElementVisible(elementId){
+  console.log(elementId);
+  console.log(document.getElementById(elementId).style.display);
   document.getElementById(elementId).style.display = 'block';
 }
   
 function hideElement(elementId){
+  console.log(elementId);
+  console.log(document.getElementById(elementId).style.display);
   document.getElementById(elementId).style.display = 'none';
 }
 
@@ -40,10 +47,15 @@ function rotateElement(elementId,angle){
 function removeClass(elementId,className){
   document.getElementById(elementId).classList.remove(className);
 }
+
 function addClass(elementId,className){
   document.getElementById(elementId).classList.add(className);
 }
 
 function changeSourceImage(imageId,newImagePath){
   document.getElementById(imageId).src = newImagePath;
+}
+
+function setLeftPosition(elementId,points){
+  document.getElementById(elementId).style.left = points;
 }
