@@ -53,32 +53,3 @@ function dragDrop(ev) {
 //       // }
 // }
 
-function trainAppear() {
-  console.log('started animation');
-  // let id = null;
-  //const element = document.getElementById("train"); 
-  document.getElementById("train").style.visibility = 'visible';
-  //makeElementVisible('train');
-  document.getElementById("train").style.left = '6.5vw';
-  // let pos = 3;
-  //clearInterval(id);
-  //id = setInterval(frame, 60);
-  //element.style.left = '6.5vw';
-  // function frame() {
-  //   element.style.visibility = "visible"; 
-  //   if (pos == 6.5) {
-  //     clearInterval(id);
-  //   } else {
-  //     pos += 0.5; 
-  //     element.style.left = pos + "vw"; 
-  //   }
-  // }
-}
-
-function trainDisappear() {
-  // hideElement('train');
-  //document.getElementById("train").style.left = '3vw';
-  //document.getElementById("train").style.visibility = 'hidden';
-  // makeElementVisible('train');
-  //hideElement('train');
-}

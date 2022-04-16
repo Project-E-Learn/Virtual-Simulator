@@ -29,14 +29,10 @@ function getVisibilityStatus(elementId){
 }
   
 function makeElementVisible(elementId){
-  console.log(elementId);
-  console.log(document.getElementById(elementId).style.display);
   document.getElementById(elementId).style.display = 'block';
 }
   
 function hideElement(elementId){
-  console.log(elementId);
-  console.log(document.getElementById(elementId).style.display);
   document.getElementById(elementId).style.display = 'none';
 }
 

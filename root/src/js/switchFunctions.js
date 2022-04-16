@@ -69,12 +69,16 @@ function toggleSwitch(switchId) {
 // }
 
 function switchz9On(){
-    changeSourceImage('led-announce','assets/PNG/Announce_White.png');
+    changeSourceImage('led-annonce','assets/PNG/Annonce_White.png');
+    ledStateMap.set('led-annonce','White');
     changeSourceImage('led-zap','assets/PNG/ZAP_Red.png');
+    ledStateMap.set('led-zap','Red');
 }
+
 
 function switchz9Off(){
     changeSourceImage('led-zap','assets/PNG/ZAP_Orange.png');
+    ledStateMap.set('led-zap','Orange');
 }
 
 function switchz11On(){
@@ -87,11 +91,15 @@ function switchz11Off(){
 
 function switchz13On(){
     changeSourceImage('tracklight1','assets/PNG/Z13_Red.png');
+    ledStateMap.set('tracklight1','Red');
     changeSourceImage('led-111','assets/PNG/111_Red.png');
+    ledStateMap.set('led-111','Red');
+    
 }
 
 function switchz13Off(){
      changeSourceImage('tracklight1','assets/PNG/Z13_Ash.png');
+     ledStateMap.set('tracklight1','Ash');
 }
 
 function switchz15On(){
@@ -104,10 +112,12 @@ function switchz15Off(){
 
 function switchz17On(){
     changeSourceImage('tracklight3','assets/PNG/Z17_Red.png');
+    ledStateMap.set('tracklight3','Red');
 }
 
 function switchz17Off(){
     changeSourceImage('tracklight3','assets/PNG/Z17_Ash.png');
+    ledStateMap.set('tracklight3','Ash');
 }
 
 function switch25_4On(){
@@ -128,7 +138,7 @@ function switch25_5Off(){
 
 function turnOnAnnouncement(switchId){
   if(switchStateMap.get(switchId)==true){
-    changeSourceImage('led-announce','assets/PNG/Announce_Orange.png');
+    changeSourceImage('led-annonce','assets/PNG/Annonce_Orange.png');
     var audio = new Audio('assets/SOUND/Ding_Sound_Effect.mp3');
     audio.play(); 
     switchStateMap.set(switchId,false);

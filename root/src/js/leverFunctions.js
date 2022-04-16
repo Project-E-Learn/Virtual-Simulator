@@ -111,19 +111,24 @@ function turnLever1AuAOff(){
 
 function turnLever2A1On(){
     changeSourceImage('led-a1','assets/PNG/A1_ON_State.png');
+    ledStateMap.set('led-a1','Orange');
     trainAppear();
 }
 
 function turnLever2A1Off(){
     changeSourceImage('led-a1','assets/PNG/A1_Normal_State.png');
+    ledStateMap.set('led-a1','White');
     trainDisappear();
 }
 
 function turnLever3C111On(){
     //changeImageSource(id,newImgSrcLocation);
     changeSourceImage('led-111','assets/PNG/111_White.png');
+    ledStateMap.set('led-111','White');
     changeSourceImage('tracklight1','assets/PNG/Z13_Yellow.png');
+    ledStateMap.set('tracklight1','Yellow');
     changeSourceImage('tracklight3','assets/PNG/Z17_Yellow.png');
+    ledStateMap.set('tracklight3','Yellow');
 }
 
 function turnLever3C111Off(){
@@ -140,10 +145,12 @@ function turnLever4C111Off(){
 
 function turnLever5Ag5On(){
     changeSourceImage('led-5v6','assets/PNG/5v6_White.png');
+    ledStateMap.set('led-5v6','White');
 }
 
 function turnLever5Ag5Off(){
     changeSourceImage('led-5v6','assets/PNG/5v6_Orange.png');
+    ledStateMap.set('led-5v6','Orange');
 }
 
 function turnLever6V6On(){
@@ -152,4 +159,35 @@ function turnLever6V6On(){
 
 function turnLever6V6Off(){
 
+}
+
+function trainAppear() {
+  console.log('started animation');
+  // let id = null;
+  //const element = document.getElementById("train"); 
+  document.getElementById("train").style.visibility = 'visible';
+  setLeftPosition('train','6.5vw');
+  //makeElementVisible('train');
+  // document.getElementById("train").style.left = '6.5vw';
+  // let pos = 3;
+  //clearInterval(id);
+  //id = setInterval(frame, 60);
+  //element.style.left = '6.5vw';
+  // function frame() {
+  //   element.style.visibility = "visible"; 
+  //   if (pos == 6.5) {
+  //     clearInterval(id);
+  //   } else {
+  //     pos += 0.5; 
+  //     element.style.left = pos + "vw"; 
+  //   }
+  // }
+}
+
+function trainDisappear() {
+  // hideElement('train');
+  //document.getElementById("train").style.left = '3vw';
+  //document.getElementById("train").style.visibility = 'hidden';
+  // makeElementVisible('train');
+  //hideElement('train');
 }

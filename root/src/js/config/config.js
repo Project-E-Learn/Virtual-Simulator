@@ -18,6 +18,7 @@ function initializeData() {
   initializeDefaultSwitchStates();
   switchedSwitchImageSetup();
   defaultSwitchImageSetup();
+  initializeDefaultLedStates();
   console.log('INITIALIZATION COMPLETE');
 }
 

@@ -351,7 +351,7 @@
   width: 9%;
 }
 
-#led-announce {
+#led-annonce {
   position: absolute;
   top: 3.5vw;
   left: 17.5vw;
@@ -387,7 +387,7 @@
   left: 69.25vw;
 }
 
-#label-a1, #label-zap, #label-111, #label-5v6, #label-announce, #label-awa {
+#label-a1, #label-zap, #label-111, #label-5v6, #label-annonce, #label-awa {
   position: absolute;
   font-weight: 400;
   font-size: 0.75vw;
@@ -424,7 +424,7 @@
   color: goldenrod;
 }
 
-#label-announce {
+#label-annonce {
   top: 3.25vw;
   left: 18vw;
 }
