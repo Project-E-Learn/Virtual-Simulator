@@ -38,7 +38,7 @@
   visibility: hidden;
   transition-duration: 0.8s;
   transition-timing-function: ease-in;
-  transition-property : left;
+  transition-property : left transform top;
 }
 
 #upperKeySet2, #upperKeySet3, #upperKeySet4, #upperKeySet5, #upperKeySet6,

@@ -52,6 +52,11 @@ function changeSourceImage(imageId,newImagePath){
   document.getElementById(imageId).src = newImagePath;
 }
 
-function setLeftPosition(elementId,points){
-  document.getElementById(elementId).style.left = points;
+function moveTrainForward(trainId,points){
+  var trainObj = document.getElementById(trainId);
+  if(points > trainObj.style.left){
+    trainObj.style.left = points;
+  } else{
+    console.log('Unable to move train object to: ' + points + '. Train is already past that point.');
+  }
 }

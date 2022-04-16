@@ -9,8 +9,8 @@ function initializeDefaultSwitchStates(){
     switchStateMap.set('switch-z13',true);
     switchStateMap.set('switch-z15',true);
     switchStateMap.set('switch-z17',true);
-    switchStateMap.set('switch-z25_4',true);
-    switchStateMap.set('switch-z25_5',true);
+    switchStateMap.set('switch-25_4',true);
+    switchStateMap.set('switch-25_5',true);
     switchStateMap.set('Bp_An',true);
 }
 

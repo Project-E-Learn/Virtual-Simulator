@@ -122,7 +122,6 @@ function turnLever2A1Off(){
 }
 
 function turnLever3C111On(){
-    //changeImageSource(id,newImgSrcLocation);
     changeSourceImage('led-111','assets/PNG/111_White.png');
     ledStateMap.set('led-111','White');
     changeSourceImage('tracklight1','assets/PNG/Z13_Yellow.png');
@@ -166,7 +165,7 @@ function trainAppear() {
   // let id = null;
   //const element = document.getElementById("train"); 
   document.getElementById("train").style.visibility = 'visible';
-  setLeftPosition('train','6.5vw');
+  moveTrainForward('train','18vw');
   //makeElementVisible('train');
   // document.getElementById("train").style.left = '6.5vw';
   // let pos = 3;
@@ -190,4 +189,26 @@ function trainDisappear() {
   //document.getElementById("train").style.visibility = 'hidden';
   // makeElementVisible('train');
   //hideElement('train');
+}
+
+function moveTrainForward(trainId,points){
+  var trainObj = document.getElementById(trainId);
+  console.log('Current train object left position: ' + trainObj.style.left);
+  console.log('New train object position: ' + points);
+  if(points > trainObj.style.left){
+    trainObj.style.left = points;
+  } else{
+    console.log('Unable to move train object to: ' + points + '. Train is already past that point.');
+  }
+}
+
+function moveTrainUpward(trainId,points){
+  var trainObj = document.getElementById(trainId);
+  console.log('Current train object top position: ' + trainObj.style.top);
+  console.log('New train object position: ' + points);
+  if(points > trainObj.style.top){
+    trainObj.style.top = points;
+  } else{
+    console.log('Unable to move train object to: ' + points + '. Train is already past that point.');
+  }
 }
