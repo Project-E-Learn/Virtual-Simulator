@@ -11,6 +11,7 @@ function initializeDefaultSwitchStates(){
     switchStateMap.set('switch-z17',true);
     switchStateMap.set('switch-z25_4',true);
     switchStateMap.set('switch-z25_5',true);
+    switchStateMap.set('Bp_An',true);
 }
 
 function defaultSwitchImageSetup(){

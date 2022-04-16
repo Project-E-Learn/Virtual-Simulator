@@ -36,22 +36,22 @@ function dragDrop(ev) {
   }
 }
 
-function Announcement_on(a){
-  var image=document.getElementById('led-announce');
-  //if led-annonce is off, ding it. Else, dont ding it.
-  if (img.get(a)==true) 
-      {
-        var audio = new Audio('assets/SOUND/Ding_Sound_Effect.mp3');
-        audio.play();
-        image.src = "assets/PNG/Announce_Orange.png";
-        img.set(a,false);
-      } 
-      // else
-      // {
-      //   image.src = "assets/PNG/Announce_White.png";
-      //   img.set(a,true);
-      // }
-}
+// function Announcement_on(a){
+//   var image=document.getElementById('led-announce');
+//   //if led-annonce is off, ding it. Else, dont ding it.
+//   if (img.get(a)==true) 
+//       {
+//         var audio = new Audio('assets/SOUND/Ding_Sound_Effect.mp3');
+//         audio.play();
+//         image.src = "assets/PNG/Announce_Orange.png";
+//         img.set(a,false);
+//       } 
+//       // else
+//       // {
+//       //   image.src = "assets/PNG/Announce_White.png";
+//       //   img.set(a,true);
+//       // }
+// }
 
 function trainAppear() {
   console.log('started animation');

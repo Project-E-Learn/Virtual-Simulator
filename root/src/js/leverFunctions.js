@@ -31,7 +31,7 @@ function changeLeverPosition(leverId){
             var defaultImageSource = leverDefaultSourceMap.get(leverId);
             leverStateMap.set(leverId,true);
             changeSourceImage(leverId,defaultImageSource);
-            tracksandsignallightoff(leverId);
+            leverOffAction(leverId);
         }
     }
 }
@@ -39,41 +39,117 @@ function changeLeverPosition(leverId){
 function leverOnAction(leverId){
 
     switch(leverId){
+      case 'lever1AuA':
+        turnLever1AuAOn();
+        break;
+
+      case 'lever2A1':
+        turnLever2A1On();
+        break;
+
       case 'lever3C111':
         turnLever3C111On();
         break;
+
+      case 'lever4C111':
+        turnLever4C111On();
+        break;
+
+      case 'lever5Ag5':
+        turnLever5Ag5On();
+        break;
+
+      case 'lever6V6':
+        turnLever6V6On();
+        break;
+    
       default:
         console.log('Unable to find a lever with the ID: ' + leverId);
     }
-  
-    if(leverId=='lever5Ag5'){
-      document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_White.png');
-     
-    }
-    else if(leverId=='lever2A1'){
-      document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_ON_State.png');
-      trainAppear();
-    }
-  }
+}
 
 function leverOffAction(leverId){
+
+    switch(leverId){
+        case 'lever1AuA':
+          turnLever1AuAOff();
+          break;
   
-    if(leverId=='lever5Ag5'){
-        document.getElementById('led-5v6').setAttribute('src','assets/PNG/5v6_Orange.png');
-    }
-    else if(leverId=='lever2A1'){
-        document.getElementById('led-a1').setAttribute('src', 'assets/PNG/A1_Normal_State.png');
-        trainDisappear();
-    }
+        case 'lever2A1':
+          turnLever2A1Off();
+          break;
+  
+        case 'lever3C111':
+          turnLever3C111Off();
+          break;
+          
+        case 'lever4C111':
+          turnLever4C111Off();
+          break;
+  
+        case 'lever5Ag5':
+          turnLever5Ag5Off();
+          break;
+  
+        case 'lever6V6':
+          turnLever6V6Off();
+          break;
+      
+        default:
+          console.log('Unable to find a lever with the ID: ' + leverId);
+      }
+}
+
+
+function turnLever1AuAOn(){
+
+}
+
+function turnLever1AuAOff(){
+
+}
+
+function turnLever2A1On(){
+    changeSourceImage('led-a1','assets/PNG/A1_ON_State.png');
+    trainAppear();
+}
+
+function turnLever2A1Off(){
+    changeSourceImage('led-a1','assets/PNG/A1_Normal_State.png');
+    trainDisappear();
 }
 
 function turnLever3C111On(){
     //changeImageSource(id,newImgSrcLocation);
-    document.getElementById('led-111').setAttribute('src','assets/PNG/111_White.png');
-    document.getElementById('tracklight1').setAttribute('src','assets/PNG/Z13_Yellow.png');
-    document.getElementById('tracklight3').setAttribute('src','assets/PNG/Z17_Yellow.png');
+    changeSourceImage('led-111','assets/PNG/111_White.png');
+    changeSourceImage('tracklight1','assets/PNG/Z13_Yellow.png');
+    changeSourceImage('tracklight3','assets/PNG/Z17_Yellow.png');
 }
 
 function turnLever3C111Off(){
+
+}
+
+function turnLever4C111On(){
+
+}
+
+function turnLever4C111Off(){
+
+}
+
+function turnLever5Ag5On(){
+    changeSourceImage('led-5v6','assets/PNG/5v6_White.png');
+}
+
+function turnLever5Ag5Off(){
+    changeSourceImage('led-5v6','assets/PNG/5v6_Orange.png');
+}
+
+function turnLever6V6On(){
+
+}
+
+function turnLever6V6Off(){
 
 }

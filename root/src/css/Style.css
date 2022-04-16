@@ -257,7 +257,7 @@
 }
 
 .track-base {
-  height: 20vw;
+  height: 23vw;
   width: auto;
   position: relative;
   margin: 0;
@@ -671,3 +671,20 @@
 }
 
 
+#curly_brace{
+  position: absolute;
+  top: 20vw;
+  left: 30vw;
+  width: 20%;
+  height: 5%;
+}
+
+#label-brace{
+  position: absolute;
+  font-size: 0.8vw;
+  font-weight: 300;
+  top: 21vw;
+  left: 32.5vw;
+  letter-spacing: 1px;
+  color: white;
+}
