@@ -30,10 +30,8 @@
 }
 
 #train {
-  position: absolute;
-  top: 10.8vw;
-  left: 3vw;
-  width: 10%;
+  position: absolute; 
+  width: 15%;
   height: 6%;
   visibility: hidden;
   transition-duration: 0.8s;
