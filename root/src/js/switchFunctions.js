@@ -75,7 +75,7 @@ function switchZ9On(){
     ledStateMap.set('led-annonce','White');
     changeSourceImage('led-zap','assets/PNG/ZAP_Red.png');
     ledStateMap.set('led-zap','Red');
-    moveTrainForward('train','25.5vw');
+    moveTrainForward('train',trainLocationsMap.get('Z9')[0]);
 }
 
 
@@ -85,7 +85,7 @@ function switchZ9Off(){
 }
 
 function switchZ11On(){
-  moveTrainForward('train','32vw');
+  moveTrainForward('train',trainLocationsMap.get('Z11')[0]);
 }
 
 function switchZ11Off(){
@@ -97,7 +97,7 @@ function switchZ13On(){
     ledStateMap.set('tracklight1','Red');
     changeSourceImage('led-111','assets/PNG/111_Red.png');
     ledStateMap.set('led-111','Red');
-    moveTrainForward('train','40vw');
+    moveTrainForward('train',trainLocationsMap.get('Z13')[0]);
 }
 
 function switchZ13Off(){
@@ -106,7 +106,7 @@ function switchZ13Off(){
 }
 
 function switchZ15On(){
-  moveTrainForward('train','51vw');
+  moveTrainForward('train',trainLocationsMap.get('Z15')[0]);
 }
 
 function switchZ15Off(){
@@ -118,23 +118,27 @@ function switchZ17On(){
   ledStateMap.set('tracklight3','Red');
   var trainObj = document.getElementById('train');
   var timeoutSetting = 0;
-  if(trainObj.style.left > '46vw' && trainObj.style.top < '6vw'){
+  var z17LeftLocation = trainLocationsMap.get('Z17')[0];
+  var z17TopLocation = trainLocationsMap.get('Z17')[1];
+  var preSplitLeftLocation = trainLocationsMap.get('preSplitLeft')[0];
+  var postSplitLeftLocation = trainLocationsMap.get('postSplitLeft')[0];
+  if(getNumericAndDot(trainObj.style.left) > getNumericAndDot(preSplitLeftLocation) && getNumericAndDot(trainObj.style.top) > getNumericAndDot(z17TopLocation)){
     console.log('Train has already passed Zone 13 on another route. Cannot go to 25_4 anymore.');
   } else {
-    if(trainObj.style.left > '46vw'){
-      moveTrainForward('train','51vw');
-    } else if (trainObj.style.top < '6vw'){
-      if(trainObj.style.left < '46vw'){
-        moveTrainForward('train','46vw');      
+    if(getNumericAndDot(trainObj.style.left) > getNumericAndDot(preSplitLeftLocation)){
+      moveTrainForward('train',z17LeftLocation);
+    } else if (getNumericAndDot(trainObj.style.top) > getNumericAndDot(z17TopLocation)){
+      if(getNumericAndDot(trainObj.style.left) < getNumericAndDot(preSplitLeftLocation)){
+        moveTrainForward('train',preSplitLeftLocation);      
         timeoutSetting += 800;
       }
       setTimeout(() => {rotateElement('train',-45);},timeoutSetting);
       timeoutSetting += 800;
-      setTimeout(() => {moveTrainForward('train','49.5vw');moveTrainUpward('train','6vw');}, timeoutSetting);
+      setTimeout(() => {moveTrainForward('train',postSplitLeftLocation);moveTrainUpward('train',z17TopLocation);}, timeoutSetting);
       timeoutSetting += 800;
       setTimeout(() => {rotateElement('train',0);},timeoutSetting);
       timeoutSetting += 800;
-      setTimeout(() => {moveTrainForward('train','51vw');},timeoutSetting);
+      setTimeout(() => {moveTrainForward('train',z17LeftLocation);},timeoutSetting);
     }
   }
 }
@@ -147,23 +151,27 @@ function switchZ17Off(){
 function switch25_4On(){
   var trainObj = document.getElementById('train');
   var timeoutSetting = 0;
-  if(trainObj.style.left > '46vw' && trainObj.style.top < '6vw'){
+  var z25_4LeftLocation = trainLocationsMap.get('25_4')[0];
+  var z25_4TopLocation = trainLocationsMap.get('25_4')[1];
+  var preSplitLeftLocation = trainLocationsMap.get('preSplitLeft')[0];
+  var postSplitLeftLocation = trainLocationsMap.get('postSplitLeft')[0];
+  if(getNumericAndDot(trainObj.style.left) > getNumericAndDot(preSplitLeftLocation) && getNumericAndDot(trainObj.style.top) > getNumericAndDot(z25_4TopLocation)){
     console.log('Train has already passed Zone 13 on another route. Cannot go to 25_4 anymore.');
   } else {
-    if(trainObj.style.left > '46vw'){
-      moveTrainForward('train','62vw');
-    } else if (trainObj.style.top < '6vw'){
-      if(trainObj.style.left < '46vw'){
-        moveTrainForward('train','46vw');      
+    if(getNumericAndDot(trainObj.style.left) > getNumericAndDot(preSplitLeftLocation)){
+      moveTrainForward('train',z25_4LeftLocation);
+    } else if (getNumericAndDot(trainObj.style.top) > getNumericAndDot(z25_4TopLocation)){
+      if(getNumericAndDot(trainObj.style.left) < getNumericAndDot(preSplitLeftLocation)){
+        moveTrainForward('train',preSplitLeftLocation);      
         timeoutSetting += 800;
       }
       setTimeout(() => {rotateElement('train',-45);},timeoutSetting);
       timeoutSetting += 800;
-      setTimeout(() => {moveTrainForward('train','49.5vw');moveTrainUpward('train','6vw');}, timeoutSetting);
+      setTimeout(() => {moveTrainForward('train',postSplitLeftLocation);moveTrainUpward('train',z25_4TopLocation);}, timeoutSetting);
       timeoutSetting += 800;
       setTimeout(() => {rotateElement('train',0);},timeoutSetting);
       timeoutSetting += 800;
-      setTimeout(() => {moveTrainForward('train','62vw');},timeoutSetting);
+      setTimeout(() => {moveTrainForward('train',z25_4LeftLocation);},timeoutSetting);
     }
   }
 }
@@ -173,8 +181,8 @@ function switch25_4Off(){
 }
 
 function switch25_5On(){
-  if(document.getElementById('train').style.top < '6vw'){
-    moveTrainForward('train','62vw');
+  if(getNumericAndDot(document.getElementById('train').style.top) > getNumericAndDot(trainLocationsMap.get('25_4')[1])){
+    moveTrainForward('train',trainLocationsMap.get('25_5')[0]);
   } else{
     console.log('Train has already passed Zone 13 on another route. Cannot go to 25_4 anymore.');
   }

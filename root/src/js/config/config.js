@@ -19,6 +19,8 @@ function initializeData() {
   switchedSwitchImageSetup();
   defaultSwitchImageSetup();
   initializeDefaultLedStates();
+  defaultTrainPositionSetup();
+  defaultTrainLocationsSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 
