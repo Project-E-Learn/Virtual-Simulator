@@ -9,6 +9,7 @@ function checkVisibilityStatus(elementId){
     return true;
   }
 }
+
 function checkOrientation(elementId,angle){
   var status =  getOrientationStatus(elementId);
   if(status == 'rotate('+angle+'deg)'){
@@ -18,9 +19,11 @@ function checkOrientation(elementId,angle){
   }
 
 }
+
 function getOrientationStatus(elementId){
   return document.getElementById(elementId).style.transform;
 }
+
 function getVisibilityStatus(elementId){
   return document.getElementById(elementId).style.display;
 }
@@ -32,6 +35,7 @@ function makeElementVisible(elementId){
 function hideElement(elementId){
   document.getElementById(elementId).style.display = 'none';
 }
+
 function rotateElement(elementId,angle){
   document.getElementById(elementId).style.transform= 'rotate('+angle+'deg)';
 }
@@ -39,10 +43,17 @@ function rotateElement(elementId,angle){
 function removeClass(elementId,className){
   document.getElementById(elementId).classList.remove(className);
 }
+
 function addClass(elementId,className){
   document.getElementById(elementId).classList.add(className);
 }
 
 function changeSourceImage(imageId,newImagePath){
   document.getElementById(imageId).src = newImagePath;
+}
+
+function getNumericAndDot(stringValue){
+  var data =  parseFloat(stringValue.replace(/[^\d.]/g,''));
+  console.log('Conversion result: ' + data);
+  return data;
 }
