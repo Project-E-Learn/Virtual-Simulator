@@ -1,0 +1,20 @@
+ #sidebarTrigger {
+    top: 30%;
+    right: 0;
+    z-index: 99;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.openbtn {
+  font-size: 1.5vw;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding:  0.8vw 1.15vw;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
