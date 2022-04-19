@@ -29,7 +29,8 @@ function switchZ9On(){
     ledStateMap.set('led-annonce','White');
     changeSourceImage('led-zap','assets/PNG/ZAP_Red.png');
     ledStateMap.set('led-zap','Red');
-    moveTrainForward('train',trainLocationsMap.get('Z9')[0]);
+    if($("#train").css("visibility") == "visible")
+      moveTrainForward('train',trainLocationsMap.get('Z9')[0]);
 }
 
 
