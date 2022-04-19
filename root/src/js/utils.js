@@ -57,3 +57,8 @@ function getNumericAndDot(stringValue){
   console.log('Conversion result: ' + data);
   return data;
 }
+
+function launchModal(modalBody){
+  $("#modalBody").html(modalBody);
+  $("#modalElement").modal("show");
+}

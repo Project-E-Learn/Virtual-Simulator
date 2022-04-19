@@ -113,6 +113,7 @@ function turnLever2A1On(){
     changeSourceImage('led-a1','assets/PNG/A1_ON_State.png');
     ledStateMap.set('led-a1','Orange');
     trainAppear();
+    launchModal("Signal enabled without selecting left track");
 }
 
 function turnLever2A1Off(){
