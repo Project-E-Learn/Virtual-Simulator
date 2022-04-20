@@ -1,13 +1,13 @@
 var trainLocationsMap;
 
 function defaultTrainPositionSetup(){
-    document.getElementById('train').style.left = '3vw';
-    document.getElementById('train').style.top = '10.6vw';
+    document.getElementById('train').style.left = '0vw';
+    document.getElementById('train').style.top = '10vw';
 }
 
 function defaultTrainLocationsSetup(){
     trainLocationsMap = new Map();
-    trainLocationsMap.set('Z9',['24vw','10.6vw']);
+    trainLocationsMap.set('Z9',['10vw','10.6vw']);//24vw
     trainLocationsMap.set('Z11',['30vw','10.6vw']);
     trainLocationsMap.set('Z13',['39vw','10.6vw']);
     trainLocationsMap.set('Z15',['49.5vw','10.6vw']);
