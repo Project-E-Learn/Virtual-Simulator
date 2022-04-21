@@ -62,3 +62,9 @@ function launchModal(modalBody){
   $("#modalBody").html(modalBody);
   $("#modalElement").modal("show");
 }
+
+$(document).ready(function(){
+  $('#info').click(function(){
+    $("#infoModal").modal("show");
+  });
+});
