@@ -2,7 +2,7 @@ function openSidebar() {
   document.getElementById("contentContainer").style.marginLeft = "0vw";
   document.getElementById("contentContainer").style.marginRight = "25vw";
   document.getElementById("sidebarBlock").style.display = "inline-block";
-  sidebarKeyPosition();
+  // sidebarKeyPosition();
   document.getElementById('sidebarTriggerButton').innerHTML = '>';
   document.getElementById('sidebarTrigger').style.marginRight = '25%';
 }
@@ -11,7 +11,7 @@ function closeSidebar() {
   document.getElementById("contentContainer").style.marginLeft = "10%";
   document.getElementById("contentContainer").style.marginRight = "10%";
   document.getElementById("sidebarBlock").style.display = "none";
-  removePosition();
+  // removePosition();
   document.getElementById('sidebarTriggerButton').innerHTML = '<';
   document.getElementById('sidebarTrigger').style.marginRight = '0%';
 }
@@ -27,7 +27,7 @@ function toggleSidebar() {
 }
 
 function leftTrackChange(){
-  document.getElementById('sidebarSplit').style.left = "7.6vw";
+  document.getElementById('sidebarSplit').style.left = "3.2vw";
   changeSourceImage('led-5v6','assets/PNG/5v6_Orange.png');
   // setLeftPosition('sidebarSplit','7.6vw');
   ledStateMap.set('led-5v6','Orange');

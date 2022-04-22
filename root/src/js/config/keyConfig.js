@@ -70,50 +70,50 @@ function initalizeDrag(){
     addClass('lowerL6Key6N','dragEnabled');
 }
 
-function defaultKeyPosition() {
-    addClass('lowerL2KeyAN','lowerL2KeyAN-initial');
-    addClass('upperL3KeyAN','upperL3KeyAN-initial');
-    addClass('lowerL3Key5R','lowerL3Key5R-initial');
-    addClass('lowerL3Key6N','lowerL3Key6N-initial');
-    addClass('upperL4KeyAN','upperL4KeyAN-initial');
-    addClass('lowerL4Key5N','lowerL4Key5N-initial');
-    addClass('lowerL4Key6N','lowerL4Key6N-initial');
-    addClass('upperL5Key5','upperL5Key5-initial');
-    addClass('upperL5Key5N','upperL5Key5N-initial');
-    addClass('lowerL5Key5','lowerL5Key5-initial');
-    addClass('lowerL5Key5R','lowerL5Key5R-initial');
-    addClass('upperL6Key5','upperL6Key5-initial');
-    addClass('lowerL6Key6N','lowerL6Key6N-initial');
-}
+// function defaultKeyPosition() {
+//     addClass('lowerL2KeyAN','lowerL2KeyAN-initial');
+//     addClass('upperL3KeyAN','upperL3KeyAN-initial');
+//     addClass('lowerL3Key5R','lowerL3Key5R-initial');
+//     addClass('lowerL3Key6N','lowerL3Key6N-initial');
+//     addClass('upperL4KeyAN','upperL4KeyAN-initial');
+//     addClass('lowerL4Key5N','lowerL4Key5N-initial');
+//     addClass('lowerL4Key6N','lowerL4Key6N-initial');
+//     addClass('upperL5Key5','upperL5Key5-initial');
+//     addClass('upperL5Key5N','upperL5Key5N-initial');
+//     addClass('lowerL5Key5','lowerL5Key5-initial');
+//     addClass('lowerL5Key5R','lowerL5Key5R-initial');
+//     addClass('upperL6Key5','upperL6Key5-initial');
+//     addClass('lowerL6Key6N','lowerL6Key6N-initial');
+// }
 
-function sidebarKeyPosition() {
-    addClass('lowerL2KeyAN','lowerL2KeyAN-changed');
-    addClass('upperL3KeyAN','upperL3KeyAN-changed');
-    addClass('lowerL3Key5R','lowerL3Key5R-changed');
-    addClass('lowerL3Key6N','lowerL3Key6N-changed');
-    addClass('upperL4KeyAN','upperL4KeyAN-changed');
-    addClass('lowerL4Key5N','lowerL4Key5N-changed');
-    addClass('lowerL4Key6N','lowerL4Key6N-changed');
-    addClass('upperL5Key5','upperL5Key5-changed');
-    addClass('upperL5Key5N','upperL5Key5N-changed');
-    addClass('lowerL5Key5','lowerL5Key5-changed');
-    addClass('lowerL5Key5R','lowerL5Key5R-changed');
-    addClass('upperL6Key5','upperL6Key5-changed');
-    addClass('lowerL6Key6N','lowerL6Key6N-changed');
-}
+// function sidebarKeyPosition() {
+//     addClass('lowerL2KeyAN','lowerL2KeyAN-changed');
+//     addClass('upperL3KeyAN','upperL3KeyAN-changed');
+//     addClass('lowerL3Key5R','lowerL3Key5R-changed');
+//     addClass('lowerL3Key6N','lowerL3Key6N-changed');
+//     addClass('upperL4KeyAN','upperL4KeyAN-changed');
+//     addClass('lowerL4Key5N','lowerL4Key5N-changed');
+//     addClass('lowerL4Key6N','lowerL4Key6N-changed');
+//     addClass('upperL5Key5','upperL5Key5-changed');
+//     addClass('upperL5Key5N','upperL5Key5N-changed');
+//     addClass('lowerL5Key5','lowerL5Key5-changed');
+//     addClass('lowerL5Key5R','lowerL5Key5R-changed');
+//     addClass('upperL6Key5','upperL6Key5-changed');
+//     addClass('lowerL6Key6N','lowerL6Key6N-changed');
+// }
 
-function removePosition() {
-    removeClass('lowerL2KeyAN','lowerL2KeyAN-changed');
-    removeClass('upperL3KeyAN','upperL3KeyAN-changed');
-    removeClass('lowerL3Key5R','lowerL3Key5R-changed');
-    removeClass('lowerL3Key6N','lowerL3Key6N-changed');
-    removeClass('upperL4KeyAN','upperL4KeyAN-changed');
-    removeClass('lowerL4Key5N','lowerL4Key5N-changed');
-    removeClass('lowerL4Key6N','lowerL4Key6N-changed');
-    removeClass('upperL5Key5','upperL5Key5-changed');
-    removeClass('upperL5Key5N','upperL5Key5N-changed');
-    removeClass('lowerL5Key5','lowerL5Key5-changed');
-    removeClass('lowerL5Key5R','lowerL5Key5R-changed');
-    removeClass('upperL6Key5','upperL6Key5-changed');
-    removeClass('lowerL6Key6N','lowerL6Key6N-changed');
-}
+// function removePosition() {
+//     removeClass('lowerL2KeyAN','lowerL2KeyAN-changed');
+//     removeClass('upperL3KeyAN','upperL3KeyAN-changed');
+//     removeClass('lowerL3Key5R','lowerL3Key5R-changed');
+//     removeClass('lowerL3Key6N','lowerL3Key6N-changed');
+//     removeClass('upperL4KeyAN','upperL4KeyAN-changed');
+//     removeClass('lowerL4Key5N','lowerL4Key5N-changed');
+//     removeClass('lowerL4Key6N','lowerL4Key6N-changed');
+//     removeClass('upperL5Key5','upperL5Key5-changed');
+//     removeClass('upperL5Key5N','upperL5Key5N-changed');
+//     removeClass('lowerL5Key5','lowerL5Key5-changed');
+//     removeClass('lowerL5Key5R','lowerL5Key5R-changed');
+//     removeClass('upperL6Key5','upperL6Key5-changed');
+//     removeClass('lowerL6Key6N','lowerL6Key6N-changed');
+// }

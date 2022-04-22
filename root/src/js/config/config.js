@@ -12,7 +12,6 @@ function initializeData() {
   initializeDefaultLeverStates();
   defaultLeverImageSetup();
   switchedLeverImageSetup();
-  defaultKeyPosition();
   sideTrackSetup();
   initializeDefaultSwitchStates();
   switchedSwitchImageSetup();
