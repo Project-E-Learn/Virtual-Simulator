@@ -14,7 +14,6 @@ function initializeData() {
   switchedLeverImageSetup();
   defaultKeyPosition();
   sideTrackSetup();
-  changeImg();
   initializeDefaultSwitchStates();
   switchedSwitchImageSetup();
   defaultSwitchImageSetup();
@@ -24,7 +23,3 @@ function initializeData() {
   console.log('INITIALIZATION COMPLETE');
 }
 
-function changeImg(){
-    img=new Map();
-    img.set('Bp_An',true);
-}
