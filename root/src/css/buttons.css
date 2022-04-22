@@ -1,11 +1,11 @@
 #buttonGroup a {
     position: absolute;
-    left: -3vw;
-    width : 3.5vw;
+    left: -2vw;
+    width : 2.5vw;
     transition: all 0.3s ease;
-    padding:  0.8vw ;
+    padding:  0.4vw ;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: white;
     border-radius: 0 5px 5px 0;
     text-align: center;
@@ -22,6 +22,6 @@
 }
   
 #manual {
-    top: 5vw;
+    top: 4vw;
     background-color: #04AA6D;
 }
