@@ -55,14 +55,12 @@ function dragDrop(ev) {
 
 $(document).ready(function(){
   $('#lever6V6').hover(function(){
-    $("#lever6V6").classList.toggle('transformImage');
-    $("#lowerL6Key6N").classList.toggle('transformImage');
+    $("#lever6V6").toggleClass('transformImage');
   });
 });
 
 $(document).ready(function(){
-  $('#lowerL6Key6N').hover(function(){
-    //$("#lever6V6").classList.toggle('transformImage');
-    $("#lowerL6Key6N").classList.toggle('transformImage');
+  $('#lever5Ag5').hover(function(){
+    $("#lever5Ag5").toggleClass('transformImage');
   });
 });
