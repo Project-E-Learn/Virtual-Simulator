@@ -7,7 +7,7 @@
 
 #tracklight1{
   position: absolute;
-  top: 9.825vw;
+  top: 5.41vw;
   left: 43.8vw;
   height: auto;
   width: 13%;
@@ -15,17 +15,17 @@
 
 #tracklight2{
   position: absolute;
-  top: 9.828vw;
+  top: 5.75vw;
   left: 57.11vw;
-  height: 20%;
+  height: 24%;
   width: 15%;
 }
 
 #tracklight3{
   position: absolute;
-  top: 4.35vw;
+  top: 1.05vw;
   left: 57.1vw;
-  height: 20%;
+  height: 24%;
   width: 15%;
 }
 
@@ -281,7 +281,7 @@
 } */
 
 .track-base {
-  height: 23vw;
+  height: 16vw;
   width: auto;
   position: relative;
   margin: 0;
@@ -291,47 +291,47 @@
 #straight {
   position: relative;
   display: block;
-  height: auto;
+  height: 3vw;
   width: 44vw;
-  top: 10.15vw;
+  top: 6vw;
   left: 0vw;
 }
 
 #split {
   position: absolute;
-  top: 5.95vw;
+  top: 2.34vw;
   left: 44.25vw;
-  height: 28%;
+  height: 35%;
   width: 30%;
 }
 
 #up {
   position: absolute;
-  top: 4.98vw;
+  top: 1.55vw;
   left: 57.75vw;
-  height: 12%;
+  height: 14.8%;
   width: 60%;
 }
 
 #down {
   position: absolute;
-  top: 10.55vw;
+  top: 6.35vw;
   left: 57.75vw;
-  height: 12%;
+  height: 14.8%;
   width: 60%;
 }
 
 #led-a1 {
   position: absolute;
-  top: 8.25vw;
-  left: 21vw;
+  top: 4.25vw;
+  left: 16vw;
   height: auto;
-  width: 11%;
+  width: 10%;
 }
 
 #led-111 {
   position: absolute;
-  top: 8.75vw;
+  top: 4.6vw;
   left: 41.15vw;
   height: auto;
   width: 8%;
@@ -339,60 +339,60 @@
 
 #led-5v6 {
   position: absolute;
-  top: 8.60vw;
-  left: 50.25vw;
+  top: 4.3vw;
+  left: 50.6vw;
   height: auto;
   width: 9%;
 }
 
 #led-25_4 {
   position: absolute;
-  top: 2.5vw;
-  left: 70.3vw;
+  top: 0vw;
+  left: 73.25vw;
   height: auto;
-  width: 15%;
+  width: 10.25%;
 }
 
 #led-25_5 {
   position: absolute;
-  top: 7.85vw;
-  left: 70vw;
+  top: 4.7vw;
+  left: 73vw;
   height: auto;
-  width: 15%;
+  width: 10.25%;
 }
 
 #led-zap {
   position: absolute;
-  top: 8.5vw;
-  left: 39vw;
+  top: 4.3vw;
+  left: 38.65vw;
   height: auto;
   width: 9%;
 }
 
 #led-annonce {
   position: absolute;
-  top: 3.5vw;
-  left: 14vw;
+  top: 0.75vw;
+  left: 10.4vw;
   height: auto;
-  width: 12%;
+  width: 10%;
 }
 
 #led-awa {
   position: absolute;
-  top: 2vw;
+  top: 0.8vw;
   left: 29.80vw;
   height: auto;
-  width: 10%;
+  width: 8%;
 }
 
 #start {
   position: absolute;
   font-weight: 500;
-  font-size: 1.25vw;
+  font-size: 1vw;
   color: white;
   letter-spacing: 0.15vw;
-  top: 9.5vw;
-  left: 0.5vw;
+  top: 5.5vw;
+  left: 0.8vw;
 }
 
 #end {
@@ -401,7 +401,7 @@
   font-size: 1vw;
   color: white;
   letter-spacing: 1px;
-  top: 7.7vw;
+  top: 3.5vw;
   left: 79.5vw;
 }
 
@@ -414,53 +414,53 @@
 }
 
 #label-a1 {
-  top: 7.50vw;
-  left: 23.90vw;
+  top: 3.7vw;
+  left: 18.7vw;
 }
 
 #label-zap {
   font-size: 0.75vw;
   font-weight: 200;
-  top: 8.15vw;
+  top: 4vw;
   left: 39.90vw;
 }
 
 #label-111 {
   font-size: 0.75vw;
   font-weight: 200;
-  top: 8.25vw;
-  left: 42.35vw;
+  top: 4.15vw;
+  left: 42.45vw;
   letter-spacing: 0.2vw;
 }
 
 #label-5v6 {
-  font-size: 0.55vw;
+  font-size: 0.65vw;
   font-weight: 300;
-  top: 10.80vw;
-  left: 51.60vw;
+  top: 5vw;
+  left: 53.6vw;
   letter-spacing: 1px;
   color: goldenrod;
 }
 
 #label-annonce {
-  top: 3.25vw;
-  left: 14.80vw;
+  top: 0.5vw;
+  left: 10.80vw;
 }
 
 #label-awa {
-  top: 1.5vw;
-  left: 31.20vw;
+  top: 0.5vw;
+  left: 30.8vw;
 }
 
 #switch-z9, #switch-z11, #switch-z13, #switch-z15, #switch-z17, #switch-25_4, #switch-25_5{
   position: absolute;
-  top: 16vw;
+  top: 10.75vw;
   height: auto;
-  width: 4.5%;
+  width: 4%;
 }
 
 #switch-z9{
-  left: 30vw;
+  left: 29.9vw;
 }
 
 #switch-z11{
@@ -492,75 +492,75 @@
   font-size: 0.8vw;
   color: white;
   font-weight: 300;
-  top: 13.65vw;
-  left: 23.95vw;
+  top: 8vw;
+  left: 23vw;
 }
 
 #line-0 {
   position: absolute;
   height: 1px;
   width: 1.5vw;
-  top: 15.5vw;
-  left: 24.4vw;
+  top: 9.7vw;
+  left: 23.4vw;
   background: white;
 }
 
 #Bp_An {
   position: absolute;
-  top: 16.15vw;
-  left: 24.55vw;
+  top: 10.1vw;
+  left: 23.55vw;
   height: auto;
   width: 1.25vw;
 }
 
 #label-occupee_1, #label-occupee_2, #label-occupee_3, #label-occupee_4, #label-occupee_5, #label-occupee_6, #label-occupee_7{
   position: absolute;
-  font-size: 1vw;
+  font-size: 0.75vw;
   font-weight: 300;
-  top: 18vw;
+  top: 12vw;
   letter-spacing: 1px;
   color: white;
 }
 
 #label-occupee_1{
-  left: 28.75vw;
+  left: 29.4vw;
 }
 
 #label-occupee_2{
-  left: 34.75vw;
+  left: 35.4vw;
 }
 
 #label-occupee_3{
-  left: 40.75vw;
+  left: 41.4vw;
 }
 
 #label-occupee_4{
-  left: 46.75vw;
+  left: 47.4vw;
 }
 
 #label-occupee_5{
-  left: 52.75vw;
+  left: 53.4vw;
 }
 
 #label-occupee_6{
-  left: 58.75vw;
+  left: 59.4vw;
 }
 
 #label-occupee_7{
-  left: 64.75vw;
+  left: 65.4vw;
 }
 
 #label-libre_1, #label-libre_2, #label-libre_3, #label-libre_4, #label-libre_5{
   position: absolute;
   font-size: 0.8vw;
   font-weight: 300;
-  top: 14.25vw;
+  top: 9vw;
   letter-spacing: 1px;
   color: white;
 }
 
 #label-libre_1{
-  left: 29.90vw;
+  left: 29.80vw;
 }
 
 #label-libre_2{
@@ -583,13 +583,13 @@
   position: absolute;
   height: 1px;
   width: 1.2vw;
-  top: 14.75vw;
+  top: 9.25vw;
   background: rgb(255, 255, 255);
 
 }
 
 #line-1{
-  left: 30.25vw;
+  left: 30.1vw;
 }
 
 #line-2{
@@ -612,7 +612,7 @@
   position: absolute;
   font-size: 0.8vw;
   font-weight: 300;
-  top: 13vw;
+  top: 7.6vw;
   letter-spacing: 1px;
   color: white;
 }
@@ -641,7 +641,7 @@
   position: absolute;
   font-size: 0.8vw;
   font-weight: 300;
-  top: 14.2vw;
+  top: 9vw;
   letter-spacing: 1px;
   color: white;
 }
@@ -693,10 +693,10 @@
 
 #curly_brace{
   position: absolute;
-  top: 18vw;
-  left: 28.75vw;
-  width: 22%;
-  height: 21.75%;
+  top: 12.25vw;
+  left: 30vw;
+  width: 17%;
+  height: 22%;
   /* transform: rotate(270deg); */
 }
 
@@ -704,7 +704,7 @@
   position: absolute;
   font-size: 0.8vw;
   font-weight: 300;
-  top: 21vw;
+  top: 14vw;
   left: 32.2vw;
   letter-spacing: 1px;
   color: white;
