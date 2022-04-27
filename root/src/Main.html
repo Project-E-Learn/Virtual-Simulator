@@ -297,25 +297,36 @@
                 </div>
             </div>
         </div>
-        <div id="upperLeverContainer" class="container-fluid">
-            <div id="upperLeverRow" class="row" style="background-color: white;">
-                <div id="lever1ContainerAuA" class="col-2 container-fluid" style=" visibility: hidden; border-bottom: 1px solid black    ; border-left: 1px solid black; border-right: 1px solid black;">
-                    <img id="lever1AuA" onclick="changeLeverPosition(this.id)" src="assets/PNG/Au_A_I.png" class="img-fluid col-6 mx-auto d-block">
+        <div id="upperHolderContainer" class="container-fluid">
+            <div id="upperHolderRow" class="row" style="background-color: white;">
+                <div id="upperHolder1ContainerAuA" class="col-2 container-fluid"></div>
+                <div id="upperHolder2ContainerA1" class="col-2 container-fluid"></div>
+                <div id="upperHolder3ContainerC111" class="col-2 container-fluid">
+                    <img id="upperHolder3C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">
+                    <img id="upperL3KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
                 </div>
-                <div id="lever2ContainerA1" class="col-2 container-fluid" style="visibility: hidden;">
-                    <img id="lever2A1" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">
+                <div id="upperHolder4ContainerC111" class="col-2 container-fluid">
+                    <img id="upperHolder4C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">
+                    <img id="upperL4KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
                 </div>
-                <div id="lever3ContainerC111" class="col-2 container-fluid">
-                    <img id="lever3C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">
+                <div id="upperHolder5ContainerAg5" class="col-2 container-fluid">
+                    <img id="upperHolder5Ag5" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion_double.png" class="img-fluid col-12 mx-auto d-block">  
+                    <img id="upperL5Key5" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">    
+                    <img id="upperL5Key5N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
                 </div>
-                <div id="lever4ContainerC111" class="col-2 container-fluid">
-                    <img id="lever4C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">
-                </div>
-                <div id="lever5ContainerAg5" class="col-2 container-fluid">
-                    <img id="lever5Ag5" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">      
-                </div>
-                <div id="lever6ContainerV6" class="col-2 container-fluid">
-                    <img id="lever6V6" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">
+                <div id="upperHolder6ContainerV6" class="col-2 container-fluid">
+                    <img id="upperHolder6V6" onclick="changeLeverPosition(this.id)" src="assets/PNG/Upper_Portion.png" class="img-fluid col-12 mx-auto d-block">
+                    <img id="upperL6Key5" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
                 </div>
             </div>
         </div>
@@ -326,18 +337,42 @@
                 </div>
                 <div id="lever2ContainerA1" class="col-2 container-fluid">
                     <img id="lever2A1" onclick="changeLeverPosition(this.id)" src="assets/PNG/A1_lower_locked.png" class="img-fluid col-12 mx-auto d-block">
+                    <img id="lowerL2KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
                 </div>
                 <div id="lever3ContainerC111" class="col-2 container-fluid">
                     <img id="lever3C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/C111_V3_lower_locked.png" class="img-fluid col-12 mx-auto d-block">
+                    <img id="lowerL3Key5R" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    <img id="lowerL3Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                        ondragstart="dragStart(event)"
+                        onclick="rotateKey(event)">
                 </div>
                 <div id="lever4ContainerC111" class="col-2 container-fluid">
                     <img id="lever4C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/C111_V1_lower_locked.png" class="img-fluid col-12 mx-auto d-block">
+                    <img id="lowerL4Key5N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    <img id="lowerL4Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
                 </div>
                 <div id="lever5ContainerAg5" class="col-2 container-fluid">
-                    <img id="lever5Ag5" onclick="changeLeverPosition(this.id)" src="assets/PNG/Ag5_lower_locked.png" class="img-fluid col-12 mx-auto d-block">      
+                    <img id="lever5Ag5" onclick="changeLeverPosition(this.id)" src="assets/PNG/Ag5_lower_locked.png" class="img-fluid col-12 mx-auto d-block">  
+                    <img id="lowerL5Key5" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
+                    <img id="lowerL5Key5R" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">    
                 </div>
                 <div id="lever6ContainerV6" class="col-2 container-fluid">
                     <img id="lever6V6" onclick="changeLeverPosition(this.id)" src="assets/PNG/V6_lower_locked.png" class="img-fluid col-12 mx-auto d-block">
+                    <img id="lowerL6Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                            ondragstart="dragStart(event)"
+                            onclick="rotateKey(event)">
                 </div>
             </div>
         </div>

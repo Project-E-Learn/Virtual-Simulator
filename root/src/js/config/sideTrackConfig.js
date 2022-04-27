@@ -7,7 +7,7 @@ function sideTrackSetup(){
     // hideElement('sidebarBlock');
     document.getElementById("contentContainer").style.marginLeft = "0vw";
     document.getElementById("contentContainer").style.marginRight = "15%";
-    document.getElementById("sidebarBlock").style.display = "block";
+    document.getElementById("sidebarBlock").style.display = "none";
     // sidebarKeyPosition();
 //  document.getElementById('sidebarTriggerButton').innerHTML = '>';
 //  document.getElementById('sidebarTrigger').style.marginRight = '25%';

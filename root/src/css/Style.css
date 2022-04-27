@@ -39,8 +39,8 @@
   transition-property : left transform top;
 }
 
-#upperKeySet2, #upperKeySet3, #upperKeySet4, #upperKeySet5, #upperKeySet6,
-#lowerKeySet2, #lowerKeySet3, #lowerKeySet4, #lowerKeySet5, #lowerKeySet6{
+#upperHolder2ContainerA1, #upperHolder3ContainerC111, #upperHolder4ContainerC111, #upperHolder5ContainerAg5, #upperHolder6ContainerV6,
+#lever2ContainerA1, #lever3ContainerC111, #lever4ContainerC111, #lever5ContainerAg5, #lever6ContainerV6{
   position: relative;
   margin: 0;
   padding: 0;
@@ -48,10 +48,10 @@
 
 #upperL6Key5 {
   position: absolute;
-  width: 6.5%;
+  width: 8%;
   height: auto;
-  top: 2.65vw;
-  left: 7.7vw;
+  top: 6.7vw;
+  left: 8.45vw;
 }
 
 /* .upperL6Key5-initial {
@@ -66,10 +66,10 @@
 
 #lowerL6Key6N {
   position: absolute;
-  width: 6.5%;
+  width: 8%;
   height: auto;
-  top: 2.8vw;
-  left: 7.52vw;
+  top: 6.5vw;
+  left: 8.4vw;
 }
 
 /* .lowerL6Key6N-initial {
@@ -84,10 +84,10 @@
 
 #upperL5Key5 {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 5.8vw;
+  top: 6.22vw;
+  left: 4vw;
 }
 
 /* .upperL5Key5-initial {
@@ -102,10 +102,10 @@
 
 #upperL5Key5N {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 9.1vw;
+  top: 6.22vw;
+  left: 8.6vw;
 }
 
 /* .upperL5Key5N-initial {
@@ -120,10 +120,10 @@
 
 #lowerL5Key5 {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 5.8vw;
+  top: 6.55vw;
+  left: 4vw;
 }
 
 /* .lowerL5Key5-initial {
@@ -138,10 +138,10 @@
 
 #lowerL5Key5R {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 9.1vw;
+  top: 6.55vw;
+  left: 8.7vw;
 }
 
 /* .lowerL5Key5R-initial {
@@ -156,10 +156,10 @@
 
 #upperL4KeyAN {
   position: absolute;
-  width: 6.5%;
+  width: 8%;
   height: auto;
-  top: 2.7vw;
-  left: 7.5vw;
+  top: 6.65vw;
+  left: 8.45vw;
 }
 
 /* .upperL4KeyAN-initial {
@@ -174,10 +174,10 @@
 
 #lowerL4Key5N {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 5.8vw;
+  top: 6.65vw;
+  left: 4vw;
 }
 
 /* .lowerL4Key5N-initial {
@@ -192,10 +192,10 @@
 
 #lowerL4Key6N {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 9.1vw;
+  top: 6.6vw;
+  left: 8.55vw;
 }
 
 /* .lowerL4Key6N-initial {
@@ -210,10 +210,10 @@
 
 #upperL3KeyAN {
   position: absolute;
-  width: 6.5%;
+  width: 8%;
   height: auto;
-  top: 2.7vw;
-  left: 7.5vw;
+  top: 6.65vw;
+  left: 8.45vw;
 }
 
 /* .upperL3KeyAN-initial {
@@ -228,10 +228,10 @@
 
 #lowerL3Key5R {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 5.8vw;
+  top: 6.65vw;
+  left: 4.1vw;
 }
 
 /* .lowerL3Key5R-initial {
@@ -246,10 +246,10 @@
 
 #lowerL3Key6N {
   position: absolute;
-  width: 7%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 9.15vw;
+  top: 6.65vw;
+  left: 8.6vw;
 }
 
 /* .lowerL3Key6N-initial {
@@ -264,10 +264,10 @@
 
 #lowerL2KeyAN {
   position: absolute;
-  width: 6.25%;
+  width: 8%;
   height: auto;
-  top: 2.75vw;
-  left: 7.5vw;
+  top: 7.4vw;
+  left: 8.5vw;
 }
 
 /* .lowerL2KeyAN-initial {
@@ -708,4 +708,14 @@
   left: 32.2vw;
   letter-spacing: 1px;
   color: white;
+}
+
+.transformImage {
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#lever6V6,#lever5Ag5 {
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-property : transform;
 }
