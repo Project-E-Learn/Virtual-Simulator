@@ -658,7 +658,7 @@
   position: absolute;
   left: 1.5vw;
   width: 12vw;
-  height: 45vw;
+  height: 43vw;
 }
 
 #sidebarSplit {
@@ -672,10 +672,10 @@
 
 #upperL7KeyHolder5 {
   position: absolute;
-  width: 4vw;
+  width: 8vw;
   height: auto;
-  top: 45vw;
-  left: 5.5vw;
+  top: 42vw;
+  left: 3.5vw;
 }
 
 #upperL7Key5 {
