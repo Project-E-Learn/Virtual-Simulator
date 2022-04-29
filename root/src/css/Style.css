@@ -15,7 +15,7 @@
 
 #tracklight2{
   position: absolute;
-  top: 5.75vw;
+  top: 6vw;
   left: 57.11vw;
   height: 24%;
   width: 15%;
@@ -23,7 +23,7 @@
 
 #tracklight3{
   position: absolute;
-  top: 1.05vw;
+  top: 1.25vw;
   left: 57.1vw;
   height: 24%;
   width: 15%;
@@ -281,7 +281,7 @@
 } */
 
 .track-base {
-  height: 16vw;
+  height: 14.5vw;
   width: auto;
   position: relative;
   margin: 0;
@@ -301,23 +301,23 @@
   position: absolute;
   top: 2.34vw;
   left: 44.25vw;
-  height: 35%;
+  height: 38.5%;
   width: 30%;
 }
 
 #up {
   position: absolute;
-  top: 1.55vw;
+  top: 1.65vw;
   left: 57.75vw;
-  height: 14.8%;
+  height: 15%;
   width: 60%;
 }
 
 #down {
   position: absolute;
-  top: 6.35vw;
+  top: 6.45vw;
   left: 57.75vw;
-  height: 14.8%;
+  height: 15%;
   width: 60%;
 }
 
@@ -658,14 +658,14 @@
   position: absolute;
   left: 1.5vw;
   width: 12vw;
-  height: 43vw;
+  height: 36vw;
 }
 
 #sidebarSplit {
   position: absolute;
-  top: 7.3vw;
+  top: 6.2vw;
   left: 5.2vw;
-  width: 7vw;
+  width: 8vw;
   height: auto;
   transition: ease-in 0.8s;
 }
@@ -674,7 +674,7 @@
   position: absolute;
   width: 8vw;
   height: auto;
-  top: 42vw;
+  top: 38vw;
   left: 3.5vw;
 }
 
