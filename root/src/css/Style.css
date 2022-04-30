@@ -40,7 +40,7 @@
 }
 
 #upperHolder2ContainerA1, #upperHolder3ContainerC111, #upperHolder4ContainerC111, #upperHolder5ContainerAg5, #upperHolder6ContainerV6,
-#lever2ContainerA1, #lever3ContainerC111, #lever4ContainerC111, #lever5ContainerAg5, #lever6ContainerV6{
+#lever1ContainerAuA, #lever2ContainerA1, #lever3ContainerC111, #lever4ContainerC111, #lever5ContainerAg5, #lever6ContainerV6{
   position: relative;
   margin: 0;
   padding: 0;
@@ -672,10 +672,10 @@
 
 #upperL7KeyHolder5 {
   position: absolute;
-  width: 6vw;
+  width: 8vw;
   height: auto;
   top: 38vw;
-  left: 4.57vw;
+  left: 3.55vw;
 }
 
 #upperL7Key5 {
@@ -713,4 +713,9 @@
   transition-duration: 2s;
   transition-timing-function: ease;
   transition-property : transform;
+}
+
+.customWidth1{
+  width: 110%;
+  height: 100;
 }
