@@ -7,7 +7,7 @@
 
 #tracklight1{
   position: absolute;
-  top: 5.41vw;
+  top: 4.50vw;
   left: 43.8vw;
   height: auto;
   width: 13%;
@@ -15,7 +15,7 @@
 
 #tracklight2{
   position: absolute;
-  top: 6vw;
+  top: 5.14vw;
   left: 57.11vw;
   height: 24%;
   width: 15%;
@@ -23,7 +23,7 @@
 
 #tracklight3{
   position: absolute;
-  top: 1.25vw;
+  top: 0.77vw;
   left: 57.1vw;
   height: 24%;
   width: 15%;
@@ -242,7 +242,7 @@
 } */
 
 .track-base {
-  height: 14.5vw;
+  height: 13.20vw;
   width: auto;
   position: relative;
   margin: 0;
@@ -254,13 +254,13 @@
   display: block;
   height: 3vw;
   width: 44vw;
-  top: 6vw;
+  top: 5.02vw;
   left: 0vw;
 }
 
 #split {
   position: absolute;
-  top: 2.34vw;
+  top: 1.83vw;
   left: 44.25vw;
   height: 38.5%;
   width: 30%;
@@ -268,7 +268,7 @@
 
 #up {
   position: absolute;
-  top: 1.65vw;
+  top: 1.20vw;
   left: 57.75vw;
   height: 15%;
   width: 60%;
@@ -276,7 +276,7 @@
 
 #down {
   position: absolute;
-  top: 6.45vw;
+  top: 5.5vw;
   left: 57.75vw;
   height: 15%;
   width: 60%;
@@ -284,7 +284,7 @@
 
 #led-a1 {
   position: absolute;
-  top: 4.25vw;
+  top: 3.30vw;
   left: 16vw;
   height: auto;
   width: 10%;
@@ -292,7 +292,7 @@
 
 #led-111 {
   position: absolute;
-  top: 4.6vw;
+  top: 3.60vw;
   left: 41.15vw;
   height: auto;
   width: 8%;
@@ -300,31 +300,31 @@
 
 #led-5v6 {
   position: absolute;
-  top: 4.3vw;
-  left: 50.6vw;
+  top: 3.55vw;
+  left: 50.7vw;
   height: auto;
   width: 9%;
 }
 
 #led-25_4 {
   position: absolute;
-  top: 0vw;
-  left: 73.25vw;
+  top: 0.2vw;
+  left: 74.70vw;
   height: auto;
-  width: 10.25%;
+  width: 3.80%;
 }
 
 #led-25_5 {
   position: absolute;
-  top: 4.7vw;
+  top: 3.50vw;
   left: 73vw;
   height: auto;
-  width: 10.25%;
+  width: 11.2%;
 }
 
 #led-zap {
   position: absolute;
-  top: 4.3vw;
+  top: 3.30vw;
   left: 38.65vw;
   height: auto;
   width: 9%;
@@ -332,7 +332,7 @@
 
 #led-annonce {
   position: absolute;
-  top: 0.75vw;
+  top: 0.20vw;
   left: 10.4vw;
   height: auto;
   width: 10%;
@@ -352,7 +352,7 @@
   font-size: 1vw;
   color: white;
   letter-spacing: 0.15vw;
-  top: 5.5vw;
+  top: 4.75vw;
   left: 0.8vw;
 }
 
@@ -362,7 +362,7 @@
   font-size: 1vw;
   color: white;
   letter-spacing: 1px;
-  top: 3.5vw;
+  top: 2.90vw;
   left: 79.5vw;
 }
 
@@ -375,21 +375,21 @@
 }
 
 #label-a1 {
-  top: 3.7vw;
+  top: 2.65vw;
   left: 18.7vw;
 }
 
 #label-zap {
   font-size: 0.75vw;
   font-weight: 200;
-  top: 4vw;
+  top: 3.15vw;
   left: 39.90vw;
 }
 
 #label-111 {
   font-size: 0.75vw;
   font-weight: 200;
-  top: 4.15vw;
+  top: 3.15vw;
   left: 42.45vw;
   letter-spacing: 0.2vw;
 }
@@ -397,14 +397,14 @@
 #label-5v6 {
   font-size: 0.65vw;
   font-weight: 300;
-  top: 5vw;
-  left: 53.6vw;
+  top: 4.70vw;
+  left: 53.7vw;
   letter-spacing: 1px;
   color: goldenrod;
 }
 
 #label-annonce {
-  top: 0.5vw;
+  top: 0vw;
   left: 10.80vw;
 }
 
@@ -415,7 +415,7 @@
 
 #switch-z9, #switch-z11, #switch-z13, #switch-z15, #switch-z17, #switch-25_4, #switch-25_5{
   position: absolute;
-  top: 10.75vw;
+  top: 10vw;
   height: auto;
   width: 4%;
 }
@@ -453,7 +453,7 @@
   font-size: 0.8vw;
   color: white;
   font-weight: 300;
-  top: 8vw;
+  top: 7.80vw;
   left: 23vw;
 }
 
@@ -461,7 +461,7 @@
   position: absolute;
   height: 1px;
   width: 1.5vw;
-  top: 9.7vw;
+  top: 9.65vw;
   left: 23.4vw;
   background: white;
 }
@@ -478,7 +478,7 @@
   position: absolute;
   font-size: 0.75vw;
   font-weight: 300;
-  top: 12vw;
+  top: 11.3vw;
   letter-spacing: 1px;
   color: white;
 }
@@ -515,7 +515,7 @@
   position: absolute;
   font-size: 0.8vw;
   font-weight: 300;
-  top: 9vw;
+  top: 8.40vw;
   letter-spacing: 1px;
   color: white;
 }
@@ -544,7 +544,7 @@
   position: absolute;
   height: 1px;
   width: 1.2vw;
-  top: 9.25vw;
+  top: 8.90vw;
   background: rgb(255, 255, 255);
 
 }
@@ -573,7 +573,7 @@
   position: absolute;
   font-size: 0.8vw;
   font-weight: 300;
-  top: 7.6vw;
+  top: 7vw;
   letter-spacing: 1px;
   color: white;
 }
@@ -602,17 +602,17 @@
   position: absolute;
   font-size: 0.8vw;
   font-weight: 300;
-  top: 9vw;
+  top: 8.30vw;
   letter-spacing: 1px;
   color: white;
 }
 
 #label-25_4{
-  left: 60.25vw;
+  left: 60.45vw;
 }
 
 #label-25_5{
-  left: 66.25vw;
+  left: 66.45vw;
 }
 
 #sidebarTrack {
@@ -680,4 +680,30 @@
 .customWidth1{
   width: 110%;
   height: 100;
+}
+
+#label-z_13,#label-z_15,#label-z_17{
+  position: absolute;
+  font-size: 0.8vw;;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#label-z_13
+{
+  top: 4.5vw;
+  left: 45.90vw;
+}
+
+#label-z_15
+{
+  top: 0.1vw;
+  left: 59.60vw;
+}
+
+#label-z_17
+{
+  top: 4.5vw;
+  left: 59.60vw;
 }
