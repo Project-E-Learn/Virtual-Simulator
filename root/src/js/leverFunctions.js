@@ -25,12 +25,12 @@ function changeLeverPosition(leverId){
         if(leverStateMap.get(leverId) == true){
             var switchImageSource = leverSwitchedSourceMap.get(leverId);
             leverStateMap.set(leverId,false);
-            changeSourceImage(leverId,switchImageSource);
+            changeSourceImage(leverNameMap.get(leverId),switchImageSource);
             leverOnAction(leverId);
         } else {
             var defaultImageSource = leverDefaultSourceMap.get(leverId);
             leverStateMap.set(leverId,true);
-            changeSourceImage(leverId,defaultImageSource);
+            changeSourceImage(leverNameMap.get(leverId),defaultImageSource);
             leverOffAction(leverId);
         }
     }

@@ -47,9 +47,6 @@
 }
 
 #upperL6Key5 {
-  position: absolute;
-  width: 17%;
-  height: auto;
   top: 6.5vw;
   left: 7.6vw;
 }
@@ -65,11 +62,8 @@
 } */
 
 #lowerL6Key6N {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.5vw;
-  left: 8.4vw;
+  top: 6.9vw;
+  left: 8vw;
 }
 
 /* .lowerL6Key6N-initial {
@@ -83,11 +77,8 @@
 } */
 
 #upperL5Key5 {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.22vw;
-  left: 4vw;
+  top: 5.9vw;
+  left: 3vw;
 }
 
 /* .upperL5Key5-initial {
@@ -101,11 +92,8 @@
 } */
 
 #upperL5Key5N {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.22vw;
-  left: 8.6vw;
+  top: 6vw;
+  left: 8vw;
 }
 
 /* .upperL5Key5N-initial {
@@ -119,11 +107,8 @@
 } */
 
 #lowerL5Key5 {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.55vw;
-  left: 4vw;
+  top: 7.1vw;
+  left: 3vw;
 }
 
 /* .lowerL5Key5-initial {
@@ -137,11 +122,8 @@
 } */
 
 #lowerL5Key5R {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.55vw;
-  left: 8.7vw;
+  top: 7.1vw;
+  left: 8.1vw;
 }
 
 /* .lowerL5Key5R-initial {
@@ -155,11 +137,8 @@
 } */
 
 #upperL4KeyAN {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.65vw;
-  left: 8.45vw;
+  top: 7.4vw;
+  left: 7.7vw;
 }
 
 /* .upperL4KeyAN-initial {
@@ -173,11 +152,8 @@
 } */
 
 #lowerL4Key5N {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.65vw;
-  left: 4vw;
+  top: 7vw;
+  left: 3vw;
 }
 
 /* .lowerL4Key5N-initial {
@@ -191,11 +167,8 @@
 } */
 
 #lowerL4Key6N {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.6vw;
-  left: 8.55vw;
+  top: 7vw;
+  left: 8vw;
 }
 
 /* .lowerL4Key6N-initial {
@@ -209,11 +182,8 @@
 } */
 
 #upperL3KeyAN {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.65vw;
-  left: 8.45vw;
+  top: 7.5vw;
+  left: 7.8vw;
 }
 
 /* .upperL3KeyAN-initial {
@@ -227,11 +197,8 @@
 } */
 
 #lowerL3Key5R {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.65vw;
-  left: 4.1vw;
+  top: 7vw;
+  left: 3vw;
 }
 
 /* .lowerL3Key5R-initial {
@@ -245,11 +212,8 @@
 } */
 
 #lowerL3Key6N {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 6.65vw;
-  left: 8.6vw;
+  top: 7vw;
+  left: 8vw;
 }
 
 /* .lowerL3Key6N-initial {
@@ -263,11 +227,8 @@
 } */
 
 #lowerL2KeyAN {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  top: 7.4vw;
-  left: 8.5vw;
+  top: 7.8vw;
+  left: 8vw;
 }
 
 /* .lowerL2KeyAN-initial {
@@ -679,11 +640,8 @@
 }
 
 #upperL7Key5 {
-  position: absolute;
-  top: 48vw;
-  left: 8.2vw;
-  width: 7%;
-  height: auto;
+  top: 43.5vw;
+  left: 7.6vw;
 }
 
 .dragEnabled {
@@ -709,10 +667,14 @@
   color: white;
 }
 
-#upperL6Key5 {
-  transition-duration: 2s;
+#upperL3KeyAN, #upperL4KeyAN, #upperL6Key5, #upperL5Key5N, #upperL5Key5, #upperL6Key5, #upperL7Key5,
+#lowerL2KeyAN, #lowerL3Key5R, #lowerL4Key6N, #lowerL4Key5N, #lowerL5Key5R, #lowerL5Key5, #lowerL3Key6N, #lowerL6Key6N {
+  transition-duration: 0.2s;
   transition-timing-function: ease;
   transition-property : transform;
+  position: absolute;
+  width: 30%;
+  height: auto;
 }
 
 .customWidth1{

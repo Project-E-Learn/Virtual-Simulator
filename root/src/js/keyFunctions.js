@@ -1,7 +1,7 @@
 function getKeyUnlockState(keyId){
     /* This method returns true only if orientation angle is vertical, and true in keyAvailabilityMap*/
     var resultStatus = false;
-    if(checkOrientation(keyId,0) && keyAvailabilityMap.get(keyId)){
+    if(checkOrientation(keyId,90) && keyAvailabilityMap.get(keyId)){
         resultStatus = true;
     }
     console.log('Unlock state for key ' + keyId + ' is: ' + resultStatus);
@@ -11,7 +11,7 @@ function getKeyUnlockState(keyId){
 function getKeyLockState(keyId){
     /* This method returns true if the key is visible, orientation angle is horizontal, or false in keyAvailabilityMap*/
     var resultStatus = false;
-    if(checkVisibilityStatus(keyId) && (checkOrientation(keyId,90) || !keyAvailabilityMap.get(keyId))){
+    if(checkVisibilityStatus(keyId) && (checkOrientation(keyId,180) || !keyAvailabilityMap.get(keyId))){
         resultStatus = true;
     }
     console.log('Lock state for key ' + keyId + ' is: ' + resultStatus);
@@ -26,9 +26,11 @@ function rotateKey(ev) {
      * */
     var keyId = ev.target.id;
     console.log('Key To Rotate: '+keyId);
-    if(checkOrientation(keyId,'200')){
+    if(checkOrientation(keyId,'90')){
+        //No need to check for rotation, we are only unlocking here. Any vertical key can be turned anytime. Nothing blocking this action.
         rotateAndDisableKey(keyId);  
-    } else if(checkOrientation(keyId,'290')){
+    } else if(checkOrientation(keyId,'180')){
+        //Need to check if this key can be rotated
         rotateAndEnableKey(keyId);
     }
 }
@@ -37,7 +39,9 @@ function rotateAndEnableKey(keyId){
     /** This method rotates the key to vertical position, enables the draggability of a key and sets the availability as true in keyAvailabilityMap.
     * Also locks the holder if circumstances are met.
     * */
-    rotateElement(keyId,200);
+
+    // Check if you can lock this holder. i.e., the respective lever's other holder needs to be in unlocked state to lock current holder
+    rotateElement(keyId,90);
 
     keyAvailabilityMap.set(keyId,true);
     addClass(keyId,'dragEnabled');
@@ -58,7 +62,7 @@ function rotateAndDisableKey(keyId){
     /** This method rotates the key to horizontal position, disables the draggability of a key and sets the availability as false in keyAvailabilityMap.
     * Also unlocks the holder if circumstances are met.
     * */
-    rotateElement(keyId,290);
+    rotateElement(keyId,180);
     keyAvailabilityMap.set(keyId,false); 
     removeClass(keyId,'dragEnabled');
     var holderId = getHolderIdForKey(keyId);

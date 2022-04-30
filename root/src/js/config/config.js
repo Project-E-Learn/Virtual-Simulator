@@ -19,6 +19,7 @@ function initializeData() {
   initializeDefaultLedStates();
   defaultTrainPositionSetup();
   defaultTrainLocationsSetup();
+  leverNameSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 

@@ -101,7 +101,7 @@
         <img src="assets/PNG/Track-02.png" class="img-fluid" id="sidebarSplit">
          <img src="assets/PNG/5_Separate.png" class="img-fluid" id="upperL7KeyHolder5"  
                     ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-        <img id="upperL7Key5" src="assets/PNG/key.png" class="img-fluid" 
+        <img id="upperL7Key5" src="assets/PNG/1_J_1.png" class="img-fluid" 
                     ondragstart="dragStart(event)"
                     onclick="rotateKey(event)">
     </div>
@@ -302,29 +302,33 @@
                 <div id="upperHolder1ContainerAuA" class="col-2 container-fluid"></div>
                 <div id="upperHolder2ContainerA1" class="col-2 container-fluid"></div>
                 <div id="upperHolder3ContainerC111" class="col-2 container-fluid">
-                    <img id="upperHolder3C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/AN_Left_Unlocked.png" class="customWidth1 col-12 mx-auto d-block">
-                    <img id="upperL3KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="upperL3KeyHolderAN" src="assets/PNG/AN_Left_Unlocked.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="upperL3KeyAN" src="assets/PNG/1_H_3.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
                 </div>
                 <div id="upperHolder4ContainerC111" class="col-2 container-fluid">
-                    <img id="upperHolder4C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/AN_Left_Unlocked.png" class="customWidth1 col-12 mx-auto d-block">
-                    <img id="upperL4KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="upperL4KeyHolderAN" src="assets/PNG/AN_Left_Unlocked.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="upperL4KeyAN" src="assets/PNG/1_H_3.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
                 </div>
                 <div id="upperHolder5ContainerAg5" class="col-2 container-fluid">
-                    <img id="upperHolder5Ag5" onclick="changeLeverPosition(this.id)" src="assets/PNG/5_5N_Right_Locked.png" class="customWidth1 col-12 mx-auto d-block">  
-                    <img id="upperL5Key5" src="assets/PNG/key.png" class="img-fluid"
+                    <img id="upperL5KeyHolder" src="assets/PNG/5_5N_Right_Locked.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">  
+                    <img id="upperL5Key5" src="assets/PNG/1_J_1.png" class="img-fluid"
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">    
-                    <img id="upperL5Key5N" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="upperL5Key5N" src="assets/PNG/1_D_5.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
                 </div>
                 <div id="upperHolder6ContainerV6" class="col-2 container-fluid">
-                    <img id="upperHolder6V6" onclick="changeLeverPosition(this.id)" src="assets/PNG/5_Left_Unlocked.png" class="customWidth1 col-12 mx-auto d-block">
-                    <img id="upperL6Key5" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="upperL6KeyHolder5" src="assets/PNG/5_Left_Unlocked.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="upperL6Key5" src="assets/PNG/1_J_1.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
                 </div>
@@ -333,44 +337,49 @@
         <div id="levercontainer" class="container-fluid">
             <div id="leverRow" class="row justify-content-center" style="background-color: white;">
                 <div id="lever1ContainerAuA" class="col-2 container-fluid">
-                    <img id="lever1AuA" onclick="changeLeverPosition(this.id)" src="assets/PNG/Au_A_A.png" class="customWidth1 col-12 mx-auto d-block">
+                    <img id="lowerL1" onclick="changeLeverPosition('lever1AuA')" src="assets/PNG/Au_A_A.png" class="customWidth1 col-12 mx-auto d-block">
                 </div>
                 <div id="lever2ContainerA1" class="col-2 container-fluid">
-                    <img id="lever2A1" onclick="changeLeverPosition(this.id)" src="assets/PNG/A1_F.png" class="customWidth1 col-12 mx-auto d-block"> 
-                    <img id="lowerL2KeyAN" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL2KeyHolderAN" onclick="changeLeverPosition('lever2A1')" src="assets/PNG/A1_F.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)"> 
+                    <img id="lowerL2KeyAN" src="assets/PNG/1_H_3.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
                 </div>
                 <div id="lever3ContainerC111" class="col-2 container-fluid">
-                    <img id="lever3C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/C111_V3_F.png" class="customWidth1 col-12 mx-auto d-block">
-                    <img id="lowerL3Key5R" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL3KeyHolder" onclick="changeLeverPosition('lever3C111')" src="assets/PNG/C111_V3_F.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="lowerL3Key5R" src="assets/PNG/2_F_5.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
-                    <img id="lowerL3Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL3Key6N" src="assets/PNG/3_J_5.png" class="img-fluid" 
                         ondragstart="dragStart(event)"
                         onclick="rotateKey(event)">
                 </div>
                 <div id="lever4ContainerC111" class="col-2 container-fluid">
-                    <img id="lever4C111" onclick="changeLeverPosition(this.id)" src="assets/PNG/C111_V1_F.png" class="customWidth1 col-12 mx-auto d-block">
-                    <img id="lowerL4Key5N" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL4KeyHolder" onclick="changeLeverPosition('lever4C111')" src="assets/PNG/C111_V1_F.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="lowerL4Key5N" src="assets/PNG/1_D_5.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
-                    <img id="lowerL4Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL4Key6N" src="assets/PNG/3_J_5.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
                 </div>
                 <div id="lever5ContainerAg5" class="col-2 container-fluid">
-                    <img id="lever5Ag5" onclick="changeLeverPosition(this.id)" src="assets/PNG/Ag5_D.png" class="customWidth1 col-12 mx-auto d-block">  
-                    <img id="lowerL5Key5" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL5KeyHolder" onclick="changeLeverPosition('lever5Ag5')" src="assets/PNG/Ag5_D.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">  
+                    <img id="lowerL5Key5" src="assets/PNG/1_J_1.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
-                    <img id="lowerL5Key5R" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL5Key5R" src="assets/PNG/2_F_5.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">    
                 </div>
                 <div id="lever6ContainerV6" class="col-2 container-fluid">
-                    <img id="lever6V6" onclick="changeLeverPosition(this.id)" src="assets/PNG/V6_L.png" class="customWidth1 col-12 mx-auto d-block">
-                    <img id="lowerL6Key6N" src="assets/PNG/key.png" class="img-fluid" 
+                    <img id="lowerL6KeyHolder6N" onclick="changeLeverPosition('lever6V6')" src="assets/PNG/V6_L.png" class="customWidth1 col-12 mx-auto d-block"
+                            ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="lowerL6Key6N" src="assets/PNG/3_J_5.png" class="img-fluid" 
                             ondragstart="dragStart(event)"
                             onclick="rotateKey(event)">
                 </div>
