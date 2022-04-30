@@ -48,10 +48,10 @@
 
 #upperL6Key5 {
   position: absolute;
-  width: 8%;
+  width: 17%;
   height: auto;
-  top: 6.7vw;
-  left: 8.45vw;
+  top: 6.5vw;
+  left: 7.6vw;
 }
 
 /* .upperL6Key5-initial {
@@ -664,7 +664,7 @@
 #sidebarSplit {
   position: absolute;
   top: 6.2vw;
-  left: 5.2vw;
+  left: 4.5vw;
   width: 8vw;
   height: auto;
   transition: ease-in 0.8s;
@@ -672,10 +672,10 @@
 
 #upperL7KeyHolder5 {
   position: absolute;
-  width: 8vw;
+  width: 6vw;
   height: auto;
   top: 38vw;
-  left: 3.5vw;
+  left: 4.57vw;
 }
 
 #upperL7Key5 {
@@ -697,7 +697,6 @@
   left: 30vw;
   width: 17%;
   height: 22%;
-  /* transform: rotate(270deg); */
 }
 
 #label-brace{
@@ -710,12 +709,8 @@
   color: white;
 }
 
-.transformImage {
-  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-#lever6V6,#lever5Ag5 {
-  transition-duration: 0.2s;
+#upperL6Key5 {
+  transition-duration: 2s;
   transition-timing-function: ease;
   transition-property : transform;
 }

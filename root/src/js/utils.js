@@ -38,6 +38,7 @@ function hideElement(elementId){
 
 function rotateElement(elementId,angle){
   document.getElementById(elementId).style.transform= 'rotate('+angle+'deg)';
+  document.getElementById(elementId).style.transformOrigin = '65% 20%';
 }
 
 function removeClass(elementId,className){

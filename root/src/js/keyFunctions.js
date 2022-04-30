@@ -26,9 +26,9 @@ function rotateKey(ev) {
      * */
     var keyId = ev.target.id;
     console.log('Key To Rotate: '+keyId);
-    if(checkOrientation(keyId,0)){
+    if(checkOrientation(keyId,'200')){
         rotateAndDisableKey(keyId);  
-    } else if(checkOrientation(keyId,90)){
+    } else if(checkOrientation(keyId,'290')){
         rotateAndEnableKey(keyId);
     }
 }
@@ -37,7 +37,8 @@ function rotateAndEnableKey(keyId){
     /** This method rotates the key to vertical position, enables the draggability of a key and sets the availability as true in keyAvailabilityMap.
     * Also locks the holder if circumstances are met.
     * */
-    rotateElement(keyId,0);
+    rotateElement(keyId,200);
+
     keyAvailabilityMap.set(keyId,true);
     addClass(keyId,'dragEnabled');
     var holderId = getHolderIdForKey(keyId);
@@ -57,7 +58,7 @@ function rotateAndDisableKey(keyId){
     /** This method rotates the key to horizontal position, disables the draggability of a key and sets the availability as false in keyAvailabilityMap.
     * Also unlocks the holder if circumstances are met.
     * */
-    rotateElement(keyId,90);
+    rotateElement(keyId,290);
     keyAvailabilityMap.set(keyId,false); 
     removeClass(keyId,'dragEnabled');
     var holderId = getHolderIdForKey(keyId);

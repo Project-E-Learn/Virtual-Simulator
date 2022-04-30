@@ -3,18 +3,18 @@ var keyAvailabilityMap;
 function defaultKeySetup() {
     console.log('Key Setup Begins');
     hideElement('lowerL2KeyAN');
-    makeElementVisible('upperL3KeyAN');
-    makeElementVisible('upperL4KeyAN');
+    hideElement('upperL3KeyAN');//makeElementVisible
+    hideElement('upperL4KeyAN');//makeElementVisible
     hideElement('lowerL3Key5R');
     hideElement('lowerL4Key5N');
-    makeElementVisible('upperL5Key5N');
+    hideElement('upperL5Key5N');//makeElementVisible
     hideElement('upperL5Key5');
-    makeElementVisible('lowerL5Key5');
-    makeElementVisible('upperL6Key5');
+    hideElement('lowerL5Key5');//makeElementVisible
+    hideElement('upperL6Key5');//makeElementVisible
     hideElement('lowerL3Key6N');
     hideElement('lowerL4Key6N');
-    makeElementVisible('lowerL5Key5R');
-    makeElementVisible('lowerL6Key6N');
+    hideElement('lowerL5Key5R');//makeElementVisible
+    hideElement('lowerL6Key6N');//makeElementVisible
     hideElement('upperL7Key5');
     console.log('Key Setup Ends');
 }
@@ -42,20 +42,20 @@ function keyAvailabilityMapSetup(){
 
 function defaultKeyOrientationSetup() {
     console.log('Key Orientation Setup Begins');
-    rotateElement('lowerL2KeyAN',0);   
-    rotateElement('upperL3KeyAN',90);
-    rotateElement('upperL4KeyAN',90);
-    rotateElement('lowerL3Key5R',0);
-    rotateElement('lowerL4Key5N',0);
-    rotateElement('upperL5Key5N',0);
-    rotateElement('upperL5Key5',0); 
-    rotateElement('lowerL5Key5',90);
-    rotateElement('upperL6Key5',90);
-    rotateElement('lowerL3Key6N',0); 
-    rotateElement('lowerL4Key6N',0);
-    rotateElement('lowerL5Key5R',90);
-    rotateElement('lowerL6Key6N',0);
-    rotateElement('upperL7Key5',0);
+    rotateElement('lowerL2KeyAN',200);   
+    rotateElement('upperL3KeyAN',290);
+    rotateElement('upperL4KeyAN',290);
+    rotateElement('lowerL3Key5R',200);
+    rotateElement('lowerL4Key5N',200);
+    rotateElement('upperL5Key5N',200);
+    rotateElement('upperL5Key5',200); 
+    rotateElement('lowerL5Key5',290);
+    rotateElement('upperL6Key5',290);
+    rotateElement('lowerL3Key6N',200); 
+    rotateElement('lowerL4Key6N',200);
+    rotateElement('lowerL5Key5R',290);
+    rotateElement('lowerL6Key6N',200);
+    rotateElement('upperL7Key5',200);
     console.log('Key Orientation Setup Ends');
 }
 
