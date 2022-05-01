@@ -48,7 +48,7 @@
 
 #upperL6Key5 {
   top: 6.5vw;
-  left: 6.9vw;
+  left: 7.3vw;
 }
 
 /* .upperL6Key5-initial {
@@ -63,7 +63,7 @@
 
 #lowerL6Key6N {
   top: 6.9vw;
-  left: 7.2vw;
+  left: 7.6vw;
 }
 
 /* .lowerL6Key6N-initial {
@@ -78,7 +78,7 @@
 
 #upperL5Key5 {
   top: 5.9vw;
-  left: 2.3vw;
+  left: 2.6vw;
 }
 
 /* .upperL5Key5-initial {
@@ -93,7 +93,7 @@
 
 #upperL5Key5N {
   top: 6vw;
-  left: 7.1vw;
+  left: 7.9vw;
 }
 
 /* .upperL5Key5N-initial {
@@ -108,7 +108,7 @@
 
 #lowerL5Key5 {
   top: 7.1vw;
-  left: 2.3vw;
+  left: 2.7vw;
 }
 
 /* .lowerL5Key5-initial {
@@ -123,7 +123,7 @@
 
 #lowerL5Key5R {
   top: 7.1vw;
-  left: 7.1vw;
+  left: 7.8vw;
 }
 
 /* .lowerL5Key5R-initial {
@@ -138,7 +138,7 @@
 
 #upperL4KeyAN {
   top: 7.4vw;
-  left: 6.3vw;
+  left: 7.4vw;
 }
 
 /* .upperL4KeyAN-initial {
@@ -153,7 +153,7 @@
 
 #lowerL4Key5N {
   top: 7vw;
-  left: 2.4vw;
+  left: 2.7vw;
 }
 
 /* .lowerL4Key5N-initial {
@@ -168,7 +168,7 @@
 
 #lowerL4Key6N {
   top: 7vw;
-  left: 7.3vw;
+  left: 7.7vw;
 }
 
 /* .lowerL4Key6N-initial {
@@ -183,7 +183,7 @@
 
 #upperL3KeyAN {
   top: 7.5vw;
-  left: 6.9vw;
+  left: 7.4vw;
 }
 
 /* .upperL3KeyAN-initial {
@@ -198,7 +198,7 @@
 
 #lowerL3Key5R {
   top: 7vw;
-  left: 2.4vw;
+  left: 2.6vw;
 }
 
 /* .lowerL3Key5R-initial {
@@ -213,7 +213,7 @@
 
 #lowerL3Key6N {
   top: 7vw;
-  left: 7.4vw;
+  left: 7.7vw;
 }
 
 /* .lowerL3Key6N-initial {
@@ -228,7 +228,7 @@
 
 #lowerL2KeyAN {
   top: 7.8vw;
-  left: 7.2vw;
+  left: 7.6vw;
 }
 
 /* .lowerL2KeyAN-initial {
@@ -619,7 +619,7 @@
   position: absolute;
   left: 1.5vw;
   width: 12vw;
-  height: 36vw;
+  height: 34vw;
 }
 
 #sidebarSplit {
@@ -635,13 +635,13 @@
   position: absolute;
   width: 8vw;
   height: auto;
-  top: 38vw;
+  top: 35vw;
   left: 3.55vw;
 }
 
 #upperL7Key5 {
-  top: 43.5vw;
-  left: 7.6vw;
+  top: 40.80vw;
+  left: 7.1vw;
 }
 
 .dragEnabled {
