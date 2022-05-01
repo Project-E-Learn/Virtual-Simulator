@@ -30,6 +30,7 @@ function dragDrop(ev) {
     } else{
         hideElement(keyId);
         makeElementVisible(heldKeyId);
+        keyAvailabilityMap.set(heldKeyId,true);
         console.log('Key switch complete'); 
         console.log('Status: ' + keyId + ' = ' + getVisibilityStatus(keyId) + ', ' + heldKeyId + ' = ' + getVisibilityStatus(heldKeyId));
     }
