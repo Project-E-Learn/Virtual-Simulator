@@ -41,19 +41,26 @@ function rotateAndEnableKey(keyId){
     * */
 
     // Check if you can lock this holder. i.e., the respective lever's other holder needs to be in unlocked state to lock current holder
-    rotateElement(keyId,75);
-
-    keyAvailabilityMap.set(keyId,true);
-    addClass(keyId,'dragEnabled');
     var holderId = getHolderIdForKey(keyId);
     if(holderId == UNAVAILABLE){
         console.log('Key ' + keyId + ' is not available in any holders');
     } else{    
+        //How to check if the current holder is in its right(upper) or left(lower) position?
+        var holderIdLower = holderId.toLowerCase();
+        var holderImageLower = getSourceImage(holderId).toLowerCase();
+        if((holderIdLower.includes('upper') && holderImageLower.includes('right')) || (holderIdLower.includes('lower') && holderImageLower.includes('left'))){
+            rotateElement(keyId,75);
+            keyAvailabilityMap.set(keyId,true);
+            addClass(keyId,'dragEnabled');
+        } else{
+            launchModal(`This key cannot be rotated in this position. Move the lever to lock this lock.`);
+            console.log(`Key ${keyId} cannot be rotated in this position. Move the lever to lock this lock.`);
+        }
         if(checkHolderKeysUnlockStatus(holderId)){
             console.log('Few keys are draggable. Holder ' + holderId + ' can be locked.');
             lockHolder(holderId);
         } else{
-            console.log('Holder ' + holderId + ' cannot be locked. None of the keys for this holder are in available state.');
+            console.log(`Holder ${holderId} cannot be locked. None of the keys for this holder are in available state.`);
         }
     }
 }
@@ -62,13 +69,13 @@ function rotateAndDisableKey(keyId){
     /** This method rotates the key to horizontal position, disables the draggability of a key and sets the availability as false in keyAvailabilityMap.
     * Also unlocks the holder if circumstances are met.
     * */
-    rotateElement(keyId,180);
-    keyAvailabilityMap.set(keyId,false); 
-    removeClass(keyId,'dragEnabled');
     var holderId = getHolderIdForKey(keyId);
     if(holderId == UNAVAILABLE){
         console.log('Key ' + keyId + ' is not available in any holders');
     }else{    
+        rotateElement(keyId,180);
+        keyAvailabilityMap.set(keyId,false); 
+        removeClass(keyId,'dragEnabled');
         if(checkHolderKeysLockStatus(holderId)){
             console.log('No keys are available for dragging. Holder ' + holderId + 'can be unlocked.');
             unlockHolder(holderId);

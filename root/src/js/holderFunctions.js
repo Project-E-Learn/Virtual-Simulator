@@ -39,6 +39,9 @@ function lockHolder(holderId){
   /* This method locks the holder by setting the state in holder lock state map. */
   /** To add logic for checking lever position before locking the holder */
   holderLockStateMap.set(holderId,true);
+  if(holderId != 'upperL7KeyHolder5'){
+    changeSourceImage(holderId, holderLockStateImageMap.get(holderId));
+  }
   console.log('Holder ' + holderId + ' is locked.');
 }
 
@@ -48,6 +51,8 @@ function unlockHolder(holderId){
   holderLockStateMap.set(holderId,false);
   if(holderId == 'upperL7KeyHolder5'){
     leftTrackChange();
+  } else{
+    changeSourceImage(holderId,holderUnlockStateImageMap.get(holderId));
   }
   console.log('Holder ' + holderId + ' is unlocked.');
 }

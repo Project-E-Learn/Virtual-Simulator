@@ -20,6 +20,10 @@ function initializeData() {
   defaultTrainPositionSetup();
   defaultTrainLocationsSetup();
   leverNameSetup();
+  setupHolderLockStateImage();
+  setupHolderUnlockStateImage();
+  defaultHolderImageSetup();
+  switchedHolderImageSetup();
   console.log('INITIALIZATION COMPLETE');
 }
 

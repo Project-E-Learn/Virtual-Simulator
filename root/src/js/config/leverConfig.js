@@ -31,22 +31,22 @@ function initializeDefaultLeverStates(){
 function defaultLeverImageSetup(){
     leverDefaultSourceMap = new Map();
     leverDefaultSourceMap.set('lever1AuA','assets/PNG/Au_A_I.png');
-    leverDefaultSourceMap.set('lever2A1','assets/PNG/A1_F.png');
-    leverDefaultSourceMap.set('lever3C111','assets/PNG/C111_V3_F.png');
-    leverDefaultSourceMap.set('lever4C111','assets/PNG/C111_V1_F.png');
-    leverDefaultSourceMap.set('lever5Ag5','assets/PNG/Ag5_D.png');
-    leverDefaultSourceMap.set('lever6V6','assets/PNG/V6_L.png');
+    leverDefaultSourceMap.set('lever2A1','assets/PNG/A1_F_Left_Locked.png');
+    leverDefaultSourceMap.set('lever3C111','assets/PNG/C111_V3_F_Left_Locked.png');
+    leverDefaultSourceMap.set('lever4C111','assets/PNG/C111_V1_F_Left_Locked.png');
+    leverDefaultSourceMap.set('lever5Ag5','assets/PNG/Ag5_D_Right_Unlocked.png');
+    leverDefaultSourceMap.set('lever6V6','assets/PNG/V6_L_Left_Locked.png');
     leverDefaultSourceMap.set('leverSideTrack','');
 }
 
 function switchedLeverImageSetup(){
     leverSwitchedSourceMap = new Map();
     leverSwitchedSourceMap.set('lever1AuA','assets/PNG/Au_A_A.png');
-    leverSwitchedSourceMap.set('lever2A1','assets/PNG/A1_O.png');
-    leverSwitchedSourceMap.set('lever3C111','assets/PNG/C111_V3_O.png');
-    leverSwitchedSourceMap.set('lever4C111','assets/PNG/C111_V1_O.png');
-    leverSwitchedSourceMap.set('lever5Ag5','assets/PNG/Ag5_G.png');
-    leverSwitchedSourceMap.set('lever6V6','assets/PNG/V6_R.png');
+    leverSwitchedSourceMap.set('lever2A1','assets/PNG/A1_O_Right_Unlocked.png');
+    leverSwitchedSourceMap.set('lever3C111','assets/PNG/C111_V3_O_Right_Unlocked.png');
+    leverSwitchedSourceMap.set('lever4C111','assets/PNG/C111_V1_O_Right_Unlocked.png');
+    leverSwitchedSourceMap.set('lever5Ag5','assets/PNG/Ag5_G_Left_Unlocked.png');
+    leverSwitchedSourceMap.set('lever6V6','assets/PNG/V6_R_Right_Unlocked.png');
     leverSwitchedSourceMap.set('leverSideTrack','');
 }
 

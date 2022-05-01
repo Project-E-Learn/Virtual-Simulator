@@ -22,15 +22,26 @@ function changeLeverPosition(leverId){
     if(checkLeverLockStatus(leverId)){
         console.log('Lever ' + leverId + ' is locked. Unable to switch.');
     } else{
+        var holderArray = leverHolderMap.get(leverId);
         if(leverStateMap.get(leverId) == true){
             var switchImageSource = leverSwitchedSourceMap.get(leverId);
             leverStateMap.set(leverId,false);
             changeSourceImage(leverNameMap.get(leverId),switchImageSource);
+            if(holderArray.length > 0){
+              for(i=0; i<holderArray.length; i++){
+                changeSourceImage(holderArray[i],switchedHolderSourceMap.get(holderArray[i]));
+              }
+            }
             leverOnAction(leverId);
         } else {
             var defaultImageSource = leverDefaultSourceMap.get(leverId);
             leverStateMap.set(leverId,true);
             changeSourceImage(leverNameMap.get(leverId),defaultImageSource);
+            if(holderArray.length > 0){
+              for(i=0; i<holderArray.length; i++){
+                changeSourceImage(holderArray[i],defaultHolderSourceMap.get(holderArray[i]));
+              }
+            }
             leverOffAction(leverId);
         }
     }
@@ -113,7 +124,7 @@ function turnLever2A1On(){
     changeSourceImage('led-a1','assets/PNG/A1_ON_State.png');
     ledStateMap.set('led-a1','Orange');
     trainAppear();
-    launchModal("Signal enabled without selecting proper track");
+    // launchModal("Signal enabled without selecting proper track");
 }
 
 function turnLever2A1Off(){

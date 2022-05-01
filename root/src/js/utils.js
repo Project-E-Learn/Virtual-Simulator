@@ -53,6 +53,10 @@ function changeSourceImage(imageId,newImagePath){
   document.getElementById(imageId).src = newImagePath;
 }
 
+function getSourceImage(imageId){
+  return document.getElementById(imageId).src;
+}
+
 function getNumericAndDot(stringValue){
   var data =  parseFloat(stringValue.replace(/[^\d.]/g,''));
   console.log('Conversion result: ' + data);
