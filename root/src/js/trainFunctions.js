@@ -3,7 +3,7 @@ function trainAppear() {
     // let id = null;
     //const element = document.getElementById("train"); 
     document.getElementById("train").style.visibility = 'visible';
-    moveTrainForward('train','3vw');
+    moveTrainForward('train','0.25vw');
     //makeElementVisible('train');
     // document.getElementById("train").style.left = '6.5vw';
     // let pos = 3;

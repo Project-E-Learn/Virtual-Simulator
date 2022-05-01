@@ -31,9 +31,10 @@
 
 #train {
   position: absolute; 
-  width: 50%;
-  height: 10%;
-  visibility: hidden;
+  width: 25%;
+  height: 15%;
+  z-index: 99;
+  visibility: visible;
   transition-duration: 0.8s;
   transition-timing-function: ease-in;
   transition-property : left transform top;
