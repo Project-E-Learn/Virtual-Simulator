@@ -1,7 +1,7 @@
 function getKeyUnlockState(keyId){
     /* This method returns true only if orientation angle is vertical, and true in keyAvailabilityMap*/
     var resultStatus = false;
-    if(checkOrientation(keyId,90) && keyAvailabilityMap.get(keyId)){
+    if(checkOrientation(keyId,75) && keyAvailabilityMap.get(keyId)){
         resultStatus = true;
     }
     console.log('Unlock state for key ' + keyId + ' is: ' + resultStatus);
@@ -26,7 +26,7 @@ function rotateKey(ev) {
      * */
     var keyId = ev.target.id;
     console.log('Key To Rotate: '+keyId);
-    if(checkOrientation(keyId,'90')){
+    if(checkOrientation(keyId,'75')){
         //No need to check for rotation, we are only unlocking here. Any vertical key can be turned anytime. Nothing blocking this action.
         rotateAndDisableKey(keyId);  
     } else if(checkOrientation(keyId,'180')){
@@ -41,7 +41,7 @@ function rotateAndEnableKey(keyId){
     * */
 
     // Check if you can lock this holder. i.e., the respective lever's other holder needs to be in unlocked state to lock current holder
-    rotateElement(keyId,90);
+    rotateElement(keyId,75);
 
     keyAvailabilityMap.set(keyId,true);
     addClass(keyId,'dragEnabled');
