@@ -35,7 +35,7 @@
   /* height: 15%; */
   height: auto;
   z-index: 99;
-  visibility: visible;
+  visibility: hidden;
   transition-duration: 0.8s;
   transition-timing-function: ease-in;
   transition-property : left transform top;
