@@ -48,7 +48,7 @@ function rotateAndEnableKey(keyId){
         //How to check if the current holder is in its right(upper) or left(lower) position?
         var holderIdLower = holderId.toLowerCase();
         var holderImageLower = getSourceImage(holderId).toLowerCase();
-        if((holderIdLower.includes('upper') && holderImageLower.includes('right')) || (holderIdLower.includes('lower') && holderImageLower.includes('left'))){
+        if(((holderIdLower.includes('upper') && holderImageLower.includes('right')) || (holderIdLower.includes('lower') && holderImageLower.includes('left'))) || holderIdLower.includes('l7')){
             rotateElement(keyId,75);
             keyAvailabilityMap.set(keyId,true);
             addClass(keyId,'dragEnabled');
