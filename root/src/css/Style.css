@@ -31,9 +31,9 @@
 
 #train {
   position: absolute; 
-  width: 10%;
+  width: 20%;
   /* height: 15%; */
-  height: auto;
+  height: 20%;
   z-index: 99;
   visibility: hidden;
   transition-duration: 0.8s;
