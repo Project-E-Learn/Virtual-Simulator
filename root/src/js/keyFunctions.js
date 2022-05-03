@@ -9,9 +9,9 @@ function getKeyUnlockState(keyId){
 }
 
 function getKeyLockState(keyId){
-    /* This method returns true if the key is visible, orientation angle is horizontal, or false in keyAvailabilityMap*/
+    /* This method returns true if the key is visible, orientation angle is horizontal, and false in keyAvailabilityMap*/
     var resultStatus = false;
-    if(checkVisibilityStatus(keyId) && (checkOrientation(keyId,180) || !keyAvailabilityMap.get(keyId))){
+    if(checkVisibilityStatus(keyId) && (checkOrientation(keyId,180) && !keyAvailabilityMap.get(keyId))){
         resultStatus = true;
     }
     console.log('Lock state for key ' + keyId + ' is: ' + resultStatus);
