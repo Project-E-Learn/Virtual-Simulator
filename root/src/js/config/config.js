@@ -24,6 +24,8 @@ function initializeData() {
   setupHolderUnlockStateImage();
   defaultHolderImageSetup();
   switchedHolderImageSetup();
+  initalizeLockSequence();
+  initalizeUnlockSequence();
   console.log('INITIALIZATION COMPLETE');
 }
 

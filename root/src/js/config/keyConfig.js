@@ -1,4 +1,6 @@
 var keyAvailabilityMap;
+var lockSequenceMap;
+var unlockSequenceMap;
 
 function defaultKeySetup() {
     console.log('Key Setup Begins');
@@ -68,6 +70,22 @@ function initalizeDrag(){
     addClass('lowerL3Key6N','dragEnabled');
     addClass('lowerL4Key6N','dragEnabled');
     addClass('lowerL6Key6N','dragEnabled');
+}
+
+function initalizeLockSequence(){
+    lockSequenceMap = new Map();
+    lockSequenceMap.set('upperL5Key5','upperL5Key5N');    
+    lockSequenceMap.set('lowerL3Key5R','lowerL3Key6N');    
+    lockSequenceMap.set('lowerL4Key5N','lowerL4Key6N');    
+    lockSequenceMap.set('lowerL5Key5','lowerL5Key5R');    
+}
+
+function initalizeUnlockSequence(){
+    unlockSequenceMap = new Map();
+    unlockSequenceMap.set('upperL5Key5N','upperL5Key5');    
+    unlockSequenceMap.set('lowerL3Key6N','lowerL3Key5R');    
+    unlockSequenceMap.set('lowerL4Key6N','lowerL4Key5N');    
+    unlockSequenceMap.set('lowerL5Key5R','lowerL5Key5');    
 }
 
 // function defaultKeyPosition() {

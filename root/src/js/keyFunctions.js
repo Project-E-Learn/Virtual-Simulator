@@ -45,13 +45,18 @@ function rotateAndEnableKey(keyId){
     if(holderId == UNAVAILABLE){
         console.log('Key ' + keyId + ' is not available in any holders');
     } else{    
-        //How to check if the current holder is in its right(upper) or left(lower) position?
+        //How to check if the current holder is in its right(upper) or left(lower) position
         var holderIdLower = holderId.toLowerCase();
         var holderImageLower = getSourceImage(holderId).toLowerCase();
         if(((holderIdLower.includes('upper') && holderImageLower.includes('right')) || (holderIdLower.includes('lower') && holderImageLower.includes('left'))) || holderIdLower.includes('l7')){
-            rotateElement(keyId,75);
-            keyAvailabilityMap.set(keyId,true);
-            addClass(keyId,'dragEnabled');
+            if((lockSequenceMap.get(keyId) == undefined) || ((lockSequenceMap.get(keyId) != undefined) && (getKeyUnlockState(lockSequenceMap.get(keyId))))){
+                rotateElement(keyId,75);
+                keyAvailabilityMap.set(keyId,true);
+                addClass(keyId,'dragEnabled');
+            } else{
+                launchModal(`Utilisez d'abord l'autre clé, s'il vous plaît`);
+                console.log(`Please use the other key first`);
+            }
         } else{
             launchModal(`Cette clé ne peut pas être tournée dans cette position. Déplacez le levier pour verrouiller cette serrure.`);
             console.log(`Key ${keyId} cannot be rotated in this position. Move the lever to lock this lock.`);
@@ -73,9 +78,14 @@ function rotateAndDisableKey(keyId){
     if(holderId == UNAVAILABLE){
         console.log('Key ' + keyId + ' is not available in any holders');
     }else{    
-        rotateElement(keyId,180);
-        keyAvailabilityMap.set(keyId,false); 
-        removeClass(keyId,'dragEnabled');
+        if((unlockSequenceMap.get(keyId) == undefined) || ((unlockSequenceMap.get(keyId) != undefined) && (getKeyLockState(unlockSequenceMap.get(keyId))))){
+            rotateElement(keyId,180);
+            keyAvailabilityMap.set(keyId,false); 
+            removeClass(keyId,'dragEnabled');
+        } else{
+            launchModal(`Utilisez d'abord l'autre clé, s'il vous plaît`);
+            console.log(`Please use the other key first`);
+        }
         if(checkHolderKeysLockStatus(holderId)){
             console.log('No keys are available for dragging. Holder ' + holderId + 'can be unlocked.');
             unlockHolder(holderId);
