@@ -53,7 +53,7 @@ function rotateAndEnableKey(keyId){
             keyAvailabilityMap.set(keyId,true);
             addClass(keyId,'dragEnabled');
         } else{
-            launchModal(`This key cannot be rotated in this position. Move the lever to lock this lock.`);
+            launchModal(`Cette clé ne peut pas être tournée dans cette position. Déplacez le levier pour verrouiller cette serrure.`);
             console.log(`Key ${keyId} cannot be rotated in this position. Move the lever to lock this lock.`);
         }
         if(checkHolderKeysUnlockStatus(holderId)){
