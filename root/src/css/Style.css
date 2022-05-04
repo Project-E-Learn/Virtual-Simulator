@@ -49,8 +49,8 @@
 }
 
 #upperL6Key5 {
-  top: 6.5vw;
-  left: 7.3vw;
+  top: 5.4vw;
+  left: 8.8vw;
 }
 
 /* .upperL6Key5-initial {
@@ -64,8 +64,8 @@
 } */
 
 #lowerL6Key6N {
-  top: 6.9vw;
-  left: 7.6vw;
+  top: 5.6vw;
+  left: 9vw;
 }
 
 /* .lowerL6Key6N-initial {
@@ -79,8 +79,8 @@
 } */
 
 #upperL5Key5 {
-  top: 5.9vw;
-  left: 2.6vw;
+  top: 4.5vw;
+  left: 4vw;
 }
 
 /* .upperL5Key5-initial {
@@ -94,8 +94,8 @@
 } */
 
 #upperL5Key5N {
-  top: 6vw;
-  left: 7.9vw;
+  top: 4.4vw;
+  left: 9vw;
 }
 
 /* .upperL5Key5N-initial {
@@ -109,8 +109,8 @@
 } */
 
 #lowerL5Key5 {
-  top: 7.1vw;
-  left: 2.7vw;
+  top: 5.7vw;
+  left: 4.1vw;
 }
 
 /* .lowerL5Key5-initial {
@@ -124,8 +124,8 @@
 } */
 
 #lowerL5Key5R {
-  top: 7.1vw;
-  left: 7.8vw;
+  top: 5.7vw;
+  left: 9.2vw;
 }
 
 /* .lowerL5Key5R-initial {
@@ -139,8 +139,8 @@
 } */
 
 #upperL4KeyAN {
-  top: 7.4vw;
-  left: 7.4vw;
+  top: 6.2vw;
+  left: 8.9vw;
 }
 
 /* .upperL4KeyAN-initial {
@@ -154,8 +154,8 @@
 } */
 
 #lowerL4Key5N {
-  top: 7vw;
-  left: 2.7vw;
+  top: 5.6vw;
+  left: 4vw;
 }
 
 /* .lowerL4Key5N-initial {
@@ -169,8 +169,8 @@
 } */
 
 #lowerL4Key6N {
-  top: 7vw;
-  left: 7.7vw;
+  top: 5.5vw;
+  left: 9.1vw;
 }
 
 /* .lowerL4Key6N-initial {
@@ -184,8 +184,8 @@
 } */
 
 #upperL3KeyAN {
-  top: 7.5vw;
-  left: 7.4vw;
+  top: 6.2vw;
+  left: 9vw;
 }
 
 /* .upperL3KeyAN-initial {
@@ -199,8 +199,8 @@
 } */
 
 #lowerL3Key5R {
-  top: 7vw;
-  left: 2.6vw;
+  top: 5.7vw;
+  left: 4.1vw;
 }
 
 /* .lowerL3Key5R-initial {
@@ -214,8 +214,8 @@
 } */
 
 #lowerL3Key6N {
-  top: 7vw;
-  left: 7.7vw;
+  top: 5.7vw;
+  left: 9.1vw;
 }
 
 /* .lowerL3Key6N-initial {
@@ -229,8 +229,8 @@
 } */
 
 #lowerL2KeyAN {
-  top: 7.8vw;
-  left: 7.6vw;
+  top: 6.3vw;
+  left: 9vw;
 }
 
 /* .lowerL2KeyAN-initial {
@@ -636,8 +636,8 @@
 }
 
 #upperL7Key5 {
-  top: 40.80vw;
-  left: 7.1vw;
+  top: 39vw;
+  left: 8.5vw;
 }
 
 .dragEnabled {
