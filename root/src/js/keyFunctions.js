@@ -1,7 +1,7 @@
 function getKeyUnlockState(keyId){
     /* This method returns true only if orientation angle is vertical, and true in keyAvailabilityMap*/
     var resultStatus = false;
-    if(checkOrientation(keyId,75) && keyAvailabilityMap.get(keyId)){
+    if(checkOrientation(keyId,345) && keyAvailabilityMap.get(keyId)){
         resultStatus = true;
     }
     console.log('Unlock state for key ' + keyId + ' is: ' + resultStatus);
@@ -11,7 +11,7 @@ function getKeyUnlockState(keyId){
 function getKeyLockState(keyId){
     /* This method returns true if the key is visible, orientation angle is horizontal, and false in keyAvailabilityMap*/
     var resultStatus = false;
-    if(checkVisibilityStatus(keyId) && (checkOrientation(keyId,180) && !keyAvailabilityMap.get(keyId))){
+    if(checkVisibilityStatus(keyId) && (checkOrientation(keyId,460) && !keyAvailabilityMap.get(keyId))){
         resultStatus = true;
     }
     console.log('Lock state for key ' + keyId + ' is: ' + resultStatus);
@@ -26,10 +26,10 @@ function rotateKey(ev) {
      * */
     var keyId = ev.target.id;
     console.log('Key To Rotate: '+keyId);
-    if(checkOrientation(keyId,'75')){
+    if(checkOrientation(keyId,'345')){
         //No need to check for rotation, we are only unlocking here. Any vertical key can be turned anytime. Nothing blocking this action.
         rotateAndDisableKey(keyId);  
-    } else if(checkOrientation(keyId,'180')){
+    } else if(checkOrientation(keyId,'460')){
         //Need to check if this key can be rotated
         rotateAndEnableKey(keyId);
     }
@@ -50,7 +50,7 @@ function rotateAndEnableKey(keyId){
         var holderImageLower = getSourceImage(holderId).toLowerCase();
         if(((holderIdLower.includes('upper') && holderImageLower.includes('right')) || (holderIdLower.includes('lower') && holderImageLower.includes('left'))) || holderIdLower.includes('l7')){
             if((lockSequenceMap.get(keyId) == undefined) || ((lockSequenceMap.get(keyId) != undefined) && (getKeyUnlockState(lockSequenceMap.get(keyId))))){
-                rotateElement(keyId,75);
+                rotateElement(keyId,345);
                 keyAvailabilityMap.set(keyId,true);
                 addClass(keyId,'dragEnabled');
             } else{
@@ -79,7 +79,7 @@ function rotateAndDisableKey(keyId){
         console.log('Key ' + keyId + ' is not available in any holders');
     }else{    
         if((unlockSequenceMap.get(keyId) == undefined) || ((unlockSequenceMap.get(keyId) != undefined) && (getKeyLockState(unlockSequenceMap.get(keyId))))){
-            rotateElement(keyId,180);
+            rotateElement(keyId,460);
             keyAvailabilityMap.set(keyId,false); 
             removeClass(keyId,'dragEnabled');
         } else{
