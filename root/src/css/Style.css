@@ -655,11 +655,10 @@
 
 #label-brace{
   position: absolute;
-  font-size: 0.8vw;
-  font-weight: 300;
-  top: 14vw;
-  left: 32.2vw;
-  letter-spacing: 1px;
+  font-size: 0.75vw;
+  font-weight: 400;
+  top: 8.8vw;
+  left: 31.5vw;
   color: white;
 }
 
