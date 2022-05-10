@@ -7,26 +7,26 @@
 
 #tracklight1{
   position: absolute;
-  top: 4.66vw;
-  left: 43.8vw;
-  height: 26%;
-  width: 15%;
+  top: 6vw;
+  left: 47.5vw;
+  height: auto;
+  width: 2.5%;
 }
 
 #tracklight2{
   position: absolute;
-  top: 4.65vw;
-  left: 57.11vw;
-  height: 26.5%;
-  width: 15%;
+  top: 6vw;
+  left: 68vw;
+  height: auto;
+  width: 2.5%;
 }
 
 #tracklight3{
   position: absolute;
-  top: 0.7vw;
-  left: 57.1vw;
-  height: 26.5%;
-  width: 15%;
+  top: 1.5vw;
+  left: 68vw;
+  height: auto;
+  width: 2.5%;
 }
 
 #train {
@@ -244,7 +244,7 @@
 } */
 
 .track-base {
-  height: 12.25vw;
+  height: 12.75vw;
   width: auto;
   position: relative;
   margin: 0;
@@ -254,13 +254,21 @@
 #straight {
   position: relative;
   display: block;
-  height: 2.65vw;
+  height: 10vw;
   width: 44vw;
-  top: 4.8vw;
+  top: 1.25vw;
   left: 0vw;
 }
 
 #split {
+  position: absolute;
+  top: 1.25vw;
+  left: 42.15vw;
+  height: 9.4vw;
+  width: 51vw;
+  transform: translateY(-16%);
+}
+/* #split {
   position: absolute;
   top: 1.82vw;
   left: 44.25vw;
@@ -282,62 +290,62 @@
   left: 57.75vw;
   height: 16%;
   width: 60%;
-}
+} */
 
 #led-a1 {
   position: absolute;
-  top: 2.9vw;
-  left: 16vw;
+  top: 4.9vw;
+  left: 19vw;
   height: auto;
-  width: 10%;
+  width: 5%;
 }
 
 #led-111 {
   position: absolute;
-  top: 3.56vw;
-  left: 41.15vw;
+  top: 5.35vw;
+  left: 42.35vw;
   height: auto;
-  width: 8%;
+  width: 3.5%;
 }
 
 #led-5v6 {
   position: absolute;
-  top: 3.2vw;
-  left: 50.8vw;
+  top: 5.6vw;
+  left: 51.6vw;
   height: auto;
-  width: 9%;
+  width: 2.5%;
 }
 
 #led-25_4 {
   position: absolute;
   top: 0.8vw;
-  left: 74.90vw;
-  height: auto;
-  width: 2.80%;
+  left: 74vw;
+  height: 8%;
+  width: auto;
 }
 
 #led-25_5 {
   position: absolute;
-  top: 4.70vw;
-  left: 74.90vw;
-  height: auto;
-  width: 2.80%;
+  top: 5.2vw;
+  left: 74vw;
+  height: 8%;
+  width: auto;
 }
 
 #led-zap {
   position: absolute;
-  top: 3.30vw;
-  left: 38.65vw;
+  top: 5.35vw;
+  left: 40.5vw;
   height: auto;
-  width: 9%;
+  width: 2.5%;
 }
 
 #led-annonce {
   position: absolute;
-  top: 0.20vw;
-  left: 10.4vw;
+  top: 1.5vw;
+  left: 12vw;
   height: auto;
-  width: 10%;
+  width: 3%;
 }
 
 #led-awa {
@@ -348,7 +356,7 @@
   width: 8%;
 }
 
-#start {
+/* #start {
   position: absolute;
   font-weight: 500;
   font-size: 1.80vw;
@@ -356,9 +364,17 @@
   letter-spacing: 0.15vw;
   top: 3.60vw;
   left: 0.25vw;
+} */
+
+#start {
+  position: absolute;
+  top: 4.6vw;
+  left: 0.25vw;
+  height: 1.25vw;
+  width: auto;
 }
 
-#end {
+/* #end {
   position: absolute;
   font-weight: 200;
   font-size: 1.20vw;
@@ -366,42 +382,62 @@
   letter-spacing: 0.20px;
   top: 2.20vw;
   left: 79.80vw;
+} */
+
+#end {
+  position: absolute;
+  top: 3.65vw;
+  left: 77.6vw;
+  height: 0.75vw;
+  width: auto;
 }
 
-#label-a1, #label-zap, #label-111, #label-5v6, #label-annonce, #label-awa {
+/* #label-a1, #label-zap, #label-111, #label-5v6, #label-annonce, #label-awa {
   position: absolute;
   font-weight: 600;
   font-size: 1vw;
   color: white;
   letter-spacing: 1px;
+} */
+
+#label-a1, #label-zap, #label-111, #label-5v6, #label-annonce, #label-awa {
+  position: absolute;
+  height: 0.75vw;
+  width: auto;
 }
 
 #label-a1 {
-  top: 2.1vw;
-  left: 18.5vw;
+  top: 3.75vw;
+  left: 20vw;
 }
 
 #label-zap {
-  top: 2.90vw;
-  left: 39.60vw;
+  height: 0.6vw;
+  top: 4.6vw;
+  left: 40.2vw;
 }
 
 #label-111 {
-  top: 2.90vw;
-  left: 42.20vw;
+  top: 4.5vw;
+  left: 43vw;
   letter-spacing: 0.2vw;
 }
 
-#label-5v6 {
+/* #label-5v6 {
   top: 4vw;
   left: 53.8vw;
   letter-spacing: 1px;
   color: goldenrod;
+} */
+
+#label-5v6 {
+  top: 6.85vw;
+  left: 51.5vw;
 }
 
 #label-annonce {
-  top: 0vw;
-  left: 10.20vw;
+  top: 0.5vw;
+  left: 10.5vw;
 }
 
 #label-awa {
@@ -413,27 +449,27 @@
   position: absolute;
   top: 9vw;
   height: auto;
-  width: 4%;
+  width: 2.5%;
 }
 
 #switch-z9{
-  left: 29.9vw;
+  left: 30vw;
 }
 
 #switch-z11{
-  left: 36vw;
+  left: 36.15vw;
 }
 
 #switch-z13{
-  left: 42vw;
+  left: 42.25vw;
 }
 
 #switch-z15{
-  left: 48vw;
+  left: 48.2vw;
 }
 
 #switch-z17{
-  left: 54vw;
+  left: 54.2vw;
 }
 
 #switch-25_4{
@@ -446,12 +482,20 @@
 
 #label-bp_an {
   position: absolute;
+  top: 7.75vw;
+  height: 1vw;
+  width: auto;
+  left: 22.65vw;
+}
+
+/* #label-bp_an {
+  position: absolute;
   font-size: 1vw;
   color: white;
   font-weight: 500;
   top: 7vw;
   left: 22.80vw;
-}
+} */
 
 #line-0 {
   position: absolute;
@@ -472,70 +516,93 @@
 
 #label-occupee_1, #label-occupee_2, #label-occupee_3, #label-occupee_4, #label-occupee_5, #label-occupee_6, #label-occupee_7{
   position: absolute;
+  top: 10.6vw;
+  height: 0.9vw;
+  width: auto;
+}
+
+/* #label-occupee_1, #label-occupee_2, #label-occupee_3, #label-occupee_4, #label-occupee_5, #label-occupee_6, #label-occupee_7{
+  position: absolute;
   font-size: 1.20vw;
   font-weight: 400;
   top: 10vw;
   letter-spacing: 1px;
   color: white;
-}
+} */
 
 #label-occupee_1{
-  left: 28.50vw;
+  left: 29vw;
 }
 
 #label-occupee_2{
-  left: 34.60vw;
+  left: 35.25vw;
 }
 
 #label-occupee_3{
-  left: 40.60vw;
+  left: 41.25vw;
 }
 
 #label-occupee_4{
-  left: 46.60vw;
+  left: 47.25vw;
 }
 
 #label-occupee_5{
-  left: 52.60vw;
+  left: 53.25vw;
 }
 
 #label-occupee_6{
-  left: 58.60vw;
+  height: 0.8vw;
+  left: 59.5vw;
 }
 
 #label-occupee_7{
-  left: 64.60vw;
+  height: 0.8vw;
+  left: 65.4vw;
 }
 
-#label-libre_1, #label-libre_2, #label-libre_3, #label-libre_4, #label-libre_5{
+#label-libre_1, #label-libre_2, #label-libre_3, #label-libre_4, #label-libre_5, #label-libre_6, #label-libre_7{
+  position: absolute;
+  top: 8vw;
+  height: 0.6vw;
+  width: auto;
+}
+
+/* #label-libre_1, #label-libre_2, #label-libre_3, #label-libre_4, #label-libre_5{
   position: absolute;
   font-size: 1.20vw;
   font-weight: 400;
   top: 7.18vw;
   letter-spacing: 1px;
   color: white;
-}
+} */
 
 #label-libre_1{
-  left: 29.50vw;
+  left: 29.7vw;
 }
 
 #label-libre_2{
-  left: 35.50vw;
+  left: 35.95vw;
 }
 
 #label-libre_3{
-  left: 41.50vw;
+  left: 42vw;
 }
 
 #label-libre_4{
-  left: 47.50vw;
+  left: 48vw;
 }
 
 #label-libre_5{
-  left: 53.50vw;
+  left: 54vw;
 }
 
+#label-libre_6{
+  left: 59.2vw;
+}
+
+#label-libre_7{
+  left: 65.2vw;
+}
 /* #line-1, #line-2, #line-3, #line-4, #line-5 {
   position: absolute;
   height: 1px;
@@ -565,21 +632,28 @@
   left: 54.25vw;
 } */
 
-#label-z9, #label-z11, #label-z13, #label-z15, #label-z17{
+/* #label-z9, #label-z11, #label-z13, #label-z15, #label-z17{
   position: absolute;
   font-size: 1.2vw;
   font-weight: 400;
   top: 5.80vw;
   letter-spacing: 1px;
   color: white;
+} */
+
+#label-z9, #label-z11, #label-z13, #label-z15, #label-z17{
+  position: absolute;
+  height: 0.8vw;
+  width: auto;
+  top: 7vw;
 }
 
 #label-z9{
-  left: 30.10vw;
+  left: 29.95vw;
 }
 
 #label-z11{
-  left: 36vw;
+  left: 35.95vw;
 }
 
 #label-z13{
@@ -594,21 +668,28 @@
   left: 54vw;
 }
 
-#label-25_4, #label-25_5{
+/* #label-25_4, #label-25_5{
   position: absolute;
   font-size: 1.20vw;
   font-weight: 400;
   top: 7vw;
   letter-spacing: 1px;
   color: white;
+} */
+
+#label-25_4, #label-25_5{
+  position: absolute;
+  top: 7vw;
+  height: 0.8vw;
+  width: auto;
 }
 
 #label-25_4{
-  left: 60.2vw;
+  left: 60vw;
 }
 
 #label-25_5{
-  left: 66.2vw;
+  left: 66vw;
 }
 
 #sidebarTrack {
@@ -644,21 +725,36 @@
   -webkit-user-drag: auto;
 }
 
+#ellipse{
+  position: absolute;
+  height: 1vw;
+  width: auto;
+  top: 4.5vw;
+  left: 41.9vw;
+}
+
+#label-fa{
+  position: absolute;
+  height: 0.45vw;
+  width: auto;
+  top: 4.75vw;
+  left: 42.05vw;
+}
 
 #curly_brace{
   position: absolute;
-  top: 12.25vw;
+  top: 11.5vw;
   left: 30vw;
-  width: 17%;
-  height: 22%;
+  width: 8vw;
+  height: auto;
 }
 
 #label-brace{
   position: absolute;
-  font-size: 0.75vw;
+  font-size: 0.5vw;
   font-weight: 400;
-  top: 8.8vw;
-  left: 31.5vw;
+  top: 11.5vw;
+  left: 33vw;
   color: white;
 }
 
@@ -679,52 +775,75 @@
 
 #label-z_13,#label-z_15,#label-z_17{
   position: absolute;
-  font-size: 1vw;;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: white;
+  height: 0.8vw;
+  width: auto;
 }
 
 #label-z_13
 {
-  top: 3.80vw;
-  left: 46.15vw;
+  top: 4.80vw;
+  left: 47.1vw;
 }
 
 #label-z_15
 {
-  top: 3.80vw;
-  left: 59.40vw;
+  top: 4.80vw;
+  left: 67.5vw;
 }
 
 #label-z_17
 {
-  top: 0vw;
-  left: 59.40vw;
+  top: 0.4vw;
+  left: 67.5vw;
 }
 
-#label-25_4_track, #label-25_5_track{
+/* #label-25_4_track, #label-25_5_track{
   position: absolute;
   font-size: 1.10vw;
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
-}
+} */
 
+#label-25_4_track, #label-25_5_track{
+  position: absolute;
+  height: 0.8vw;
+  width: auto;
+}
 
 #label-25_4_track{
   top: 0vw;
-  transform: translateY(-50%);
-  left: 76.60vw;
+  /* transform: translateY(-50%); */
+  left: 73.75vw;
 }
 
 #label-25_5_track{
-  top: 3.25vw;
-  left: 76.60vw;
+  top: 4.4vw;
+  left: 73.75vw;
+}
+
+#label-1, #label-3{
+  position: absolute;
+  height: 0.8vw;
+  width: auto;
+}
+
+#label-1 {
+  top: 5.25vw;
+  left: 77vw;
+}
+
+#label-3 {
+  top: 0.7vw;
+  left: 77vw;
 }
 
 #emergency-box{
   background-color: white;
   width: 12vw;
   height: 12vw;
+}
+
+#emergency-box:hover{
+  transform: scale(1.02);
 }

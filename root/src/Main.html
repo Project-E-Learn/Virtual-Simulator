@@ -107,74 +107,123 @@
     </div>
     <div id="contentContainer" style="transition: 0.5s;">
         <div id="displayBoardContainer" class="container-fluid text-center">
-            <div class="row" style="background-color: rgb(20, 20, 20);">
+            <div class="row" style="background-color: rgb(45, 43, 48);">
                 <div class="track-base">
-                    <p id="start">EPINAY</p>
-                    <img src="assets/PNG/track_straight.png" class="img-fluid" id="straight">
-                    <img src="assets/PNG/track_split.png" class="img-fluid" id="split">
+                    <!-- <p id="start">EPINAY</p> -->
+                    <img src="assets/PNG/3D_Images/labels/EPINAY.png" class="img-fluid" id="start">
+                    <img src="assets/PNG/3D_Images/elements/Line-1.png" class="img-fluid" id="straight">
+                    <img src="assets/PNG/3D_Images/elements/Line-2.png" class="img-fluid" id="split">
+                    <!-- <img src="assets/PNG/track_split.png" class="img-fluid" id="split">
                     <img src="assets/PNG/track_above.png" class="img-fluid" id="up">
-                    <img src="assets/PNG/track_above.png" class="img-fluid" id="down">
-                    <p id="label-annonce">Annonce</p>
-                    <img src="assets/PNG/Annonce_White.png" class="img-fluid" id="led-annonce">
-                    <p id="label-awa">AwA</p>
-                    <img src="assets/PNG/AWA_Red.png" class="img-fluid" id="led-awa">
-                    <p id="label-a1">A1</p>
-                    <img src="assets/PNG/A1_Normal_State.png" class="img-fluid" id="led-a1">
-                    <p id="label-zap">ZAp</p>
-                    <img src="assets/PNG/ZAP_Orange.png" class="img-fluid" id="led-zap">
-                    <p id="label-111">111</p>
-                    <img src="assets/PNG/111_Red.png" class="img-fluid" id="led-111">
-                    <p id="label-5v6">5.V6</p>
-                    <img src="assets/PNG/5v6_Orange.png" class="img-fluid" id="led-5v6">
-                    <img src="assets/PNG/25_4.png" class="img-fluid" id="led-25_4">
-                    <img src="assets/PNG/25_5.png" class="img-fluid" id="led-25_5">
-                    <img src="assets/PNG/Z13_Ash.png" class="img-fluid" id="tracklight1">
+                    <img src="assets/PNG/track_above.png" class="img-fluid" id="down"> -->
+                    <!-- <p id="label-annonce">Annonce</p> -->
+                    <img src="assets/PNG/3D_Images/labels/Annonce.png" class="img-fluid" id="label-annonce">
+                    <!-- <img src="assets/PNG/Annonce_White.png" class="img-fluid" id="led-annonce"> -->
+                    <img src="assets/PNG/3D_Images/elements/Annonce_white.png" class="img-fluid" id="led-annonce">
+                    <!-- <p id="label-awa">AwA</p>
+                    <img src="assets/PNG/AWA_Red.png" class="img-fluid" id="led-awa"> -->
+                    <!-- <p id="label-a1">A1</p> -->
+                    <img src="assets/PNG/3D_Images/labels/A1.png" class="img-fluid" id="label-a1">
+                    <img src="assets/PNG/3D_Images/elements/A1_Normal_State.png" class="img-fluid" id="led-a1">
+                    <!-- <img src="assets/PNG/A1_Normal_State.png" class="img-fluid" id="led-a1"> -->
+                    <!-- <p id="label-zap">ZAp</p> -->
+                    <img src="assets/PNG/3D_Images/labels/Z Ap..png" class="img-fluid" id="label-zap">
+                    <img src="assets/PNG/3D_Images/elements/ZAP_orange.png" class="img-fluid" id="led-zap">
+                    <!-- <img src="assets/PNG/ZAP_Orange.png" class="img-fluid" id="led-zap"> -->
+                    <!-- <p id="label-111">111</p> -->
+                    <!-- <img src="assets/PNG/111_Red.png" class="img-fluid" id="led-111"> -->
+                    <img src="assets/PNG/3D_Images/labels/111.png" class="img-fluid" id="label-111">
+                    <img src="assets/PNG/3D_Images/elements/111 Red.png" class="img-fluid" id="led-111">
+                    <img src="assets/PNG/3D_Images/labels/5.V6.png" class="img-fluid" id="label-5v6">
+                    <img src="assets/PNG/3D_Images/elements/5v6_orange.png" class="img-fluid" id="led-5v6">
+                    <!-- <p id="label-5v6">5.V6</p>
+                    <img src="assets/PNG/5v6_Orange.png" class="img-fluid" id="led-5v6"> -->
+                    <img src="assets/PNG/3D_Images/elements/25_4,5.png" class="img-fluid" id="led-25_4">
+                    <img src="assets/PNG/3D_Images/elements/25_4,5.png" class="img-fluid" id="led-25_5">
+                    <!-- <img src="assets/PNG/Z13_Ash.png" class="img-fluid" id="tracklight1">
                     <img src="assets/PNG/Z15_Ash.png" class="img-fluid" id="tracklight2">
-                    <img src="assets/PNG/Z17_Ash.png" class="img-fluid" id="tracklight3">
+                    <img src="assets/PNG/Z17_Ash.png" class="img-fluid" id="tracklight3"> -->
+                    <img src="assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png" id="tracklight1">
+                    <img src="assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png" id="tracklight2">
+                    <img src="assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png" id="tracklight3">
                     <img src="assets/PNG/train.png" class="img-fluid" id="train">
-                    <p id="end">LE TREPORT</p>
-                    <img src="assets/PNG/switch_default.png" class="img-fluid" id="switch-z9" onclick="toggleSwitch(this.id)">
-                    <img src="assets/PNG/switch_default.png" class="img-fluid" id="switch-z11" onclick="toggleSwitch(this.id)">
-                    <img src="assets/PNG/switch_default.png" class="img-fluid" id="switch-z13" onclick="toggleSwitch(this.id)">
-                    <img src="assets/PNG/switch_default.png" class="img-fluid" id="switch-z15" onclick="toggleSwitch(this.id)">
-                    <img src="assets/PNG/switch_default.png" class="img-fluid" id="switch-z17" onclick="toggleSwitch(this.id)">
-                    <img src="assets/PNG/switch_default.png" class="img-fluid" id="switch-25_4" onclick="toggleSwitch(this.id)">
-                    <img src="assets/PNG/switch_default.png" class="img-fluid" id="switch-25_5"  onclick="toggleSwitch(this.id)">
-                    <h5 id="label-occupee_1">occupée</h5>
+                    <!-- <p id="end">LE TREPORT</p> -->
+                    <img src="assets/PNG/3D_Images/labels/LE TREPORT.png" class="img-fluid" id="end">
+                    <img src="assets/PNG/3D_Images/elements/Switch_default.png" class="img-fluid" id="switch-z9" onclick="toggleSwitch(this.id)">
+                    <img src="assets/PNG/3D_Images/elements/Switch_default.png" class="img-fluid" id="switch-z11" onclick="toggleSwitch(this.id)">
+                    <img src="assets/PNG/3D_Images/elements/Switch_default.png" class="img-fluid" id="switch-z13" onclick="toggleSwitch(this.id)">
+                    <img src="assets/PNG/3D_Images/elements/Switch_default.png" class="img-fluid" id="switch-z15" onclick="toggleSwitch(this.id)">
+                    <img src="assets/PNG/3D_Images/elements/Switch_default.png" class="img-fluid" id="switch-z17" onclick="toggleSwitch(this.id)">
+                    <img src="assets/PNG/3D_Images/elements/Switch_default.png" class="img-fluid" id="switch-25_4" onclick="toggleSwitch(this.id)">
+                    <img src="assets/PNG/3D_Images/elements/Switch_default.png" class="img-fluid" id="switch-25_5"  onclick="toggleSwitch(this.id)">
+                    <!-- <h5 id="label-occupee_1">occupée</h5>
                     <h5 id="label-occupee_2">occupée</h5>
                     <h5 id="label-occupee_3">occupée</h5>
                     <h5 id="label-occupee_4">occupée</h5>
                     <h5 id="label-occupee_5">occupée</h5>
                     <h5 id="label-occupee_6">occupée</h5>
-                    <h5 id="label-occupee_7">occupée</h5>
-                    <h6 id="label-libre_1">Libre</h6>
+                    <h5 id="label-occupee_7">occupée</h5> -->
+                    <img src="assets/PNG/3D_Images/labels/occupee.png" class="img-fluid" id="label-occupee_1">
+                    <img src="assets/PNG/3D_Images/labels/occupee.png" class="img-fluid" id="label-occupee_2">
+                    <img src="assets/PNG/3D_Images/labels/occupee.png" class="img-fluid" id="label-occupee_3">
+                    <img src="assets/PNG/3D_Images/labels/occupee.png" class="img-fluid" id="label-occupee_4">
+                    <img src="assets/PNG/3D_Images/labels/occupee.png" class="img-fluid" id="label-occupee_5">
+                    <img src="assets/PNG/3D_Images/labels/Freme.png" class="img-fluid" id="label-occupee_6">
+                    <img src="assets/PNG/3D_Images/labels/Freme.png" class="img-fluid" id="label-occupee_7">
+                    <!-- <h6 id="label-libre_1">Libre</h6>
                     <h6 id="label-libre_2">Libre</h6>
                     <h6 id="label-libre_3">Libre</h6>
                     <h6 id="label-libre_4">Libre</h6>
-                    <h6 id="label-libre_5">Libre</h6>
-                    <h6 id="label-bp_an">Bp_An</h6>
-                    <div id="line-0"></div>
+                    <h6 id="label-libre_5">Libre</h6> -->
+                    <img src="assets/PNG/3D_Images/labels/Libre.png" class="img-fluid" id="label-libre_1">
+                    <img src="assets/PNG/3D_Images/labels/Libre.png" class="img-fluid" id="label-libre_2">
+                    <img src="assets/PNG/3D_Images/labels/Libre.png" class="img-fluid" id="label-libre_3">
+                    <img src="assets/PNG/3D_Images/labels/Libre.png" class="img-fluid" id="label-libre_4">
+                    <img src="assets/PNG/3D_Images/labels/Libre.png" class="img-fluid" id="label-libre_5">
+                    <img src="assets/PNG/3D_Images/labels/Ouvert.png" class="img-fluid" id="label-libre_6">
+                    <img src="assets/PNG/3D_Images/labels/Ouvert.png" class="img-fluid" id="label-libre_7">
+                    <!-- <h6 id="label-bp_an">Bp_An</h6> -->
+                    <img src="assets/PNG/3D_Images/labels/Bp.An.png" class="img-fluid" id="label-bp_an">
+                    <!-- <div id="line-0"></div>
                     <div id="line-1"></div>
                     <div id="line-2"></div>
                     <div id="line-3"></div>
                     <div id="line-4"></div>
-                    <div id="line-5"></div>
-                    <h6 id="label-z9">z,9</h6>
+                    <div id="line-5"></div> -->
+                    <img src="assets/PNG/3D_Images/labels/z.9.png" class="img-fluid" id="label-z9">
+                    <img src="assets/PNG/3D_Images/labels/z.11.png" class="img-fluid" id="label-z11">
+                    <img src="assets/PNG/3D_Images/labels/z.13.png" class="img-fluid" id="label-z13">
+                    <img src="assets/PNG/3D_Images/labels/z.15.png" class="img-fluid" id="label-z15">
+                    <img src="assets/PNG/3D_Images/labels/z.17.png" class="img-fluid" id="label-z17">
+                    <img src="assets/PNG/3D_Images/labels/25_4.png" class="img-fluid" id="label-25_4">
+                    <img src="assets/PNG/3D_Images/labels/25_5.png" class="img-fluid" id="label-25_5">
+                    <!-- <h6 id="label-z9">z,9</h6>
                     <h6 id="label-z11">z,11</h6>
                     <h6 id="label-z13">z,13</h6>
                     <h6 id="label-z15">z,15</h6>
                     <h6 id="label-z17">z,17</h6>
                     <h6 id="label-25_4">25<sup>4</sup></h6>
-                    <h6 id="label-25_5">25<sup>5</sup></h6>
-                    <img src="assets/PNG/BP_AN.png" class="img-fluid" id="Bp_An" onclick="turnOnAnnouncement()">
-                    <h6 id="label-z_13">z,13</h6>
+                    <h6 id="label-25_5">25<sup>5</sup></h6> -->
+                    <img src="assets/PNG/3D_Images/labels/25_4 no underline.png" class="img-fluid" id="label-25_4_track">
+                    <img src="assets/PNG/3D_Images/labels/25_5 no underline.png" class="img-fluid" id="label-25_5_track">
+                    <img src="assets/PNG/3D_Images/elements/BP_AN.png" class="img-fluid" id="Bp_An" onclick="turnOnAnnouncement()">
+                    <!-- <img src="assets/PNG/BP_AN.png" class="img-fluid" id="Bp_An" onclick="turnOnAnnouncement()"> -->
+                    <!-- <h6 id="label-z_13">z,13</h6>
                     <h6 id="label-z_15">z,15</h6>
-                    <h6 id="label-z_17">z,17</h6>
-                    <h6 id="label-25_4_track">25<sup>4</sup></h6>
-                    <h6 id="label-25_5_track">25<sup>5</sup></h6>
+                    <h6 id="label-z_17">z,17</h6> -->
+                    <img src="assets/PNG/3D_Images/labels/z.13 GREEN.png" class="img-fluid" id="label-z_13">
+                    <img src="assets/PNG/3D_Images/labels/z.15 GREEN.png" class="img-fluid" id="label-z_15">
+                    <img src="assets/PNG/3D_Images/labels/z.17 GREEN.png" class="img-fluid" id="label-z_17">
+                    <!-- <h6 id="label-25_4_track">25<sup>4</sup></h6>
+                    <h6 id="label-25_5_track">25<sup>5</sup></h6> -->
                     <!-- <img src="assets/PNG/brace.png" class="img-fluid" id="curly_brace"> -->
                     <!-- <img src="assets/PNG/open_rect.png" class="img-fluid" id="curly_brace"> -->
-                    <h6 id="label-brace"><-Z Ap 111-></h6>
+                    <img src="assets/PNG/3D_Images/elements/BOTTOM LINE.png" class="img-fluid" id="curly_brace">
+                    <h6 id="label-brace">Z Ap 111</h6>
+                    <img src="assets/PNG/3D_Images/labels/1.png" class="img-fluid" id="label-1">
+                    <img src="assets/PNG/3D_Images/labels/3.png" class="img-fluid" id="label-3">
+                    <img src="assets/PNG/3D_Images/elements/ELLIPSE FA.png" class="img-fluid" id="ellipse">
+                    <img src="assets/PNG/3D_Images/labels/FA.png" class="img-fluid" id="label-fa">
                 </div>
             </div>
         </div>
