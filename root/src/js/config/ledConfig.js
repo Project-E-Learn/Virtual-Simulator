@@ -5,7 +5,7 @@ function initializeDefaultLedStates(){
     ledStateMap.set('led-annonce','White');
     ledStateMap.set('led-a1','White');
     ledStateMap.set('led-zap','Orange');
-    ledStateMap.set('led-awa','Red');
+    // ledStateMap.set('led-awa','Red');
     ledStateMap.set('led-111','Red');
     ledStateMap.set('led-5v6','Orange');
     ledStateMap.set('tracklight1','Ash');

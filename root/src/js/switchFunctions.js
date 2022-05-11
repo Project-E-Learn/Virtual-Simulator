@@ -99,14 +99,17 @@ function switchZ13Off(){
      changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
      ledStateMap.set('tracklight1','Ash');
 }
-
+ 
 function switchZ15On(){
   if($("#train").css("visibility") == "visible")
     moveTrainForward('train',trainLocationsMap.get('Z15')[0]);
+  changeSourceImage('tracklight2','assets/PNG/3D_Images/elements/Z 13,15,17_Red.png');
+  ledStateMap.set('tracklight2','Red');
 }
 
 function switchZ15Off(){
-
+  changeSourceImage('tracklight2','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
+  ledStateMap.set('tracklight2','Ash');
 }
 
 function switchZ17On(){
@@ -130,7 +133,7 @@ function switchZ17On(){
           moveTrainForward('train',preSplitLeftLocation);      
         timeoutSetting += 800;
       }
-      setTimeout(() => {rotateElement('train',-35);},timeoutSetting);
+      setTimeout(() => {rotateElement('train',-40);},timeoutSetting);
       timeoutSetting += 800;
       setTimeout(() => {moveTrainForward('train',postSplitLeftLocation);moveTrainUpward('train',z17TopLocation);}, timeoutSetting);
       timeoutSetting += 800;
@@ -165,7 +168,7 @@ function switch25_4On(){
           moveTrainForward('train',preSplitLeftLocation);      
         timeoutSetting += 800;
       }
-      setTimeout(() => {rotateElement('train',-35);},timeoutSetting);
+      setTimeout(() => {rotateElement('train',-40);},timeoutSetting);
       timeoutSetting += 800;
       setTimeout(() => {moveTrainForward('train',postSplitLeftLocation);moveTrainUpward('train',z25_4TopLocation);}, timeoutSetting);
       timeoutSetting += 800;

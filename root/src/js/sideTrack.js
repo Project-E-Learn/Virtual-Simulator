@@ -28,7 +28,7 @@ function toggleSidebar() {
 
 function leftTrackChange(){
   document.getElementById('sidebarSplit').style.left = "3.5vw";
-  changeSourceImage('led-5v6','assets/PNG/5v6_Orange.png');
+  changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_orange.png');
   // setLeftPosition('sidebarSplit','7.6vw');
   ledStateMap.set('led-5v6','Orange');
 }

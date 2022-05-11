@@ -12,8 +12,8 @@ function defaultTrainLocationsSetup(){
     trainLocationsMap.set('Z13',['38vw','4vw']);
     trainLocationsMap.set('Z15',['57vw','4vw']);
     trainLocationsMap.set('Z17',['57vw','0vw']);
-    trainLocationsMap.set('25_4',['66vw','0vw']);
-    trainLocationsMap.set('25_5',['66vw','4vw']);
-    trainLocationsMap.set('preSplitLeft',['46.5vw']);
-    trainLocationsMap.set('postSplitLeft',['50vw']);
+    trainLocationsMap.set('25_4',['65vw','0vw']);
+    trainLocationsMap.set('25_5',['65vw','4vw']);
+    trainLocationsMap.set('preSplitLeft',['47vw']);
+    trainLocationsMap.set('postSplitLeft',['51vw']);
 }
