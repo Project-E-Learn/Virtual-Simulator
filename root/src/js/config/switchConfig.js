@@ -16,23 +16,23 @@ function initializeDefaultSwitchStates(){
 
 function defaultSwitchImageSetup(){
     switchDefaultSourceMap = new Map();
-    switchDefaultSourceMap.set('switch-z9','assets/PNG/switch_default.png');
-    switchDefaultSourceMap.set('switch-z11','assets/PNG/switch_default.png');
-    switchDefaultSourceMap.set('switch-z13','assets/PNG/switch_default.png');
-    switchDefaultSourceMap.set('switch-z15','assets/PNG/switch_default.png');
-    switchDefaultSourceMap.set('switch-z17','assets/PNG/switch_default.png');
-    switchDefaultSourceMap.set('switch-25_4','assets/PNG/switch_default.png');
-    switchDefaultSourceMap.set('switch-25_5','assets/PNG/switch_default.png');
+    switchDefaultSourceMap.set('switch-z9','assets/PNG/3D_Images/elements/Switch_default.png');
+    switchDefaultSourceMap.set('switch-z11','assets/PNG/3D_Images/elements/Switch_default.png');
+    switchDefaultSourceMap.set('switch-z13','assets/PNG/3D_Images/elements/Switch_default.png');
+    switchDefaultSourceMap.set('switch-z15','assets/PNG/3D_Images/elements/Switch_default.png');
+    switchDefaultSourceMap.set('switch-z17','assets/PNG/3D_Images/elements/Switch_default.png');
+    switchDefaultSourceMap.set('switch-25_4','assets/PNG/3D_Images/elements/Switch_default.png');
+    switchDefaultSourceMap.set('switch-25_5','assets/PNG/3D_Images/elements/Switch_default.png');
 
 }
 
 function switchedSwitchImageSetup(){
     switchSwitchedSourceMap = new Map();
-    switchSwitchedSourceMap.set('switch-z9','assets/PNG/switch_ON.png');
-    switchSwitchedSourceMap.set('switch-z11','assets/PNG/switch_ON.png');
-    switchSwitchedSourceMap.set('switch-z13','assets/PNG/switch_ON.png');
-    switchSwitchedSourceMap.set('switch-z15','assets/PNG/switch_ON.png');
-    switchSwitchedSourceMap.set('switch-z17','assets/PNG/switch_ON.png');
-    switchSwitchedSourceMap.set('switch-25_4','assets/PNG/switch_ON.png');
-    switchSwitchedSourceMap.set('switch-25_5','assets/PNG/switch_ON.png');
+    switchSwitchedSourceMap.set('switch-z9','assets/PNG/3D_Images/elements/Switch_on.png');
+    switchSwitchedSourceMap.set('switch-z11','assets/PNG/3D_Images/elements/Switch_on.png');
+    switchSwitchedSourceMap.set('switch-z13','assets/PNG/3D_Images/elements/Switch_on.png');
+    switchSwitchedSourceMap.set('switch-z15','assets/PNG/3D_Images/elements/Switch_on.png');
+    switchSwitchedSourceMap.set('switch-z17','assets/PNG/3D_Images/elements/Switch_on.png');
+    switchSwitchedSourceMap.set('switch-25_4','assets/PNG/3D_Images/elements/Switch_on.png');
+    switchSwitchedSourceMap.set('switch-25_5','assets/PNG/3D_Images/elements/Switch_on.png');
 }

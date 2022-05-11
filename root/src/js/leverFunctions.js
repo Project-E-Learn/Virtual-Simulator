@@ -121,33 +121,36 @@ function turnLever1AuAOff(){
 }
 
 function turnLever2A1On(){
-    changeSourceImage('led-a1','assets/PNG/A1_ON_State.png');
+    changeSourceImage('led-a1','assets/PNG/3D_Images/elements/A1_On_State.png');
     ledStateMap.set('led-a1','Orange');
     trainAppear();
     // launc-hModal("Signal enabled without selecting proper track");
 }
 
 function turnLever2A1Off(){
-    changeSourceImage('led-a1','assets/PNG/A1_Normal_State.png');
+    changeSourceImage('led-a1','assets/PNG/3D_Images/elements/A1_Normal_State.png');
     ledStateMap.set('led-a1','White');
     trainDisappear();
 }
 
 function turnLever3C111On(){
-    changeSourceImage('led-111','assets/PNG/111_White.png');
+    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
     ledStateMap.set('led-111','White');
-    changeSourceImage('tracklight1','assets/PNG/Z13_Yellow.png');
+    changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png');
     ledStateMap.set('tracklight1','Yellow');
-    changeSourceImage('tracklight3','assets/PNG/Z17_Yellow.png');
+    changeSourceImage('tracklight3','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png');
     ledStateMap.set('tracklight3','Yellow');
 }
 
 function turnLever3C111Off(){
-
+    
 }
 
 function turnLever4C111On(){
-
+    changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png')
+    ledStateMap.set('tracklight1','Yellow');
+    changeSourceImage('tracklight2','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png')
+    ledStateMap.set('tracklight2','Yellow');
 }
 
 function turnLever4C111Off(){
@@ -155,12 +158,12 @@ function turnLever4C111Off(){
 }
 
 function turnLever5Ag5On(){
-    changeSourceImage('led-5v6','assets/PNG/5v6_White.png');
+    changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_white.png');
     ledStateMap.set('led-5v6','White');
 }
 
 function turnLever5Ag5Off(){
-    changeSourceImage('led-5v6','assets/PNG/5v6_Orange.png');
+    changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_orange.png');
     ledStateMap.set('led-5v6','Orange');
 }
 

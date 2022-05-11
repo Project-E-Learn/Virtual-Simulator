@@ -61,18 +61,20 @@ function toggleSwitch(switchId) {
 }  
 
 function switchZ9On(){
-    changeSourceImage('led-annonce','assets/PNG/Annonce_White.png');
+    changeSourceImage('led-annonce','assets/PNG/3D_Images/elements/Annonce_white.png');
     ledStateMap.set('led-annonce','White');
-    changeSourceImage('led-zap','assets/PNG/ZAP_Red.png');
+    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Red.png');
     ledStateMap.set('led-zap','Red');
     if($("#train").css("visibility") == "visible")
       moveTrainForward('train',trainLocationsMap.get('Z9')[0]);
+    disableLevers();
 }
 
 
 function switchZ9Off(){
-    changeSourceImage('led-zap','assets/PNG/ZAP_Orange.png');
+    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
     ledStateMap.set('led-zap','Orange');
+    enableLevers();
 }
 
 function switchZ11On(){
@@ -85,16 +87,16 @@ function switchZ11Off(){
 }
 
 function switchZ13On(){
-    changeSourceImage('tracklight1','assets/PNG/Z13_Red.png');
+    changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Red.png');
     ledStateMap.set('tracklight1','Red');
-    changeSourceImage('led-111','assets/PNG/111_Red.png');
+    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
     ledStateMap.set('led-111','Red');
     if($("#train").css("visibility") == "visible")
       moveTrainForward('train',trainLocationsMap.get('Z13')[0]);
 }
 
 function switchZ13Off(){
-     changeSourceImage('tracklight1','assets/PNG/Z13_Ash.png');
+     changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
      ledStateMap.set('tracklight1','Ash');
 }
 
@@ -108,7 +110,7 @@ function switchZ15Off(){
 }
 
 function switchZ17On(){
-  changeSourceImage('tracklight3','assets/PNG/Z17_Red.png');
+  changeSourceImage('tracklight3','assets/PNG/3D_Images/elements/Z 13,15,17_Red.png');
   ledStateMap.set('tracklight3','Red');
   var trainObj = document.getElementById('train');
   var timeoutSetting = 0;
@@ -140,7 +142,7 @@ function switchZ17On(){
 }
 
 function switchZ17Off(){
-    changeSourceImage('tracklight3','assets/PNG/Z17_Ash.png');
+    changeSourceImage('tracklight3','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
     ledStateMap.set('tracklight3','Ash');
 }
 
@@ -194,10 +196,21 @@ function switch25_5Off(){
 function turnOnAnnouncement(){
   console.log(ledStateMap.get('led-annonce'));
   if(ledStateMap.get('led-annonce')=='White'){
-    changeSourceImage('led-annonce','assets/PNG/Annonce_Orange.png');
+    changeSourceImage('led-annonce','assets/PNG/3D_Images/elements/Annonce_orange.png');
     var audio = new Audio('assets/SOUND/Ding_Sound_Effect.mp3');
     audio.play(); 
     ledStateMap.set('led-annonce','Orange');
   }
 }
 
+function disableLevers(){
+  addClass('lowerL3KeyHolder','disableLever');  
+  addClass('lowerL4KeyHolder','disableLever');  
+  console.log('LeverC111V3 and LeverC111V1 is now locked');
+}
+
+function enableLevers(){
+  removeClass('lowerL3KeyHolder','disableLever');  
+  removeClass('lowerL4KeyHolder','disableLever');  
+  console.log('LeverC111V3 and LeverC111V1 is now unlocked');
+}

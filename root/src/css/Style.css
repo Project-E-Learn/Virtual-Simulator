@@ -16,7 +16,7 @@
 #tracklight2{
   position: absolute;
   top: 6vw;
-  left: 68vw;
+  left: 66.5vw;
   height: auto;
   width: 2.5%;
 }
@@ -24,7 +24,7 @@
 #tracklight3{
   position: absolute;
   top: 1.5vw;
-  left: 68vw;
+  left: 66.5vw;
   height: auto;
   width: 2.5%;
 }
@@ -35,7 +35,7 @@
   /* height: 15%; */
   height: 20%;
   z-index: 99;
-  visibility: hidden;
+  visibility: visible;
   transition-duration: 0.8s;
   transition-timing-function: ease-in;
   transition-property : left transform top;
@@ -342,8 +342,8 @@
 
 #led-annonce {
   position: absolute;
-  top: 1.5vw;
-  left: 12vw;
+  top: 1.75vw;
+  left: 14.7vw;
   height: auto;
   width: 3%;
 }
@@ -437,7 +437,7 @@
 
 #label-annonce {
   top: 0.5vw;
-  left: 10.5vw;
+  left: 13.25vw;
 }
 
 #label-awa {
@@ -453,31 +453,31 @@
 }
 
 #switch-z9{
-  left: 30vw;
+  left: 24vw;
 }
 
 #switch-z11{
-  left: 36.15vw;
+  left: 32vw;
 }
 
 #switch-z13{
-  left: 42.25vw;
+  left: 39.5vw;
 }
 
 #switch-z15{
-  left: 48.2vw;
+  left: 47.5vw;
 }
 
 #switch-z17{
-  left: 54.2vw;
+  left: 54.8vw;
 }
 
 #switch-25_4{
-  left: 60vw;
+  left: 62.5vw;
 }
 
 #switch-25_5{
-  left: 66vw;
+  left: 70vw;
 }
 
 #label-bp_an {
@@ -485,7 +485,7 @@
   top: 7.75vw;
   height: 1vw;
   width: auto;
-  left: 22.65vw;
+  left: 14vw;
 }
 
 /* #label-bp_an {
@@ -509,7 +509,7 @@
 #Bp_An {
   position: absolute;
   top: 9.25vw;
-  left: 23.55vw;
+  left: 14.85vw;
   height: auto;
   width: 1.25vw;
 }
@@ -531,33 +531,33 @@
 } */
 
 #label-occupee_1{
-  left: 29vw;
+  left: 23.15vw;
 }
 
 #label-occupee_2{
-  left: 35.25vw;
+  left: 31.15vw;
 }
 
 #label-occupee_3{
-  left: 41.25vw;
+  left: 38.55vw;
 }
 
 #label-occupee_4{
-  left: 47.25vw;
+  left: 46.5vw;
 }
 
 #label-occupee_5{
-  left: 53.25vw;
+  left: 53.75vw;
 }
 
 #label-occupee_6{
   height: 0.8vw;
-  left: 59.5vw;
+  left: 61.75vw;
 }
 
 #label-occupee_7{
   height: 0.8vw;
-  left: 65.4vw;
+  left: 69.5vw;
 }
 
 #label-libre_1, #label-libre_2, #label-libre_3, #label-libre_4, #label-libre_5, #label-libre_6, #label-libre_7{
@@ -577,31 +577,31 @@
 } */
 
 #label-libre_1{
-  left: 29.7vw;
+  left: 23.75vw;
 }
 
 #label-libre_2{
-  left: 35.95vw;
+  left: 31.75vw;
 }
 
 #label-libre_3{
-  left: 42vw;
+  left: 39.3vw;
 }
 
 #label-libre_4{
-  left: 48vw;
+  left: 47.25vw;
 }
 
 #label-libre_5{
-  left: 54vw;
+  left: 54.5vw;
 }
 
 #label-libre_6{
-  left: 59.2vw;
+  left: 61.65vw;
 }
 
 #label-libre_7{
-  left: 65.2vw;
+  left: 69.25vw;
 }
 /* #line-1, #line-2, #line-3, #line-4, #line-5 {
   position: absolute;
@@ -649,23 +649,23 @@
 }
 
 #label-z9{
-  left: 29.95vw;
+  left: 24vw;
 }
 
 #label-z11{
-  left: 35.95vw;
+  left: 31.75vw;
 }
 
 #label-z13{
-  left: 42vw;
+  left: 39.25vw;
 }
 
 #label-z15{
-  left: 48vw;
+  left: 47.25vw;
 }
 
 #label-z17{
-  left: 54vw;
+  left: 54.5vw;
 }
 
 /* #label-25_4, #label-25_5{
@@ -685,11 +685,11 @@
 }
 
 #label-25_4{
-  left: 60vw;
+  left: 62.5vw;
 }
 
 #label-25_5{
-  left: 66vw;
+  left: 70.1vw;
 }
 
 #sidebarTrack {
@@ -744,8 +744,8 @@
 #curly_brace{
   position: absolute;
   top: 11.5vw;
-  left: 30vw;
-  width: 8vw;
+  left: 24vw;
+  width: 10vw;
   height: auto;
 }
 
@@ -754,7 +754,7 @@
   font-size: 0.5vw;
   font-weight: 400;
   top: 11.5vw;
-  left: 33vw;
+  left: 28vw;
   color: white;
 }
 
@@ -788,13 +788,13 @@
 #label-z_15
 {
   top: 4.80vw;
-  left: 67.5vw;
+  left: 66.1vw;
 }
 
 #label-z_17
 {
   top: 0.4vw;
-  left: 67.5vw;
+  left: 66.1vw;
 }
 
 /* #label-25_4_track, #label-25_5_track{
@@ -846,4 +846,8 @@
 
 #emergency-box:hover{
   transform: scale(1.02);
+}
+
+.disableLever{
+  pointer-events: none;
 }
