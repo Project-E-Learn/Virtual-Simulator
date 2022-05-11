@@ -244,7 +244,7 @@
 } */
 
 .track-base {
-  height: 12.75vw;
+  height: 12.35vw;
   width: auto;
   position: relative;
   margin: 0;
@@ -447,7 +447,7 @@
 
 #switch-z9, #switch-z11, #switch-z13, #switch-z15, #switch-z17, #switch-25_4, #switch-25_5{
   position: absolute;
-  top: 9vw;
+  top: 8.75vw;
   height: auto;
   width: 2.5%;
 }
@@ -516,7 +516,7 @@
 
 #label-occupee_1, #label-occupee_2, #label-occupee_3, #label-occupee_4, #label-occupee_5, #label-occupee_6, #label-occupee_7{
   position: absolute;
-  top: 10.6vw;
+  top: 10.25vw;
   height: 0.9vw;
   width: auto;
 }
@@ -743,19 +743,27 @@
 
 #curly_brace{
   position: absolute;
-  top: 11.5vw;
+  top: 11.1vw;
   left: 24vw;
   width: 10vw;
   height: auto;
 }
 
-#label-brace{
+/* #label-brace{
   position: absolute;
   font-size: 0.5vw;
   font-weight: 400;
-  top: 11.5vw;
+  top: 11.1vw;
   left: 28vw;
   color: white;
+} */
+
+#label-brace{
+  position: absolute;
+  top: 11.59vw;
+  left: 27.8vw;
+  height: 0.75vw;
+  width: auto;
 }
 
 #upperL3KeyAN, #upperL4KeyAN, #upperL6Key5, #upperL5Key5N, #upperL5Key5, #upperL6Key5, #upperL7Key5,
@@ -840,7 +848,7 @@
 
 #emergency-box{
   background-color: white;
-  width: 12vw;
+  width: 10vw;
   height: 12vw;
 }
 
