@@ -161,6 +161,13 @@ function turnLever3C111Off(){
       else{
         console.log("z13 light is red, so functional changes for lever3 was not done");
       }
+      if($("#lowerL3KeyHolder").hasClass("emergency-use")){
+        changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
+        ledStateMap.set('led-zap','Orange');
+      }
+      else{
+        console.log("Levers turned off without using emergency box");
+      }
   //if one of these lights (z13,z17) are red, dont do anything. else, do it
     //111 to red
     //z13,z17 to grey
@@ -176,6 +183,7 @@ function turnLever4C111On(){
   else{
     console.log("z13 light is red, so functional changes for lever4 was not done");
   }
+
 }
 
 function turnLever4C111Off(){
@@ -187,6 +195,13 @@ function turnLever4C111Off(){
   }
   else{
     console.log("z13 light is red, so functional changes for lever4 was not done");
+  }
+  if($("#lowerL3KeyHolder").hasClass("emergency-use")){
+    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
+    ledStateMap.set('led-zap','Orange');
+  }
+  else{
+    console.log("Levers turned off without using emergency box");
   }
   //if one of these lights are red, dont do anything. else, do it
   //Z13,z15 to grey

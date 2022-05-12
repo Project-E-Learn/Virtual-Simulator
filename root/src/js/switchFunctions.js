@@ -212,12 +212,16 @@ function turnOnAnnouncement(){
 
 function disableLevers(){
   addClass('lowerL3KeyHolder','disableLever');  
-  addClass('lowerL4KeyHolder','disableLever');  
+  addClass('lowerL4KeyHolder','disableLever'); 
+  removeClass('lowerL3KeyHolder','emergency-use');  
+  removeClass('lowerL4KeyHolder','emergency-use');   
   console.log('LeverC111V3 and LeverC111V1 is now locked');
 }
 
 function enableLevers(){
   removeClass('lowerL3KeyHolder','disableLever');  
-  removeClass('lowerL4KeyHolder','disableLever');  
+  removeClass('lowerL4KeyHolder','disableLever');
+  addClass('lowerL3KeyHolder','emergency-use');  
+  addClass('lowerL4KeyHolder','emergency-use');   
   console.log('LeverC111V3 and LeverC111V1 is now unlocked');
 }
