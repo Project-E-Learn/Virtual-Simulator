@@ -256,16 +256,16 @@
   display: block;
   height: 10vw;
   width: 44vw;
-  top: 1.25vw;
+  top: 1.40vw;
   left: 0vw;
 }
 
 #split {
   position: absolute;
-  top: 1.25vw;
-  left: 42.15vw;
-  height: 9.4vw;
-  width: 51vw;
+  top: 2.33vw;
+  left: 44vw;
+  height: 5.7vw;
+  width: 40vw;
   transform: translateY(-16%);
 }
 /* #split {
@@ -343,9 +343,9 @@
 #led-annonce {
   position: absolute;
   top: 1.75vw;
-  left: 14.7vw;
+  left: 14vw;
   height: auto;
-  width: 3%;
+  width: 6%;
 }
 
 #led-awa {
@@ -453,31 +453,31 @@
 }
 
 #switch-z9{
-  left: 24vw;
+  left: 24.1vw;
 }
 
 #switch-z11{
-  left: 32vw;
+  left: 32.1vw;
 }
 
 #switch-z13{
-  left: 39.5vw;
+  left: 39.6vw;
 }
 
 #switch-z15{
-  left: 47.5vw;
+  left: 47.6vw;
 }
 
 #switch-z17{
-  left: 54.8vw;
+  left: 54.9vw;
 }
 
 #switch-25_4{
-  left: 62.5vw;
+  left: 62.6vw;
 }
 
 #switch-25_5{
-  left: 70vw;
+  left: 70.1vw;
 }
 
 #label-bp_an {
