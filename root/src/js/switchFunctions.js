@@ -4,7 +4,7 @@ function toggleSwitch(switchId) {
       console.log('Switch is turned off. Turning on now');
         var switchImageSource = switchSwitchedSourceMap.get(switchId);
         switchStateMap.set(switchId,false);
-        changeSourceImage(switchId,switchImageSource);
+        changeSourceImage(switchId,switchImageSource);  
       switch(switchId){
         case 'switch-z9':
           switchZ9On();
@@ -16,16 +16,20 @@ function toggleSwitch(switchId) {
           switchZ13On();
           break;
         case 'switch-z15':
-          switchZ15On();
+          if(ledStateMap.get('tracklight2')=='Yellow'){
+              switchZ15On();}
           break;
         case 'switch-z17':
-          switchZ17On();
+          if(ledStateMap.get('tracklight3')=='Yellow')
+              switchZ17On();
           break;
         case 'switch-25_4':
-          switch25_4On();
+          if(ledStateMap.get('tracklight3')=='Red'){
+              switch25_4On();}
           break;
         case 'switch-25_5':
-          switch25_5On();
+          if(ledStateMap.get('tracklight2')=='Red'){
+              switch25_5On();}
           break;
       }
 

@@ -42,6 +42,9 @@ function lockHolder(holderId){
   if(holderId != 'upperL7KeyHolder5'){
     changeSourceImage(holderId, holderLockStateImageMap.get(holderId));
   }
+  // else{
+  //   straightTrackChange();
+  // }
   console.log('Holder ' + holderId + ' is locked.');
 }
 
@@ -50,7 +53,7 @@ function unlockHolder(holderId){
   /** To add logic for checking lever position before unlocking the holder */
   holderLockStateMap.set(holderId,false);
   if(holderId == 'upperL7KeyHolder5'){
-    leftTrackChange();
+    sideTrackChange();
   } else{
     changeSourceImage(holderId,holderUnlockStateImageMap.get(holderId));
   }

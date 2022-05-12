@@ -25,18 +25,18 @@ function keyAvailabilityMapSetup(){
     console.log('Key Availability Map Setup Begins');
     keyAvailabilityMap = new Map();
     keyAvailabilityMap.set('lowerL2KeyAN', false);
-    keyAvailabilityMap.set('upperL3KeyAN', true );
-    keyAvailabilityMap.set('upperL4KeyAN', true);
+    keyAvailabilityMap.set('upperL3KeyAN', false );
+    keyAvailabilityMap.set('upperL4KeyAN', false);
     keyAvailabilityMap.set('lowerL3Key5R', false);
     keyAvailabilityMap.set('lowerL4Key5N', false);
-    keyAvailabilityMap.set('upperL5Key5N', false);
-    keyAvailabilityMap.set('upperL5Key5', true);
-    keyAvailabilityMap.set('lowerL5Key5', true);
-    keyAvailabilityMap.set('upperL6Key5', true);
+    keyAvailabilityMap.set('upperL5Key5N', true);
+    keyAvailabilityMap.set('upperL5Key5', false);
+    keyAvailabilityMap.set('lowerL5Key5', false);
+    keyAvailabilityMap.set('upperL6Key5', false);
     keyAvailabilityMap.set('lowerL3Key6N', false);    
     keyAvailabilityMap.set('lowerL4Key6N', false);
-    keyAvailabilityMap.set('lowerL5Key5R', true);
-    keyAvailabilityMap.set('lowerL6Key6N', true);
+    keyAvailabilityMap.set('lowerL5Key5R', false);
+    keyAvailabilityMap.set('lowerL6Key6N', false);
     keyAvailabilityMap.set('upperL7Key5', false);
     console.log('Map Data: ' + keyAvailabilityMap); //to print in key-value pairs
     console.log('Key Availability Map Setup Ends');

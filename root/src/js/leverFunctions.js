@@ -134,28 +134,60 @@ function turnLever2A1Off(){
 }
 
 function turnLever3C111On(){
+  if((ledStateMap.get('tracklight1')!='Red')){ 
     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
     ledStateMap.set('led-111','White');
     changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png');
     ledStateMap.set('tracklight1','Yellow');
     changeSourceImage('tracklight3','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png');
     ledStateMap.set('tracklight3','Yellow');
+  }
+  else{
+    console.log("z13 light is red, so functional changes for lever3 was not done");
+  }
+    
 }
-
 function turnLever3C111Off(){
-    //if one of these lights (z13,z17) are red, dont do anything. else, do it
+  // 
+      if((ledStateMap.get('tracklight1')!='Red'))   {
+        console.log(ledStateMap.get('tracklight1'));
+        changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 red.png');
+        ledStateMap.set('led-111','Red');
+        changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
+        ledStateMap.set('tracklight1','Ash');
+        changeSourceImage('tracklight3','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
+        ledStateMap.set('tracklight3','Ash'); 
+      }
+      else{
+        console.log("z13 light is red, so functional changes for lever3 was not done");
+      }
+  //if one of these lights (z13,z17) are red, dont do anything. else, do it
     //111 to red
     //z13,z17 to grey
 }
 
 function turnLever4C111On(){
+  if((ledStateMap.get('tracklight1')!='Red'))   {
     changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png')
     ledStateMap.set('tracklight1','Yellow');
     changeSourceImage('tracklight2','assets/PNG/3D_Images/elements/Z 13,15,17_Yellow.png')
     ledStateMap.set('tracklight2','Yellow');
+  }
+  else{
+    console.log("z13 light is red, so functional changes for lever4 was not done");
+  }
 }
 
 function turnLever4C111Off(){
+  if((ledStateMap.get('tracklight1')!='Red'))   {
+    changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png')
+    ledStateMap.set('tracklight1','Ash');
+    changeSourceImage('tracklight2','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png')
+    ledStateMap.set('tracklight2','Ash');
+  }
+  else{
+    console.log("z13 light is red, so functional changes for lever4 was not done");
+  }
   //if one of these lights are red, dont do anything. else, do it
   //Z13,z15 to grey
 }

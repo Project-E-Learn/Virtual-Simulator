@@ -8,6 +8,7 @@ function sideTrackSetup(){
     document.getElementById("contentContainer").style.marginLeft = "0vw";
     document.getElementById("contentContainer").style.marginRight = "15%";
     document.getElementById("sidebarBlock").style.display = "block";
+    document.getElementById('sidebarSplit').style.left="3.5vw";
     // sidebarKeyPosition();
 //  document.getElementById('sidebarTriggerButton').innerHTML = '>';
 //  document.getElementById('sidebarTrigger').style.marginRight = '25%';
