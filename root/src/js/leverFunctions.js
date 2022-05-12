@@ -143,7 +143,9 @@ function turnLever3C111On(){
 }
 
 function turnLever3C111Off(){
-    
+    //if one of these lights (z13,z17) are red, dont do anything. else, do it
+    //111 to red
+    //z13,z17 to grey
 }
 
 function turnLever4C111On(){
@@ -154,7 +156,8 @@ function turnLever4C111On(){
 }
 
 function turnLever4C111Off(){
-
+  //if one of these lights are red, dont do anything. else, do it
+  //Z13,z15 to grey
 }
 
 function turnLever5Ag5On(){
