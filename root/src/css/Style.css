@@ -512,6 +512,7 @@
   left: 14.85vw;
   height: auto;
   width: 1.25vw;
+  z-index: 5;
 }
 
 #label-occupee_1, #label-occupee_2, #label-occupee_3, #label-occupee_4, #label-occupee_5, #label-occupee_6, #label-occupee_7{

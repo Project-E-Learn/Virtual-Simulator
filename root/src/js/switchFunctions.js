@@ -197,7 +197,7 @@ function switch25_5Off(){
 }
 
 function turnOnAnnouncement(){
-  console.log(ledStateMap.get('led-annonce'));
+  console.log('Current state of Annonce LED: ' + ledStateMap.get('led-annonce'));
   if(ledStateMap.get('led-annonce')=='White'){
     changeSourceImage('led-annonce','assets/PNG/3D_Images/elements/Annonce_orange.png');
     var audio = new Audio('assets/SOUND/Ding_Sound_Effect.mp3');
