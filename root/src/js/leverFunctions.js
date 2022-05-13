@@ -151,7 +151,7 @@ function turnLever3C111Off(){
   // 
       if((ledStateMap.get('tracklight1')!='Red'))   {
         console.log(ledStateMap.get('tracklight1'));
-        changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 red.png');
+        changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
         ledStateMap.set('led-111','Red');
         changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
         ledStateMap.set('tracklight1','Ash');
@@ -162,7 +162,7 @@ function turnLever3C111Off(){
         console.log("z13 light is red, so functional changes for lever3 was not done");
       }
       if($("#lowerL3KeyHolder").hasClass("emergency-use")){
-        changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
+        changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_orange.png');
         ledStateMap.set('led-zap','Orange');
       }
       else{
@@ -190,7 +190,7 @@ function turnLever4C111On(){
 
 function turnLever4C111Off(){
   if((ledStateMap.get('tracklight1')!='Red'))   {
-    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 red.png');
+    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
     ledStateMap.set('led-111','Red');
     changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png')
     ledStateMap.set('tracklight1','Ash');
@@ -201,7 +201,7 @@ function turnLever4C111Off(){
     console.log("z13 light is red, so functional changes for lever4 was not done");
   }
   if($("#lowerL3KeyHolder").hasClass("emergency-use")){
-    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
+    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_orange.png');
     ledStateMap.set('led-zap','Orange');
   }
   else{

@@ -76,9 +76,9 @@ function switchZ9On(){
 
 
 function switchZ9Off(){
-    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
-    ledStateMap.set('led-zap','Orange');
-    enableLevers();
+    // changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
+    // ledStateMap.set('led-zap','Orange');
+    // enableLevers();
 }
 
 function switchZ11On(){
@@ -87,7 +87,13 @@ function switchZ11On(){
 }
 
 function switchZ11Off(){
-
+  if(switchStateMap.get('switch-z9')){
+    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_orange.png');
+    ledStateMap.set('led-zap','Orange');
+    enableLevers();
+  } else{
+    console.log('Switch Z9 is turned on. No actions performed by Switch Z11');
+  }
 }
 
 function switchZ13On(){
