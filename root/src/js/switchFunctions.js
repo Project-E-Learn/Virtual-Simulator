@@ -219,6 +219,7 @@ function disableLevers(){
 }
 
 function enableLevers(){
+  changeSourceImage('emergency-box','assets/PNG/3D_Images/elements/emergencyBoxModified.jpg');
   removeClass('lowerL3KeyHolder','disableLever');  
   removeClass('lowerL4KeyHolder','disableLever');
   addClass('lowerL3KeyHolder','emergency-use');  
