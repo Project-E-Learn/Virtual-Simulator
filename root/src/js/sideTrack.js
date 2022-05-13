@@ -32,8 +32,6 @@ function sideTrackChange(){
   if(sideTrackPosition.style.left == "3.5vw")
   {
     sideTrackPosition.style.left = "5.6vw";
-    changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_white.png');
-    ledStateMap.set('led-5v6','White');
   }else if(sideTrackPosition.style.left == "5.6vw"){
     sideTrackPosition.style.left = "3.5vw";
     changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_orange.png');
