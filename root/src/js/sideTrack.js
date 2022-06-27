@@ -29,13 +29,15 @@ function toggleSidebar() {
 function sideTrackChange(){
   var sideTrackPosition =document.getElementById('sidebarSplit');
   console.log("left Value=",sideTrackPosition.style.left);
-  if(sideTrackPosition.style.left == "3.5vw")
+  if(sideTrackPosition.style.left == "0vw")
   {
-    sideTrackPosition.style.left = "5.6vw";
-  }else if(sideTrackPosition.style.left == "5.6vw"){
-    sideTrackPosition.style.left = "3.5vw";
-    changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_orange.png');
-    ledStateMap.set('led-5v6','Orange');
+    sideTrackPosition.style.left = "0.5vw";
+  }else if(sideTrackPosition.style.left == "0.5vw"){
+    sideTrackPosition.style.left = "0vw";
+//    changeSourceImage('led-5v6-3','assets/PNG/3D_Images/elements/5v6_orange.png');
+//    ledStateMap.set('led-5v6-3','Orange');
+//    changeSourceImage('led-5v6-1','assets/PNG/3D_Images/elements/5v6_orange.png');
+//    ledStateMap.set('led-5v6-1','Orange');
   }
 
 }

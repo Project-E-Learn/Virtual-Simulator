@@ -26,6 +26,7 @@ function initializeData() {
   switchedHolderImageSetup();
   initalizeLockSequence();
   initalizeUnlockSequence();
+  emergencyConfig();
   console.log('INITIALIZATION COMPLETE');
 }
 

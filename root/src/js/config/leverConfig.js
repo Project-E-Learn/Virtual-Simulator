@@ -13,7 +13,7 @@ function initializeLeverHolderMap(){
     leverHolderMap.set('lever4C111',['lowerL4KeyHolder','upperL4KeyHolderAN']);
     leverHolderMap.set('lever5Ag5',['lowerL5KeyHolder','upperL5KeyHolder']);
     leverHolderMap.set('lever6V6',['lowerL6KeyHolder6N','upperL6KeyHolder5']);
-    leverHolderMap.set('leverSideTrack',['upperL7KeyHolder5']);
+//    leverHolderMap.set('leverSideTrack',['upperL7KeyHolder5']);
     console.log('Lever Holder Map Setup Ends');
 }
 

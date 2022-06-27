@@ -212,19 +212,49 @@ function turnLever4C111Off(){
 }
 
 function turnLever5Ag5On(){
-    changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_white.png');
-    ledStateMap.set('led-5v6','White');
+    sideTrackChange();
+    if(leverStateMap.get('lever6V6') == true){
+        changeSourceImage('led-5v6-3','assets/PNG/3D_Images/elements/5v6_orange.png');
+        ledStateMap.set('led-5v6-3','Orange');
+        changeSourceImage('led-5v6-1','assets/PNG/3D_Images/elements/5v6_white.png');
+        ledStateMap.set('led-5v6-1','White');
+    } else {
+        console.log('V6 lever is turned OFF. Electrical supply is cut for 5.V6');
+    }
 }
 
 function turnLever5Ag5Off(){
-    changeSourceImage('led-5v6','assets/PNG/3D_Images/elements/5v6_orange.png');
-    ledStateMap.set('led-5v6','Orange');
+    sideTrackChange();
+    if(leverStateMap.get('lever6V6') == true){
+        changeSourceImage('led-5v6-3','assets/PNG/3D_Images/elements/5v6_white.png');
+        ledStateMap.set('led-5v6-3','White');
+        changeSourceImage('led-5v6-1','assets/PNG/3D_Images/elements/5v6_orange.png');
+        ledStateMap.set('led-5v6-1','Orange');
+    } else {
+        console.log('V6 lever is turned OFF. Electrical supply is cut for 5.V6');
+    }
 }
 
 function turnLever6V6On(){
-
+    //Turn both lights 5.V6 off
+    changeSourceImage('led-5v6-3','assets/PNG/3D_Images/elements/5v6_white.png');
+    ledStateMap.set('led-5v6-3','White');
+    changeSourceImage('led-5v6-1','assets/PNG/3D_Images/elements/5v6_white.png');
+    ledStateMap.set('led-5v6-1','White');
 }
 
 function turnLever6V6Off(){
-
+    //If Ag5 is in D, led-5v6-1 should be on -- leverStateMap.get(leverId) == true
+    //If Ag5 is in G, led-5v6-3 should be on -- leverStateMap.get(leverId) == false
+    if(leverStateMap.get('lever5Ag5') == true){
+        changeSourceImage('led-5v6-3','assets/PNG/3D_Images/elements/5v6_white.png');
+        ledStateMap.set('led-5v6-3','White');
+        changeSourceImage('led-5v6-1','assets/PNG/3D_Images/elements/5v6_orange.png');
+        ledStateMap.set('led-5v6-1','Orange');
+    } else {
+        changeSourceImage('led-5v6-3','assets/PNG/3D_Images/elements/5v6_orange.png');
+        ledStateMap.set('led-5v6-3','Orange');
+        changeSourceImage('led-5v6-1','assets/PNG/3D_Images/elements/5v6_white.png');
+        ledStateMap.set('led-5v6-1','White');
+    }
 }

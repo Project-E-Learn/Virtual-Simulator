@@ -16,12 +16,10 @@ function toggleSwitch(switchId) {
           switchZ13On();
           break;
         case 'switch-z15':
-          if(ledStateMap.get('tracklight2')=='Yellow'){
-              switchZ15On();}
+          switchZ15On();
           break;
         case 'switch-z17':
-          if(ledStateMap.get('tracklight3')=='Yellow')
-              switchZ17On();
+          switchZ17On();
           break;
         case 'switch-25_4':
           if(ledStateMap.get('tracklight3')=='Red'){
@@ -64,35 +62,41 @@ function toggleSwitch(switchId) {
     }
 }  
 
-function switchZ9On(){
-    changeSourceImage('led-annonce','assets/PNG/3D_Images/elements/Annonce_white.png');
-    ledStateMap.set('led-annonce','White');
-    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Red.png');
-    ledStateMap.set('led-zap','Red');
-    if($("#train").css("visibility") == "visible")
-      moveTrainForward('train',trainLocationsMap.get('Z9')[0]);
-    disableLevers();
+function switchZ9On() {
+  changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_Red.png");
+  ledStateMap.set("led-zap", "Red");
+  if ($("#train").css("visibility") == "visible")
+    moveTrainForward("train", trainLocationsMap.get("Z9")[0]);
+  disableLevers();
 }
 
-
-function switchZ9Off(){
-    // changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_Orange.png');
-    // ledStateMap.set('led-zap','Orange');
-    // enableLevers();
+function switchZ9Off() {
+  if (switchStateMap.get("switch-z11")) {
+  changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_orange.png");
+  ledStateMap.set("led-zap", "Orange");
+  enableLevers();
+} else {
+  console.log("Switch Z11 is turned on. No actions performed by Switch Z9");
+}
 }
 
-function switchZ11On(){
-  if($("#train").css("visibility") == "visible")
-    moveTrainForward('train',trainLocationsMap.get('Z11')[0]);
+function switchZ11On() {
+  changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_Red.png");
+  ledStateMap.set("led-zap", "Red");
+  if ($("#train").css("visibility") == "visible")
+    moveTrainForward("train", trainLocationsMap.get("Z11")[0]);
 }
 
-function switchZ11Off(){
-  if(switchStateMap.get('switch-z9')){
-    changeSourceImage('led-zap','assets/PNG/3D_Images/elements/ZAP_orange.png');
-    ledStateMap.set('led-zap','Orange');
+function switchZ11Off() {
+  if (switchStateMap.get("switch-z9")) {
+    changeSourceImage(
+      "led-zap",
+      "assets/PNG/3D_Images/elements/ZAP_orange.png"
+    );
+    ledStateMap.set("led-zap", "Orange");
     enableLevers();
-  } else{
-    console.log('Switch Z9 is turned on. No actions performed by Switch Z11');
+  } else {
+    console.log("Switch Z9 is turned on. No actions performed by Switch Z11");
   }
 }
 
@@ -101,6 +105,7 @@ function switchZ13On(){
     ledStateMap.set('tracklight1','Red');
     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
     ledStateMap.set('led-111','Red');
+	enableLevers();
     if($("#train").css("visibility") == "visible")
       moveTrainForward('train',trainLocationsMap.get('Z13')[0]);
 }
@@ -214,21 +219,4 @@ function turnOnAnnouncement(){
     audio.play(); 
     ledStateMap.set('led-annonce','Orange');
   }
-}
-
-function disableLevers(){
-  addClass('lowerL3KeyHolder','disableLever');  
-  addClass('lowerL4KeyHolder','disableLever'); 
-  removeClass('lowerL3KeyHolder','emergency-use');  
-  removeClass('lowerL4KeyHolder','emergency-use');   
-  console.log('LeverC111V3 and LeverC111V1 is now locked');
-}
-
-function enableLevers(){
-  changeSourceImage('emergency-box','assets/PNG/3D_Images/elements/emergencyBoxModified.jpg');
-  removeClass('lowerL3KeyHolder','disableLever');  
-  removeClass('lowerL4KeyHolder','disableLever');
-  addClass('lowerL3KeyHolder','emergency-use');  
-  addClass('lowerL4KeyHolder','emergency-use');   
-  console.log('LeverC111V3 and LeverC111V1 is now unlocked');
 }

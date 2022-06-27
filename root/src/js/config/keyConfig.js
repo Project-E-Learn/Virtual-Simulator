@@ -17,7 +17,7 @@ function defaultKeySetup() {
     hideElement('lowerL4Key6N');
     makeElementVisible('lowerL5Key5R');//makeElementVisible
     makeElementVisible('lowerL6Key6N');//makeElementVisible
-    hideElement('upperL7Key5');
+//    hideElement('upperL7Key5');
     console.log('Key Setup Ends');
 }
 
@@ -37,7 +37,7 @@ function keyAvailabilityMapSetup(){
     keyAvailabilityMap.set('lowerL4Key6N', false);
     keyAvailabilityMap.set('lowerL5Key5R', false);
     keyAvailabilityMap.set('lowerL6Key6N', false);
-    keyAvailabilityMap.set('upperL7Key5', false);
+//    keyAvailabilityMap.set('upperL7Key5', false);
     console.log('Map Data: ' + keyAvailabilityMap); //to print in key-value pairs
     console.log('Key Availability Map Setup Ends');
 }
@@ -57,7 +57,7 @@ function defaultKeyOrientationSetup() {
     rotateElement('lowerL4Key6N',345);
     rotateElement('lowerL5Key5R',460);
     rotateElement('lowerL6Key6N',345);
-    rotateElement('upperL7Key5',345);
+//    rotateElement('upperL7Key5',345);
     console.log('Key Orientation Setup Ends');
 }
 

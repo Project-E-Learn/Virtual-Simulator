@@ -16,7 +16,7 @@ function defaultHolderImageSetup(){
     defaultHolderSourceMap.set('lowerL4KeyHolder', 'assets/PNG/C111_V1_F_Left_Unlocked.png');
     defaultHolderSourceMap.set('lowerL5KeyHolder', 'assets/PNG/Ag5_D_Right_Unlocked.png');
     defaultHolderSourceMap.set('lowerL6KeyHolder6N', 'assets/PNG/V6_L_Left_Unlocked.png');
-    defaultHolderSourceMap.set('upperL7KeyHolder5', '');
+//    defaultHolderSourceMap.set('upperL7KeyHolder5', '');
 }
 
 function switchedHolderImageSetup(){
@@ -30,7 +30,7 @@ function switchedHolderImageSetup(){
     switchedHolderSourceMap.set('lowerL4KeyHolder', 'assets/PNG/C111_V1_O_Right_Unlocked.png');
     switchedHolderSourceMap.set('lowerL5KeyHolder', 'assets/PNG/Ag5_G_Left_Unlocked.png');
     switchedHolderSourceMap.set('lowerL6KeyHolder6N', 'assets/PNG/V6_R_Right_Unlocked.png');
-    switchedHolderSourceMap.set('upperL7KeyHolder5', '');
+//    switchedHolderSourceMap.set('upperL7KeyHolder5', '');
 }
 
 function setupHolderLockStateImage(){
@@ -45,7 +45,7 @@ function setupHolderLockStateImage(){
     holderLockStateImageMap.set('lowerL4KeyHolder', 'assets/PNG/C111_V1_F_Left_Locked.png');
     holderLockStateImageMap.set('lowerL5KeyHolder', 'assets/PNG/Ag5_G_Left_Locked.png');
     holderLockStateImageMap.set('lowerL6KeyHolder6N', 'assets/PNG/V6_L_Left_Locked.png');
-    holderLockStateImageMap.set('upperL7KeyHolder5', '');
+//    holderLockStateImageMap.set('upperL7KeyHolder5', '');
     console.log('Holder Lock State Image Map Setup Ends');
 }
 
@@ -61,7 +61,7 @@ function setupHolderUnlockStateImage() {
     holderUnlockStateImageMap.set('lowerL4KeyHolder', 'assets/PNG/C111_V1_F_Left_Unlocked.png');
     holderUnlockStateImageMap.set('lowerL5KeyHolder', 'assets/PNG/Ag5_G_Left_Unlocked.png');
     holderUnlockStateImageMap.set('lowerL6KeyHolder6N', 'assets/PNG/V6_L_Left_Unlocked.png');
-    holderUnlockStateImageMap.set('upperL7KeyHolder5', '');
+//    holderUnlockStateImageMap.set('upperL7KeyHolder5', '');
     console.log('Holder Unlock State Map Setup Ends');
 }
 
@@ -77,7 +77,7 @@ function setupDefaultHolderLockState() {
     holderLockStateMap.set('lowerL4KeyHolder', true);
     holderLockStateMap.set('lowerL5KeyHolder', false);
     holderLockStateMap.set('lowerL6KeyHolder6N', true);
-    holderLockStateMap.set('upperL7KeyHolder5', false);
+//    holderLockStateMap.set('upperL7KeyHolder5', false);
     console.log('Holder Lock State Map Setup Ends');
 }
 
@@ -93,6 +93,6 @@ function exactKeyMapSetup(){
     exactKeyMap.set('lowerL4KeyHolder', ['lowerL4Key5N','lowerL4Key6N']);
     exactKeyMap.set('lowerL5KeyHolder', ['lowerL5Key5','lowerL5Key5R']);
     exactKeyMap.set('lowerL6KeyHolder6N', ['lowerL6Key6N']);
-    exactKeyMap.set('upperL7KeyHolder5', ['upperL7Key5']);
+//    exactKeyMap.set('upperL7KeyHolder5', ['upperL7Key5']);
     console.log('Unique Key-Holder mapping ends');
 }

@@ -308,10 +308,18 @@
   width: 3.5%;
 }
 
-#led-5v6 {
+#led-5v6-3 {
   position: absolute;
-  top: 5.6vw;
-  left: 51.6vw;
+  top: 3vw;
+  left: 51vw;
+  height: auto;
+  width: 2.5%;
+}
+
+#led-5v6-1{
+  position: absolute;
+  top: 7vw;
+  left: 52.4vw;
   height: auto;
   width: 2.5%;
 }
@@ -400,7 +408,7 @@
   letter-spacing: 1px;
 } */
 
-#label-a1, #label-zap, #label-111, #label-5v6, #label-annonce, #label-awa {
+#label-a1, #label-zap, #label-111, #label-5v6-3, #label-5v6-1, #label-annonce, #label-awa {
   position: absolute;
   height: 0.75vw;
   width: auto;
@@ -430,9 +438,14 @@
   color: goldenrod;
 } */
 
-#label-5v6 {
-  top: 6.85vw;
-  left: 51.5vw;
+#label-5v6-3 {
+  top: 4.4vw;
+  left: 50.5vw;
+}
+
+#label-5v6-1 {
+  top: 8.3vw;
+  left: 52vw;
 }
 
 #label-annonce {
@@ -695,32 +708,49 @@
 
 #sidebarTrack {
   position: absolute;
-  left: 1.5vw;
-  width: 12vw;
-  height: 34vw;
+  left: 0.55vw;
+  width: 14vw;
+  height: 46vw;
 }
 
 #sidebarSplit {
   position: absolute;
-  top: 5.75vw;
-  left: 5.6vw;
-  width: 6.25vw;
-  height: auto;
-  transition: ease-in 0.8s;
+  /*top: 5.75vw;*/
+  left: 0.5vw;
+  width: 14vw;
+  height: 46vw;
+  z-index: 99;
+  transition-timing-function: ease;
+  transition-duration: 0.8s;
+  transition-property : left;
 }
 
-#upperL7KeyHolder5 {
+#sideTrackLeverUpper {
+  position: absolute;
+  left: 0.55vw;
+  width: 14vw;
+  height: 46vw;
+}
+
+#sideTrackLeverLower {
+  position: absolute;
+  left: 0.55vw;
+  width: 14vw;
+  height: 46vw;
+}
+
+/*#upperL7KeyHolder5 {
   position: absolute;
   width: 8vw;
   height: auto;
   top: 35vw;
   left: 3.55vw;
-}
+}*/
 
-#upperL7Key5 {
+/*#upperL7Key5 {
   top: 39vw;
   left: 8.5vw;
-}
+}*/
 
 .dragEnabled {
   -webkit-user-drag: auto;
@@ -767,7 +797,7 @@
   width: auto;
 }
 
-#upperL3KeyAN, #upperL4KeyAN, #upperL6Key5, #upperL5Key5N, #upperL5Key5, #upperL6Key5, #upperL7Key5,
+#upperL3KeyAN, #upperL4KeyAN, #upperL5Key5N, #upperL5Key5, #upperL6Key5, /*#upperL7Key5,*/
 #lowerL2KeyAN, #lowerL3Key5R, #lowerL4Key6N, #lowerL4Key5N, #lowerL5Key5R, #lowerL5Key5, #lowerL3Key6N, #lowerL6Key6N {
   transition-duration: 0.2s;
   transition-timing-function: ease;
@@ -861,6 +891,32 @@
   pointer-events: none;
 }
 
-.emergency-use{
-  
+#emergency-button-ferm{
+   top: 1.4vw;
+   left: 8.8vw;
+   transition-duration: 0.2s;
+   transition-timing-function: ease;
+   transition-property : transform;
+   position: absolute;
+   width: 14%;
+   height: auto;
+}
+
+#emergency-button-ferm:hover{
+  transform: scale(1.02);
+}
+
+#emergency-button-annu{
+   top: 5.4vw;
+   left: 8.8vw;
+   transition-duration: 0.2s;
+   transition-timing-function: ease;
+   transition-property : transform;
+   position: absolute;
+   width: 14%;
+   height: auto;
+}
+
+#emergency-button-annu:hover{
+  transform: scale(1.02);
 }
