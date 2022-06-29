@@ -28,12 +28,18 @@ function toggleSidebar() {
 
 function sideTrackChange(){
   var sideTrackPosition =document.getElementById('sidebarSplit');
-  console.log("left Value=",sideTrackPosition.style.left);
-  if(sideTrackPosition.style.left == "0vw")
+  var sideTrackLowerLever = document.getElementById('sideTrackLeverLower');
+  console.log("Sub-track Value: ",sideTrackPosition.style.left);
+  console.log("Lower lever part value: ",sideTrackLowerLever.style.left);
+  if(sideTrackPosition.style.left == "0.5vw")
   {
+    sideTrackPosition.style.left = "1.2vw";
+    sideTrackLowerLever.style.left = "13.1vw";
+    rotateElement('sideTrackLeverUpper',-20);
+  }else if(sideTrackPosition.style.left == "1.2vw"){
     sideTrackPosition.style.left = "0.5vw";
-  }else if(sideTrackPosition.style.left == "0.5vw"){
-    sideTrackPosition.style.left = "0vw";
+    rotateElement('sideTrackLeverUpper',0);
+    sideTrackLowerLever.style.left = "12.5vw";
 //    changeSourceImage('led-5v6-3','assets/PNG/3D_Images/elements/5v6_orange.png');
 //    ledStateMap.set('led-5v6-3','Orange');
 //    changeSourceImage('led-5v6-1','assets/PNG/3D_Images/elements/5v6_orange.png');

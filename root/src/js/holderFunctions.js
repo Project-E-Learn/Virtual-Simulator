@@ -39,6 +39,7 @@ function lockHolder(holderId){
   /* This method locks the holder by setting the state in holder lock state map. */
   /** To add logic for checking lever position before locking the holder */
   holderLockStateMap.set(holderId,true);
+  changeSourceImage(holderId, holderLockStateImageMap.get(holderId));
   /*if(holderId != 'upperL7KeyHolder5'){
     changeSourceImage(holderId, holderLockStateImageMap.get(holderId));
   }*/

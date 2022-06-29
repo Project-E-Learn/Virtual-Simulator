@@ -711,6 +711,7 @@
   left: 0.55vw;
   width: 14vw;
   height: 46vw;
+  z-index: 97;
 }
 
 #sidebarSplit {
@@ -727,16 +728,36 @@
 
 #sideTrackLeverUpper {
   position: absolute;
-  left: 0.55vw;
-  width: 14vw;
-  height: 46vw;
+  top: 31.2vw;
+  left: 12.4vw;
+  width: 2.2vw;
+  height: auto;
+  z-index: 99;
+  transform-origin: 60.37% 25.63%;
+  transition-timing-function: ease;
+  transition-duration: 0.8s;
+  transition-property : transform;
 }
 
 #sideTrackLeverLower {
   position: absolute;
-  left: 0.55vw;
-  width: 14vw;
-  height: 46vw;
+  top: 33.6vw;
+  left: 12.5vw;
+  width: 1.5vw;
+  height: auto;
+  z-index: 99;
+  transition-timing-function: ease;
+  transition-duration: 0.8s;
+  transition-property : left;
+}
+
+#sideTrackControlBox {
+  position: absolute;
+  top: 30.7vw;
+  left: 12.5vw;
+  width: 2.1vw;
+  height: 2.3vw;
+  z-index: 98;
 }
 
 /*#upperL7KeyHolder5 {
