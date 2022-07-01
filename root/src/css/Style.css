@@ -904,40 +904,40 @@
   height: 12vw;
 }
 
-#emergency-box:hover{
+/*#emergency-box:hover{
   transform: scale(1.02);
-}
+}*/
 
 .disableLever{
   pointer-events: none;
 }
 
 #emergency-button-ferm{
-   top: 1.4vw;
-   left: 8.8vw;
+   top: 1.3vw;
+   left: 0.5vw;
    transition-duration: 0.2s;
    transition-timing-function: ease;
    transition-property : transform;
    position: absolute;
-   width: 14%;
+   width: 15.5%;
    height: auto;
 }
 
 #emergency-button-ferm:hover{
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 
 #emergency-button-annu{
-   top: 5.4vw;
-   left: 8.8vw;
+   top: 1.3vw;
+   left: 7vw;
    transition-duration: 0.2s;
    transition-timing-function: ease;
    transition-property : transform;
    position: absolute;
-   width: 14%;
+   width: 15.5%;
    height: auto;
 }
 
 #emergency-button-annu:hover{
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
