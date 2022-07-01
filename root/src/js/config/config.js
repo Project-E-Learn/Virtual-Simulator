@@ -17,8 +17,8 @@ function initializeData() {
   switchedSwitchImageSetup();
   defaultSwitchImageSetup();
   initializeDefaultLedStates();
-  defaultTrainPositionSetup();
-  defaultTrainLocationsSetup();
+/*  defaultTrainPositionSetup();
+  defaultTrainLocationsSetup();*/
   leverNameSetup();
   setupHolderLockStateImage();
   setupHolderUnlockStateImage();

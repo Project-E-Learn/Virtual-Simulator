@@ -1,3 +1,4 @@
+/*
 var trainLocationsMap;
 
 function defaultTrainPositionSetup(){
@@ -16,4 +17,4 @@ function defaultTrainLocationsSetup(){
     trainLocationsMap.set('25_5',['65vw','4vw']);
     trainLocationsMap.set('preSplitLeft',['47vw']);
     trainLocationsMap.set('postSplitLeft',['51vw']);
-}
+}*/

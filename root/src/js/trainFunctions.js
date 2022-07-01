@@ -1,3 +1,4 @@
+/*
 function trainAppear() {
     console.log('started animation');
     // let id = null;
@@ -28,7 +29,7 @@ function trainAppear() {
     // makeElementVisible('train');
     //hideElement('train');
   }
-  
+
   function moveTrainForward(trainId,points){
     var trainObj = document.getElementById(trainId);
     console.log('Current train object left position: ' + getNumericAndDot(trainObj.style.left));
@@ -49,4 +50,4 @@ function trainAppear() {
     } else{
       console.log('Unable to move train object to: ' + points + '. Train is already past that point.');
     }
-  }
+  }*/

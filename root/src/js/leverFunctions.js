@@ -123,14 +123,14 @@ function turnLever1AuAOff(){
 function turnLever2A1On(){
     changeSourceImage('led-a1','assets/PNG/3D_Images/elements/A1_On_State.png');
     ledStateMap.set('led-a1','Orange');
-    trainAppear();
+//    trainAppear();
     // launc-hModal("Signal enabled without selecting proper track");
 }
 
 function turnLever2A1Off(){
     changeSourceImage('led-a1','assets/PNG/3D_Images/elements/A1_Normal_State.png');
     ledStateMap.set('led-a1','White');
-    trainDisappear();
+//    trainDisappear();
 }
 
 function turnLever3C111On(){

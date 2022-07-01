@@ -65,8 +65,8 @@ function toggleSwitch(switchId) {
 function switchZ9On() {
   changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_Red.png");
   ledStateMap.set("led-zap", "Red");
-  if ($("#train").css("visibility") == "visible")
-    moveTrainForward("train", trainLocationsMap.get("Z9")[0]);
+/*  if ($("#train").css("visibility") == "visible")
+    moveTrainForward("train", trainLocationsMap.get("Z9")[0]);*/
   disableLevers();
 }
 
@@ -83,8 +83,8 @@ function switchZ9Off() {
 function switchZ11On() {
   changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_Red.png");
   ledStateMap.set("led-zap", "Red");
-  if ($("#train").css("visibility") == "visible")
-    moveTrainForward("train", trainLocationsMap.get("Z11")[0]);
+/*  if ($("#train").css("visibility") == "visible")
+    moveTrainForward("train", trainLocationsMap.get("Z11")[0]);*/
 }
 
 function switchZ11Off() {
@@ -106,8 +106,8 @@ function switchZ13On(){
     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
     ledStateMap.set('led-111','Red');
 	enableLevers();
-    if($("#train").css("visibility") == "visible")
-      moveTrainForward('train',trainLocationsMap.get('Z13')[0]);
+/*    if($("#train").css("visibility") == "visible")
+      moveTrainForward('train',trainLocationsMap.get('Z13')[0]);*/
 }
 
 function switchZ13Off(){
@@ -116,8 +116,8 @@ function switchZ13Off(){
 }
  
 function switchZ15On(){
-  if($("#train").css("visibility") == "visible")
-    moveTrainForward('train',trainLocationsMap.get('Z15')[0]);
+/*  if($("#train").css("visibility") == "visible")
+    moveTrainForward('train',trainLocationsMap.get('Z15')[0]);*/
   changeSourceImage('tracklight2','assets/PNG/3D_Images/elements/Z 13,15,17_Red.png');
   ledStateMap.set('tracklight2','Red');
 }
@@ -130,7 +130,7 @@ function switchZ15Off(){
 function switchZ17On(){
   changeSourceImage('tracklight3','assets/PNG/3D_Images/elements/Z 13,15,17_Red.png');
   ledStateMap.set('tracklight3','Red');
-  var trainObj = document.getElementById('train');
+/*  var trainObj = document.getElementById('train');
   var timeoutSetting = 0;
   var z17LeftLocation = trainLocationsMap.get('Z17')[0];
   var z17TopLocation = trainLocationsMap.get('Z17')[1];
@@ -156,7 +156,7 @@ function switchZ17On(){
       timeoutSetting += 800;
       setTimeout(() => {moveTrainForward('train',z17LeftLocation);},timeoutSetting);
     }
-  }
+  }*/
 }
 
 function switchZ17Off(){
@@ -165,7 +165,7 @@ function switchZ17Off(){
 }
 
 function switch25_4On(){
-  var trainObj = document.getElementById('train');
+/*  var trainObj = document.getElementById('train');
   var timeoutSetting = 0;
   var z25_4LeftLocation = trainLocationsMap.get('25_4')[0];
   var z25_4TopLocation = trainLocationsMap.get('25_4')[1];
@@ -191,7 +191,7 @@ function switch25_4On(){
       timeoutSetting += 800;
       setTimeout(() => {moveTrainForward('train',z25_4LeftLocation);},timeoutSetting);
     }
-  }
+  }*/
 }
 
 function switch25_4Off(){
@@ -199,12 +199,12 @@ function switch25_4Off(){
 }
 
 function switch25_5On(){
-  if(getNumericAndDot(document.getElementById('train').style.top) > getNumericAndDot(trainLocationsMap.get('25_4')[1])){
+/*  if(getNumericAndDot(document.getElementById('train').style.top) > getNumericAndDot(trainLocationsMap.get('25_4')[1])){
     if($("#train").css("visibility") == "visible")
       moveTrainForward('train',trainLocationsMap.get('25_5')[0]);
   } else{
     console.log('Train has already passed Zone 13 on another route. Cannot go to 25_4 anymore.');
-  }
+  }*/
 }
 
 function switch25_5Off(){
