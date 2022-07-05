@@ -310,18 +310,18 @@
 
 #led-5v6-3 {
   position: absolute;
-  top: 3vw;
-  left: 51vw;
+  top: 5.5vw;
+  left: 51.66vw;
   height: auto;
-  width: 2.5%;
+  width: 1.85%;
 }
 
 #led-5v6-1{
   position: absolute;
-  top: 7vw;
-  left: 52.4vw;
-  height: auto;
-  width: 2.5%;
+  top: 5.9vw;
+    left: 52.2vw;
+    height: auto;
+    width: 1.85%;
 }
 
 #led-25_4 {
@@ -444,8 +444,8 @@
 }
 
 #label-5v6-1 {
-  top: 8.3vw;
-  left: 52vw;
+  top: 7.3vw;
+  left: 51.5vw;
 }
 
 #label-annonce {
