@@ -65,7 +65,10 @@ function toggleSwitch(switchId) {
 function switchZ9On() {
   changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_Red.png");
   ledStateMap.set("led-zap", "Red");
-/*  if ($("#train").css("visibility") == "visible")
+  changeSourceImage('led-annonce','assets/PNG/3D_Images/elements/Annonce_white.png');
+  ledStateMap.set('led-annonce','White');
+  
+/*  if ($("#train").css("visibility") == "visible"
     moveTrainForward("train", trainLocationsMap.get("Z9")[0]);*/
   disableLevers();
 }
@@ -74,6 +77,8 @@ function switchZ9Off() {
   if (switchStateMap.get("switch-z11")) {
   changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_orange.png");
   ledStateMap.set("led-zap", "Orange");
+  // changeSourceImage('led-annonce','assets/PNG/3D_Images/elements/Annonce_orange.png');
+  // ledStateMap.set('led-annonce','Orange');
   enableLevers();
 } else {
   console.log("Switch Z11 is turned on. No actions performed by Switch Z9");
@@ -83,6 +88,12 @@ function switchZ9Off() {
 function switchZ11On() {
   changeSourceImage("led-zap", "assets/PNG/3D_Images/elements/ZAP_Red.png");
   ledStateMap.set("led-zap", "Red");
+  changeSourceImage(
+    "led-a1",
+    "assets/PNG/3D_Images/elements/A1_Normal_State.png"
+  );
+  ledStateMap.set("led-a1", "White");
+
 /*  if ($("#train").css("visibility") == "visible")
     moveTrainForward("train", trainLocationsMap.get("Z11")[0]);*/
 }
@@ -94,6 +105,7 @@ function switchZ11Off() {
       "assets/PNG/3D_Images/elements/ZAP_orange.png"
     );
     ledStateMap.set("led-zap", "Orange");
+    
     enableLevers();
   } else {
     console.log("Switch Z9 is turned on. No actions performed by Switch Z11");
