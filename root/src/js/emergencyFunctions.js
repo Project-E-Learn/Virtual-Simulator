@@ -7,7 +7,7 @@ function emergencyButtonFermAction(){
     } else {
         emergencyFerm = true;
         changeSourceImage('emergency-button-ferm','assets/PNG/3D_Images/elements/Ferm_popped_in.png');
-        enableLevers();
+        enableLeversnew();
     }
 }
 
@@ -16,9 +16,18 @@ function disableLevers(){
   addClass('lowerL4KeyHolder','disableLever');
 /*  removeClass('lowerL3KeyHolder','emergency-use');
   removeClass('lowerL4KeyHolder','emergency-use');*/
-  changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+  if (switchStateMap.get("switch-z13")){
+    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
   ledStateMap.set('led-111','White');
   console.log('LeverC111V3 and LeverC111V1 is now locked');
+  }
+  else{
+    
+    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+    ledStateMap.set('led-111','Red');
+    console.log('LeverC111V3 and LeverC111V1 is now locked');
+  }
+ 
 }
 
 function enableLevers(){
@@ -28,6 +37,26 @@ function enableLevers(){
   addClass('lowerL4KeyHolder','emergency-use');*/
   changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
   ledStateMap.set('led-111','Red');
+  console.log('LeverC111V3 and LeverC111V1 is now unlocked');
+
+}
+function enableLeversnew(){
+  addClass('lowerL3KeyHolder','disableLever');
+  addClass('lowerL4KeyHolder','disableLever');
+/*  addClass('lowerL3KeyHolder','emergency-use');
+  addClass('lowerL4KeyHolder','emergency-use');*/
+  changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+  ledStateMap.set('led-111','Red');
+  console.log('LeverC111V3 and LeverC111V1 is now unlocked');
+
+}
+function enableLeversz9z11(){
+  removeClass('lowerL3KeyHolder','disableLever');
+  removeClass('lowerL4KeyHolder','disableLever');
+/*  addClass('lowerL3KeyHolder','emergency-use');
+  addClass('lowerL4KeyHolder','emergency-use');*/
+  // changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+  // ledStateMap.set('led-111','Red');
   console.log('LeverC111V3 and LeverC111V1 is now unlocked');
 }
 
@@ -39,5 +68,9 @@ function emergencyButtonAnnuAction(){
     } else {
         emergencyAnnu = true;
         changeSourceImage('emergency-button-annu','assets/PNG/3D_Images/elements/Annu_popped_in.png');
+        if (switchStateMap.get("switch-z15") || switchStateMap.get("switch-z17")){
+        changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+        ledStateMap.set('led-111','White');
+        }
     }
 }

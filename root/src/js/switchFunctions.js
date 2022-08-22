@@ -79,7 +79,8 @@ function switchZ9Off() {
   ledStateMap.set("led-zap", "Orange");
   // changeSourceImage('led-annonce','assets/PNG/3D_Images/elements/Annonce_orange.png');
   // ledStateMap.set('led-annonce','Orange');
-  enableLevers();
+   enableLeversz9z11();
+  // enableLevers();
 } else {
   console.log("Switch Z11 is turned on. No actions performed by Switch Z9");
 }
@@ -106,7 +107,8 @@ function switchZ11Off() {
     );
     ledStateMap.set("led-zap", "Orange");
     
-    enableLevers();
+     enableLeversz9z11();
+    // enableLevers();
   } else {
     console.log("Switch Z9 is turned on. No actions performed by Switch Z11");
   }
@@ -117,6 +119,7 @@ function switchZ13On(){
     ledStateMap.set('tracklight1','Red');
     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
     ledStateMap.set('led-111','Red');
+    
 	enableLevers();
 /*    if($("#train").css("visibility") == "visible")
       moveTrainForward('train',trainLocationsMap.get('Z13')[0]);*/
