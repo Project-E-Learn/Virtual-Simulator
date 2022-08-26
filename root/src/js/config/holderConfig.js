@@ -7,8 +7,8 @@ var switchedHolderSourceMap;
 
 function defaultHolderImageSetup(){
     defaultHolderSourceMap = new Map();
-    defaultHolderSourceMap.set('upperL3KeyHolderAN', 'assets/PNG/AN_Left_Unlocked.png');
-    defaultHolderSourceMap.set('upperL4KeyHolderAN', 'assets/PNG/AN_Left_Unlocked.png');
+    defaultHolderSourceMap.set('upperL3KeyHolderAN', 'assets/PNG/L3_AN_Left_Unlocked.png');
+    defaultHolderSourceMap.set('upperL4KeyHolderAN', 'assets/PNG/L4_AN_Left_Unlocked.png');
     defaultHolderSourceMap.set('upperL5KeyHolder', 'assets/PNG/5_5N_Right_Unlocked.png');
     defaultHolderSourceMap.set('upperL6KeyHolder5', 'assets/PNG/5_Left_Unlocked.png');
     defaultHolderSourceMap.set('lowerL2KeyHolderAN', 'assets/PNG/A1_F_Left_Unlocked.png');
@@ -21,8 +21,8 @@ function defaultHolderImageSetup(){
 
 function switchedHolderImageSetup(){
     switchedHolderSourceMap = new Map();
-    switchedHolderSourceMap.set('upperL3KeyHolderAN', 'assets/PNG/AN_Right_Unlocked.png');
-    switchedHolderSourceMap.set('upperL4KeyHolderAN', 'assets/PNG/AN_Right_Unlocked.png');
+    switchedHolderSourceMap.set('upperL3KeyHolderAN', 'assets/PNG/L3_AN_Right_Unlocked.png');
+    switchedHolderSourceMap.set('upperL4KeyHolderAN', 'assets/PNG/L4_AN_Right_Unlocked.png');
     switchedHolderSourceMap.set('upperL5KeyHolder', 'assets/PNG/5_5N_Left_Unlocked.png');
     switchedHolderSourceMap.set('upperL6KeyHolder5', 'assets/PNG/5_Right_Unlocked.png');
     switchedHolderSourceMap.set('lowerL2KeyHolderAN', 'assets/PNG/A1_O_Right_Unlocked.png');
@@ -36,8 +36,8 @@ function switchedHolderImageSetup(){
 function setupHolderLockStateImage(){
     console.log('Holder Lock State Image Map Setup Begins');
     holderLockStateImageMap = new Map();
-    holderLockStateImageMap.set('upperL3KeyHolderAN', 'assets/PNG/AN_Right_Locked.png');
-    holderLockStateImageMap.set('upperL4KeyHolderAN', 'assets/PNG/AN_Right_Locked.png');
+    holderLockStateImageMap.set('upperL3KeyHolderAN', 'assets/PNG/L3_AN_Right_Locked.png');
+    holderLockStateImageMap.set('upperL4KeyHolderAN', 'assets/PNG/L4_AN_Right_Locked.png');
     holderLockStateImageMap.set('upperL5KeyHolder', 'assets/PNG/5_5N_Right_Locked.png');
     holderLockStateImageMap.set('upperL6KeyHolder5', 'assets/PNG/5_Right_Locked.png');
     holderLockStateImageMap.set('lowerL2KeyHolderAN', 'assets/PNG/A1_F_Left_Locked.png');
@@ -52,8 +52,8 @@ function setupHolderLockStateImage(){
 function setupHolderUnlockStateImage() {
     console.log('Holder Unlock State Map Setup Begins');
     holderUnlockStateImageMap = new Map();
-    holderUnlockStateImageMap.set('upperL3KeyHolderAN', 'assets/PNG/AN_Right_Unlocked.png');
-    holderUnlockStateImageMap.set('upperL4KeyHolderAN', 'assets/PNG/AN_Right_Unlocked.png');
+    holderUnlockStateImageMap.set('upperL3KeyHolderAN', 'assets/PNG/L3_AN_Right_Unlocked.png');
+    holderUnlockStateImageMap.set('upperL4KeyHolderAN', 'assets/PNG/L4_AN_Right_Unlocked.png');
     holderUnlockStateImageMap.set('upperL5KeyHolder', 'assets/PNG/5_5N_Right_Unlocked.png');
     holderUnlockStateImageMap.set('upperL6KeyHolder5', 'assets/PNG/5_Right_Unlocked.png');
     holderUnlockStateImageMap.set('lowerL2KeyHolderAN', 'assets/PNG/A1_F_Left_Unlocked.png');
