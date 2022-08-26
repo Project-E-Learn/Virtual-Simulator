@@ -68,9 +68,9 @@ function emergencyButtonAnnuAction(){
     } else {
         emergencyAnnu = true;
         changeSourceImage('emergency-button-annu','assets/PNG/3D_Images/elements/Annu_popped_in.png');
-        if (switchStateMap.get("switch-z15") || switchStateMap.get("switch-z17")){
+        //if (switchStateMap.get("switch-z15") || switchStateMap.get("switch-z17")){
         changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
         ledStateMap.set('led-111','White');
-        }
+        //}
     }
 }
