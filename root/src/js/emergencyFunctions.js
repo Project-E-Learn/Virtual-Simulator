@@ -11,16 +11,42 @@ function emergencyButtonFermAction(){
     }
 }
 
+// function disableLevers(){
+//   addClass('lowerL3KeyHolder','disableLever');
+//   addClass('lowerL4KeyHolder','disableLever');
+// /*  removeClass('lowerL3KeyHolder','emergency-use');
+//   removeClass('lowerL4KeyHolder','emergency-use');*/
+//   if (switchStateMap.get("switch-z13")){
+//     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+//   ledStateMap.set('led-111','White');
+//   console.log('LeverC111V3 and LeverC111V1 is now locked');
+//   }
+//   else{
+    
+//     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+//     ledStateMap.set('led-111','Red');
+//     console.log('LeverC111V3 and LeverC111V1 is now locked');
+//   }
+ 
+// }
+
 function disableLevers(){
   addClass('lowerL3KeyHolder','disableLever');
   addClass('lowerL4KeyHolder','disableLever');
 /*  removeClass('lowerL3KeyHolder','emergency-use');
   removeClass('lowerL4KeyHolder','emergency-use');*/
   if (switchStateMap.get("switch-z13")){
-    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+    if(leverStateMap.get('lever3C111')  && leverStateMap.get('lever4C111')){
+      changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+      ledStateMap.set('led-111','Red');
+      console.log('LeverC111V3 and LeverC111V1 default place 111 red');
+    }
+    else
+    {changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
   ledStateMap.set('led-111','White');
-  console.log('LeverC111V3 and LeverC111V1 is now locked');
+  console.log('LeverC111V3 and LeverC111V1 is now locked');}
   }
+  
   else{
     
     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
@@ -29,6 +55,7 @@ function disableLevers(){
   }
  
 }
+
 
 function enableLevers(){
   removeClass('lowerL3KeyHolder','disableLever');
