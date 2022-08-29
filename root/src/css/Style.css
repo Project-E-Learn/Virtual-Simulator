@@ -760,6 +760,15 @@
   z-index: 98;
 }
 
+#sideTrackBox {
+  position: absolute;
+  top: 30.5vw;
+  left: 4.25vw;
+  width: 7vw;
+  height: 8.5vw;
+  z-index: 100;
+}
+
 /*#upperL7KeyHolder5 {
   position: absolute;
   width: 8vw;
