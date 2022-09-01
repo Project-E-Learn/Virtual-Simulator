@@ -7,6 +7,7 @@ function emergencyButtonFermAction(){
     } else {
         emergencyFerm = true;
         changeSourceImage('emergency-button-ferm','assets/PNG/3D_Images/elements/Ferm_popped_in.png');
+      
         enableLeversnew();
     }
 }
@@ -42,9 +43,12 @@ function disableLevers(){
       console.log('LeverC111V3 and LeverC111V1 default place 111 red');
     }
     else
-    {changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+    {
+      changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
   ledStateMap.set('led-111','White');
-  console.log('LeverC111V3 and LeverC111V1 is now locked');}
+  console.log('LeverC111V3 and LeverC111V1 is now locked');
+  enableLeversfix();
+}
   }
   
   else{
@@ -55,7 +59,13 @@ function disableLevers(){
   }
  
 }
-
+function enableLeversfix(){
+  removeClass('lowerL3KeyHolder','disableLever');
+  removeClass('lowerL4KeyHolder','disableLever');
+/*  addClass('lowerL3KeyHolder','emergency-use');
+  addClass('lowerL4KeyHolder','emergency-use');*/
+  
+}
 
 function enableLevers(){
   removeClass('lowerL3KeyHolder','disableLever');
@@ -68,15 +78,26 @@ function enableLevers(){
 
 }
 function enableLeversnew(){
-  addClass('lowerL3KeyHolder','disableLever');
-  addClass('lowerL4KeyHolder','disableLever');
+  // addClass('lowerL3KeyHolder','disableLever');
+  // addClass('lowerL4KeyHolder','disableLever');
 /*  addClass('lowerL3KeyHolder','emergency-use');
   addClass('lowerL4KeyHolder','emergency-use');*/
-  changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
-  ledStateMap.set('led-111','Red');
-  console.log('LeverC111V3 and LeverC111V1 is now unlocked');
-
+  // changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+  // ledStateMap.set('led-111','Red');
+  // console.log('LeverC111V3 and LeverC111V1 is now unlocked');
+  if(leverStateMap.get('lever3C111')  && leverStateMap.get('lever4C111')){
+    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+    ledStateMap.set('led-111','Red');
+  }
+else{
+  addClass('lowerL3KeyHolder','disableLever');
+   addClass('lowerL4KeyHolder','disableLever');
+   changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+   ledStateMap.set('led-111','Red');
+   console.log('LeverC111V3 and LeverC111V1 is now unlocked');
 }
+}
+
 function enableLeversz9z11(){
   removeClass('lowerL3KeyHolder','disableLever');
   removeClass('lowerL4KeyHolder','disableLever');
