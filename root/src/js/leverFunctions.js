@@ -19,7 +19,8 @@ function changeLeverPosition(leverId){
      *  If no holders are locked, changes the lever source images accordingly.
      *  If at least one of the holders are locked, lever source image is not changed.
      */
-    if(checkLeverLockStatus(leverId)){
+    if (!hasClass(leverNameMap.get(leverId),'disableLever'))
+   { if(checkLeverLockStatus(leverId)){
         console.log('Lever ' + leverId + ' is locked. Unable to switch.');
     } else{
         var holderArray = leverHolderMap.get(leverId);
@@ -44,7 +45,7 @@ function changeLeverPosition(leverId){
             }
             leverOffAction(leverId);
         }
-    }
+    }}
 }
 
 function leverOnAction(leverId){

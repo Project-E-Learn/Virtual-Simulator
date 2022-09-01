@@ -49,6 +49,10 @@ function addClass(elementId,className){
   document.getElementById(elementId).classList.add(className);
 }
 
+function hasClass(elementId,className){
+  return document.getElementById(elementId).classList.contains(className);
+}
+
 function changeSourceImage(imageId,newImagePath){
   document.getElementById(imageId).src = newImagePath;
 }
