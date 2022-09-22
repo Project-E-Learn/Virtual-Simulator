@@ -32,55 +32,7 @@
 </head>
 
 <body onload="initializeData()" style="background-color: white;">
-    <div id="buttonGroup">
-        <a href="#" id="info"><i>i</i></a>
-        <!-- <a href="#" id="manual"><i>m</i></a> -->
-    </div>
-    <div class="modal fade" id="infoModal">
-        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header bg-info text-white">
-                    <h4 class="modal-title">Information</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-            <div class="modal-body">
-                <!-- <p>Long instructions here</p> -->
-                <h3><b>Steps to Choose Left Track</b></h3>
-                <p><b>STEP 1: </b>You need to turn on the announcement button (Bp.An) before to start<br><br>
-                <b>STEP 2: </b>You need to provide a warning signal A1, But before that you have to choose the path in which the train has to move. (C111V3- LEFT, C111V1-STRAIGHT) <br><br>
-                <b>STEP 3: </b>IF chosen C111V3-left side
-                <ul>
-                    <li>We need to change the needle to left track by activating the Ag5 and V6 levers.</li>
-                    <li>Unlock the 6N key of V6 by turning clockwise direction.</li>
-                    <li>Change the lever position of V6 from close to open (left to right) to remove 5 Key.</li>
-                    <li>Lock the 5 key by turning the key in Anti-clockwise direction. Now remove the top 5 key from V6 and place on top 5 in Ag5 lever.</li>
-                    <li>Now all keys are available. Turn both the top 5 and 5N keys in clockwise direction to unlock. Now Ag5 lever is moved from right to left.</li>
-                    <li>To make the track to move left side. And the keys bottom 5 and 5R are locked by turning Anti-clockwise direction and Ag5 is locked.</li>
-                    <li>Now you notice 5.V6 signal is turned off. We have to bring the needle light, to ensure the needle is pointing towards left track.</li>
-                </ul>
-                <b>STEP 4: </b>Remove the bottom 5 key from Ag5 and perform the manual operation of track changing, and now you can see the light in Needle.
-                <ul>
-                    <li>Replace the bottom 5 key from Ag5 and place it to 5 slot of V6 and turn it into clockwise to unlock and turn the lever from right to left.</li>
-                </ul>
-                <b>STEP 5: </b>To bring the electrical supply to left side track.
-                <ul>
-                    <li>Turn 6N key from V6 anticlockwise and remove, place it in 6N slot of C111V3.</li>
-                    <li>Remove the 5R key from Ag5 and place in  5R  slot of C111V3.</li>
-                    <li>Now unlock (clockwise) and change the lever position (left to right) to give electrical flow to the path. (111 - Light goes off, Z13 - White, Z17 - White).</li>
-                </ul>
-                <b>STEP 6: </b>Now we need to open the A1 lever for providing the warning signal that train is approaching. <br>
-                To Activate A1:
-                <ul>
-                    <li>Turn anticlockwise and remove AN Key from C111V3 and place it in AN key of A1.</li>
-                    <li>Turn clockwise to unlock and now change the lever position (left to right) to enable A1 warning signal.</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="modal fade" id="modalElement">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -122,9 +74,13 @@
                     <img src="assets/PNG/track_above.png" class="img-fluid" id="down"> -->
                     <!-- <p id="label-annonce">Annonce</p> -->
                     <img src="assets/PNG/3D_Images/labels/Annonce.png" class="img-fluid" id="label-annonce">
+                    <img src="assets/PNG/3D_Images/labels/Di.png" class="img-fluid" id="label-Di">
+                    <img src="assets/PNG/3D_Images/labels/Poste.png" class="img-fluid" id="label-Poste">
                     <!-- <img src="assets/PNG/Annonce_White.png" class="img-fluid" id="led-annonce"> -->
                     <img src="assets/PNG/3D_Images/elements/Annonce_white.png" class="img-fluid" id="led-annonce">
-                    <!-- <p id="label-awa">AwA</p>
+                    <img src="assets/PNG/3D_Images/elements/Annonce_white.png" class="img-fluid" id="led-Di">
+                    <img src="assets/PNG/3D_Images/elements/Annonce_white.png" class="img-fluid" id="led-Poste">
+                    <!-- <p id="label-awa">AwA</p>s
                     <img src="assets/PNG/AWA_Red.png" class="img-fluid" id="led-awa"> -->
                     <!-- <p id="label-a1">A1</p> -->
                     <img src="assets/PNG/3D_Images/labels/A1.png" class="img-fluid" id="label-a1">
@@ -213,6 +169,7 @@
                     <img src="assets/PNG/3D_Images/labels/25_4 no underline.png" class="img-fluid" id="label-25_4_track">
                     <img src="assets/PNG/3D_Images/labels/25_5 no underline.png" class="img-fluid" id="label-25_5_track">
                     <img src="assets/PNG/3D_Images/elements/BP_AN.png" class="img-fluid" id="Bp_An" onclick="turnOnAnnouncement()">
+                    
                     <!-- <img src="assets/PNG/BP_AN.png" class="img-fluid" id="Bp_An" onclick="turnOnAnnouncement()"> -->
                     <!-- <h6 id="label-z_13">z,13</h6>
                     <h6 id="label-z_15">z,15</h6>
@@ -238,10 +195,16 @@
         <div id="emergencyContainer" class="container-fluid" style="display: block; position:absolute;">
             <div class="col">
                 <div id="emergencyControl" class="col-2" style="transform: translateY(-38%) translateX(-4%);">
+                    <div class="scale">
                     <img class="img-fluid col-5 d-block" id="emergency-box" src="assets/PNG/3D_Images/elements/Emergency_Box_Base.jpg">
                     <img class="img-fluid" id="emergency-button-ferm" src="assets/PNG/3D_Images/elements/Ferm_popped_out.png" onclick="emergencyButtonFermAction()">
                     <img class="img-fluid" id="emergency-button-annu" src="assets/PNG/3D_Images/elements/Annu_popped_out.png" onclick="emergencyButtonAnnuAction()">
                 </div>
+                </div>
+                <img class="img-fluid" id="refresh_button" src="assets/PNG/3D_Images/elements/refresh.jpg" onclick="location.reload();">
+                <!-- <img class="img-fluid" id="refresh_button" src="assets/PNG/3D_Images/elements/refresh_img.png" onclick="location.reload();"> -->
+                    <!-- <button class="img-fluid" id="refresh_button" onclick="location.reload();">Refresh Page</button> -->
+                
             </div>
         </div>
 

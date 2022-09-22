@@ -119,6 +119,16 @@ function switchZ13On(){
     ledStateMap.set('tracklight1','Red');
     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
     ledStateMap.set('led-111','Red');
+    if(emergencyAnnu){
+      changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 Red.png');
+      ledStateMap.set('led-111','Red');
+      changeSourceImage(
+        "led-a1",
+        "assets/PNG/3D_Images/elements/A1_Normal_State.png"
+      );
+      ledStateMap.set("led-a1", "White");
+    }
+
     
 	enableLevers();
 /*    if($("#train").css("visibility") == "visible")
@@ -128,6 +138,12 @@ function switchZ13On(){
 function switchZ13Off(){
      changeSourceImage('tracklight1','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
      ledStateMap.set('tracklight1','Ash');
+     if(emergencyAnnu){
+      changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+      ledStateMap.set('led-111','White');
+      changeSourceImage('led-a1','assets/PNG/3D_Images/elements/A1_On_State.png');
+      ledStateMap.set('led-a1','Orange');
+    }
 }
  
 function switchZ15On(){
@@ -140,10 +156,7 @@ function switchZ15On(){
 function switchZ15Off(){
   changeSourceImage('tracklight2','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
   ledStateMap.set('tracklight2','Ash');
-  if(emergencyAnnu){
-    changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
-    ledStateMap.set('led-111','White');
-  }
+  
 }
 
 function switchZ17On(){
@@ -181,10 +194,10 @@ function switchZ17On(){
 function switchZ17Off(){
     changeSourceImage('tracklight3','assets/PNG/3D_Images/elements/Z 13,15,17_Ash.png');
     ledStateMap.set('tracklight3','Ash');
-    if(emergencyAnnu){
-        changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
-        ledStateMap.set('led-111','White');
-    }
+    // if(emergencyAnnu){
+    //     changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+    //     ledStateMap.set('led-111','White');
+    // }
 }
 
 function switch25_4On(){

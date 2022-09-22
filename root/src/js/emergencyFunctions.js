@@ -61,6 +61,16 @@ function disableLeversnew() {
   console.log("LeverC111V3 and LeverC111V1 is now locked");
 }
 
+function disableLevers(){
+  addClass('lowerL3KeyHolder','disableLever');
+  addClass('lowerL4KeyHolder','disableLever');
+/*  removeClass('lowerL3KeyHolder','emergency-use');
+  removeClass('lowerL4KeyHolder','emergency-use');*/
+  changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+  ledStateMap.set('led-111','White');
+  console.log('LeverC111V3 and LeverC111V1 is now locked');
+}
+
 function enableLeversz9z11() {
   removeClass("lowerL3KeyHolder", "disableLever");
   removeClass("lowerL4KeyHolder", "disableLever");
@@ -75,6 +85,13 @@ function emergencyButtonAnnuAction() {
       "emergency-button-annu",
       "assets/PNG/3D_Images/elements/Annu_popped_out.png"
     );
+    changeSourceImage("led-111", "assets/PNG/3D_Images/elements/111 Red.png");
+    ledStateMap.set("led-111", "Red");
+    changeSourceImage(
+      "led-a1",
+      "assets/PNG/3D_Images/elements/A1_Normal_State.png"
+    );
+    ledStateMap.set("led-a1", "White");
   } else {
     emergencyAnnu = true;
     changeSourceImage(
@@ -84,6 +101,7 @@ function emergencyButtonAnnuAction() {
     
     changeSourceImage("led-111", "assets/PNG/3D_Images/elements/111 white.png");
     ledStateMap.set("led-111", "White");
-    
+    changeSourceImage('led-a1','assets/PNG/3D_Images/elements/A1_On_State.png');
+    ledStateMap.set('led-a1','Orange');
   }
 }
