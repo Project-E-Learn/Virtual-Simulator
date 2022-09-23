@@ -386,15 +386,16 @@
 
 #led-Di {
   position: absolute;
-  top: 0.75vw;
-  left: 53vw;
+  top: 1.75vw;
+  left: 52vw;
+  /* left: 16vw; */
   height: auto;
   width: 6%;
 }
 #led-Poste {
   position: absolute;
   top: 0.75vw;
-  left: 47.4vw;
+  left: 46.7vw;
   height: auto;
   width: 6%;
 }
@@ -495,12 +496,13 @@
   left: 14.25vw;
 }
 #label-Di {
-  top: 0.1vw;
-  left: 53.80vw;
+  top: 0.5vw;
+  left: 52.80vw;
+  width: 3%;
 }
 #label-Poste {
   top: 3.1vw;
-  left: 47.6vw;
+  left: 46.9vw;
 }
 
 #label-awa {
