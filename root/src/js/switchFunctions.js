@@ -94,6 +94,7 @@ function switchZ11On() {
     "assets/PNG/3D_Images/elements/A1_Normal_State.png"
   );
   ledStateMap.set("led-a1", "White");
+  disableLevers();
 
 /*  if ($("#train").css("visibility") == "visible")
     moveTrainForward("train", trainLocationsMap.get("Z11")[0]);*/

@@ -6,7 +6,13 @@ function emergencyButtonFermAction() {
       "emergency-button-ferm",
       "assets/PNG/3D_Images/elements/Ferm_popped_out.png"
     );
-    enableLeversnew();
+    if(switchStateMap.get("switch-z9") && switchStateMap.get("switch-z11")){
+      enableLeversnew();
+    }
+    else
+    {
+      console.log("n");
+    }
   } else {
     emergencyFerm = true;
     changeSourceImage(
@@ -66,8 +72,8 @@ function disableLevers(){
   addClass('lowerL4KeyHolder','disableLever');
 /*  removeClass('lowerL3KeyHolder','emergency-use');
   removeClass('lowerL4KeyHolder','emergency-use');*/
-  changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
-  ledStateMap.set('led-111','White');
+  // changeSourceImage('led-111','assets/PNG/3D_Images/elements/111 white.png');
+  // ledStateMap.set('led-111','White');
   console.log('LeverC111V3 and LeverC111V1 is now locked');
 }
 
