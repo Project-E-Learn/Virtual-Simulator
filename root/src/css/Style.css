@@ -977,9 +977,9 @@
   transform: scale(1.02);
 }*/
 
-.disableLever{
+/* .disableLever{ */
   /* pointer-events: none; */
-}
+/* } */
 
 #emergency-button-ferm{
    top: 1.3vw;
@@ -1009,4 +1009,9 @@
 
 #emergency-button-annu:hover{
   transform: scale(1.1);
+}
+
+#refresh_button:hover{
+  transform: scale(1.4);
+  cursor: pointer;
 }
